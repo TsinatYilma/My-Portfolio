@@ -2,102 +2,185 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <div className="bg-black relative   text-white body">
+     
+    <div className="header text-white flex justify-between  m-4 mt-0 pt-4">
+        <div className="leftHeader  flex items-center gap-5">
+         <img src="images\code.png" alt="" width="40" height="40">
+         <p className="whatRU sm:text-xl">Web-Developer</p>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+        <div className="rightHeader">
+            <div className="menuOverlay absolute top-0 left-0 w-[100%] h-screen bg-burgandy flex justify-center items-center clip">
+                <div className="absolute top-4 left-3 right-3 header text-white flex justify-between ">
+                    <div className="leftHeader  flex items-center gap-5">
+                    <img src="images\code.png" alt="" width="40" height="40">
+                    <p className="whatRU sm:text-xl">Web-Developer</p>
+                    </div>
+                    <div className="rightHeader flex justify-center items-center">
+                        <button className="menuButton"><img src="images\cross-mark.png" alt="" width="30" height="30"></button>
+                    </div>
+                </div>
+                <ul className="nav  flex flex-col justify-center items-center gap-4  text-white text-3xl font-bold">
+                    <li className=""><a href="#Home">Home</a></li>
+                    <li className=""><a href="Home">About</a></li>
+                    <li className=""><a href="#projects">Projects</a></li>
+                    <li className=""><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <button className="menuButton"><img src="images\menu.png" alt="" width="40" height="40"></button>
+        </div>
     </div>
-  );
+    <div className="main md:ml-16 md:mr-16">
+        <div id="Home" className="top m-5 flex flex-col justify-center gap-10 md:h-screen md:items-center mb-20 md:flex-row md:justify-between md:gap-24 lg:gap-64  bg-none md:bg-profile bg-no-repeat bg-center md:m-0 md:-ml-14 md:-mr-14">
+            <div className="intro mt-20 ">
+                <hr className="border-2 w-32 mb-5">
+                <p className="who text-start ">
+                    <span className="text-4xl font-bold ">Shalom!, i'm Tsinat</span><br>I am a junior web developer who loves to work on client based web application and looking forward to solve the problems of humans that can be addressed by web app .
+                </p>
+                <a href="#wait" className=""><img className="m-5 mt-10" src="images\chevron-double-down.png" alt="" width="40" height="40"></a>
+            </div>
+            <div className="flex flex-col gap-10">
+                <div className="aboutnav">
+                    <p className="text-start mb-5"><span className="font-bold text-2xl">About Me</span><br><br>
+                    My name is Tsinat yilma. I'm a 21 year old who studies software engineering in Addis Abeba university .I satrted my programming journey when i <a href="#" className="text-[12px]">. . . more</a></p>
+                    <a href="#wait"><button className="flex gap-5 items-center ">MORE <img src="images\down.png" alt="" width="20" height="20"></button></a>
+                </div>
+                <div className="aboutnav">
+                    <p className="text-start mb-5"><span className="font-bold text-2xl">My Work</span><br><br>
+                        You can see some of my projects recently. you can navigate to projects using the link below </p>
+                   <a href="#projects"><button className="flex gap-5 items-center ">MORE <img src="images\down.png" alt="" width="20" height="20"></button></a>
+                </div>
+            </div>
+        </div>
+
+        <div className="m-5 mb-20" id="wait">
+            <h2 className="flex font-bold mb-8 text-2xl lefty"><img src="images\slash.png" alt="" width="30" height="30">Skills and Tools</h2>
+            <div className="skill flex flex-wrap m-2 gap-6 ">
+              <img src="images\html.png" alt="" className="w-12 h-12 rounded-lg hover:scale-110 appear" width="40" height="40">
+              <img src="images\css-3.png" alt="" className="w-12 h-12 rounded-lg hover:scale-110 appear" width="40" height="40">
+              <img src="images\js.png" alt="" className="w-12 h-12 rounded-lg hover:scale-110 appear " width="40" height="40">
+              <img src="images\bootstrap.png" alt="" className="w-12 h-12 rounded-lg hover:scale-110 appear" width="40" height="40">
+              <img src="images\tailwindcss.png" alt="" className="w-12 h-12 rounded-lg hover:scale-110 appear " width="40" height="40">
+              <img src="images\python.png" alt="" className="w-12 h-12 rounded-lg hover:scale-110 appear" width="40" height="40">
+              <img src="images\github-sign.png" alt="" className="w-12 h-12 rounded-lg hover:scale-110 appear" width="40" height="40">
+              <img src="images\social.png" alt="" className="w-12 h-12 rounded-lg hover:scale-110 appear" width="40" height="40">
+              <img src="images\vscode.png" alt="" className="w-12 h-12 rounded-lg hover:scale-110 appear">
+            </div>
+        </div>
+        <div className="m-5" id="projects">
+            <h2 className="flex font-bold mb-8 text-2xl"><img src="images\slash.png" alt="" width="30" height="30">My Works</h2>
+            <div className="projects rounded flex flex-col sm:grid sm:grid-cols-2 gap-14" >
+                <div className="flex flex-col righty">
+                    <div className="flex  flex-col justify-around bg-burgandy">
+                        <div className="flex items-center justify-center gap-2">
+                            <img src="images\startup.png" alt="" className="w-6 h-6">
+                            <p className="font-bold text-xl ">Space X</p>
+                        </div>
+                        <div className="m-5 ">
+                            <img src="images\spaceX.png" alt="" className="rounded">
+                        </div>
+                    </div>
+                    <div className="description">
+                        <h3 className="mb-5 mt-5 text-xl">Space Tourism Website</h3>
+                        <p className="text-start">I successfully built the multi-page space tourism website. It’s fully responsive, allows seamless toggling between tabs, and includes hover states for all interactive elements.</p>
+                        <div className="flex gap-7 mt-5">
+                            <div className="flex items-center text-[20px]"><a className="hover:border-b-[1px] border-white" href="">Live</a><a href=""><img src="images\diagonal-arrow.png" className="w-5 h-5 ml-1" alt=""></a></div>
+                            <div className="flex items-center text-[20px]"><a className="hover:border-b-[1px] border-white" href="">Github</a><a href=""><img src="images\diagonal-arrow.png" className="w-5 h-5 ml-1" alt=""></a></div>
+                        </div>
+                    </div>
+                </div>
+                <div className="flex flex-col lefty">
+                    <div className="flex  flex-col justify-around bg-burgandy">
+                        <div className="flex items-center justify-center gap-2">
+                            <img src="images\sneakers.png" alt="" className=" w-6 h-6">
+                            <p className="font-bold text-xl ">Sneaker market</p>
+                        </div>
+                        <div className="m-5 ">
+                            <img src="images\sneakerpic.png" alt="" className="rounded">
+                        </div>
+                    </div>
+                    <div className="description">
+                        <h3 className="mb-5 mt-5 text-xl">Online Sneaker Market</h3>
+                        <p className="text-start">I effeciently built the multi-page space tourism website. It’s fully responsive, allows seamless toggling between tabs, and includes hover states for all interactive elements.</p>
+                        <div className="flex gap-7 mt-5">
+                            <div className="flex items-center text-[20px]"><a className="hover:border-b-[1px] border-white" href="">Live</a><a href=""><img src="images\diagonal-arrow.png" className="w-5 h-5 ml-1" alt=""></a></div>
+                            <div className="flex items-center text-[20px]"><a className="hover:border-b-[1px] border-white" href="">Github</a><a href=""><img src="images\diagonal-arrow.png" className="w-5 h-5 ml-1" alt=""></a></div>
+                        </div>
+                    </div>
+                </div>
+                <div className="flex flex-col lefty md:righty">
+                    <div className="flex  flex-col justify-around bg-burgandy">
+                        <div className="flex items-center justify-center gap-2">
+                            <img src="images\weathericon.png" alt="" className=" w-6 h-6">
+                            <p className="font-bold text-xl ">Weather Boy</p>
+                        </div>
+                        <div className="m-5 ">
+                            <img src="images\weather.png" alt="" className="rounded">
+                        </div>
+                    </div>
+                    <div className="description">
+                        <h3 className="mb-5 mt-5 text-xl">Weather App</h3>
+                        <p className="text-start">I skillfully built a web page that fetches weather data from a weather API, based on either the user's location or a user-inputted location. The page displays current weather conditions, temperature, and other key details clearly and interactively.</p>
+                        <div className="flex gap-7 mt-5">
+                            <div className="flex items-center text-[20px]"><a className="hover:border-b-[1px] border-white" href="">Live</a><a href=""><img src="images\diagonal-arrow.png" className="w-5 h-5 ml-1" alt=""></a></div>
+                            <div className="flex items-center text-[20px]"><a className="hover:border-b-[1px] border-white" href="">Github</a><a href=""><img src="images\diagonal-arrow.png" className="w-5 h-5 ml-1" alt=""></a></div>
+                        </div>
+                    </div>
+                </div>
+                <div className="flex flex-col righty md:lefty">
+                    <div className="flex  flex-col justify-around bg-burgandy">
+                        <div className="flex items-center justify-center gap-2">
+                            <img src="images\stopW.png" alt="" className=" w-6 h-6">
+                            <p className="font-bold text-xl ">Stop Watch</p>
+                        </div>
+                        <div className="m-5 ">
+                            <img src="images\stopwatch.png" alt="" className="rounded">
+                        </div>
+                    </div>
+                    <div className="description anime">
+                        <h3 className="mb-5 mt-5 text-xl">Stop Watch Web Application</h3>
+                        <p className="text-start">I efficiently built a stopwatch web application using HTML, CSS, and JavaScript. It includes functionalities for starting, pausing, resetting, and tracking lap times, allowing users to measure and record time intervals with ease. The result is an interactive, intuitive, and user-friendly tool</p>
+                        <div className="flex gap-7 mt-5">
+                            <div className="flex items-center text-[20px]"><a className="hover:border-b-[1px] border-white" href="">Live</a><a href=""><img src="images\diagonal-arrow.png" className="w-5 h-5 ml-1" alt=""></a></div>
+                            <div className="flex items-center text-[20px]"><a className="hover:border-b-[1px] border-white" href="">Github</a><a href=""><img src="images\diagonal-arrow.png" className="w-5 h-5 ml-1" alt=""></a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div className="footer m-5 mt-32 border-b-[1px] border-white lefty " id="contact">
+            <hr className="border-2 w-32 mb-5">
+            <p className="font-bold">interested in working together <br> Let's talk!</p>
+            <form action="/submit" method="POST" className="mt-8 flex flex-col gap-10 sm:w-1/2">
+                
+                <input className="border-b-4 border-white bg-transparent font-bold" type="text" id="name" name="name" placeholder="Enter your name" required />
+            
+                
+                <input className="border-b-4 border-white bg-transparent font-bold" type="email" id="email" name="email" placeholder="Enter your email" required />
+
+                <!-- Message Field -->
+                <textarea className="border-b-4 border-white bg-transparent font-bold" id="message" name="message" rows="5" cols="30" placeholder="Describe your project" required></textarea>
+
+                <button className="font-bold flex gap-2 items-center" type="submit">Send <img src="images\submit.png" alt="" className="w-4 h-4"></button>
+              </form>
+
+              <div className="flex gap-8 mt-14 items-center righty">
+                <img src="images\kinpe.jpg" alt="" className="w-20 h-20 rounded-full">
+                <p className="text-purp font-bold"><span className="font-bold text-white text-2xl">Tsinat Yilma</span><br>Junior Front-end web Developer.</p>
+              </div>
+              <div className="social flex flex-wrap gap-5 mt-6 m-5 mb-14">
+                 <a href=""><img src="images\logos\facebook.png" alt="" className="w-6 h-6"></a>
+                 <a href=""><img src="images\logos\telegram.png" alt="" className="w-6 h-6"></a>
+                 <a href=""><img src="images\logos\twitter.png" alt="" className="w-6 h-6"></a>
+                 <a href=""><img src="images\logos\instagram.png" alt="" className="w-6 h-6"></a>
+                 <a href=""><img src="images\github-sign.png" alt="" className="w-6 h-6"></a>
+              </div>
+        </div>
+        <div className="flex justify-center text-[16px] font-bold text-purp  gap-4 md:text-xl md:gap-7 ">
+            <a className="hover:text-white" href="">Home</a><a className="hover:text-white" href="">About</a>
+            <a className="hover:text-white" href="">Projects</a><a className="hover:text-white" href="">contact</a>
+        </div>
+    </div>
+  </div>
+  )
 }
