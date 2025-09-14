@@ -31,33 +31,59 @@ export default function Home() {
         </div>
     </div>
     <div className="main md:ml-16 md:mr-16">
-        <div id="Home" className="top m-5 flex flex-col justify-center gap-10 md:h-screen md:items-center mb-20 md:flex-row md:justify-between md:gap-24 lg:gap-64  bg-none md:bg-profile bg-no-repeat bg-center md:m-0 md:-ml-14 md:-mr-14">
-            <div className="intro mt-20 ">
-                <hr className="border-2 w-32 mb-5">
-                <p className="who text-start ">
-                    <span className="text-4xl font-bold ">Shalom!, i'm Tsinat</span><br>I am a junior web developer who loves to work on client based web application and looking forward to solve the problems of humans that can be addressed by web app .
-                </p>
-                <a href="#wait" className=""><img className="m-5 mt-10" src="images\chevron-double-down.png" alt="" width="40" height="40"></a>
-            </div>
-            <div className="flex flex-col gap-10">
-                <div className="aboutnav">
-                    <p className="text-start mb-5"><span className="font-bold text-2xl">About Me</span><br><br>
-                    My name is Tsinat yilma. I'm a 21 year old who studies software engineering in Addis Abeba university .I satrted my programming journey when i <a href="#" className="text-[12px]">. . . more</a></p>
-                    <a href="#wait"><button className="flex gap-5 items-center ">MORE <img src="images\down.png" alt="" width="20" height="20"></button></a>
-                </div>
-                <div className="aboutnav">
-                    <p className="text-start mb-5"><span className="font-bold text-2xl">My Work</span><br><br>
-                        You can see some of my projects recently. you can navigate to projects using the link below </p>
-                   <a href="#projects"><button className="flex gap-5 items-center ">MORE <img src="images\down.png" alt="" width="20" height="20"></button></a>
-                </div>
-            </div>
+  <div
+    id="Home"
+    className="top m-5 flex flex-col justify-center gap-10 md:h-screen md:items-center mb-20 md:flex-row md:justify-between md:gap-24 lg:gap-64 bg-none md:bg-profile bg-no-repeat bg-center md:m-0 md:-ml-14 md:-mr-14"
+  >
+    <div className="intro mt-20">
+      <hr className="border-2 w-32 mb-5" />
+      <p className="who text-start">
+        <span className="text-4xl font-bold">Shalom!, I'm Tsinat</span>
+        <br />
+        I am a junior web developer who loves to work on client-based web applications and looks forward to solving human problems through the web.
+      </p>
+      <a href="#wait">
+        <img className="m-5 mt-10" src="images/chevron-double-down.png" alt="Scroll down" width="40" height="40" />
+      </a>
+    </div>
+
+    <div className="flex flex-col gap-10">
+        <div className="aboutnav">
+            <p className="text-start mb-5">
+            <span className="font-bold text-2xl">About Me</span>
+            <br />
+            <br />
+            My name is Tsinat Yilma. I'm a 21-year-old software engineering student at Addis Ababa University. I started my programming journey when I{" "}
+            <a href="#" className="text-[12px]">. . . more</a>
+            </p>
+            <a href="#wait">
+            <button className="flex gap-5 items-center">
+                MORE <img src="images/down.png" alt="More about me" width="20" height="20" />
+            </button>
+            </a>
         </div>
 
-        <div className="m-5 mb-20" id="wait">
-  <h2 className="flex font-bold mb-8 text-2xl lefty">
-    <img src="images/slash.png" alt="" width="30" height="30" />
-    Skills and Tools
-  </h2>
+        <div className="aboutnav">
+            <p className="text-start mb-5">
+            <span className="font-bold text-2xl">My Work</span>
+            <br />
+            <br />
+            You can see some of my recent projects. Navigate to the projects section using the link below.
+            </p>
+            <a href="#projects">
+            <button className="flex gap-5 items-center">
+                MORE <img src="images/down.png" alt="See projects" width="20" height="20" />
+            </button>
+            </a>
+        </div>
+        </div>
+    </div>
+
+    <div className="m-5 mb-20" id="wait">
+        <h2 className="flex font-bold mb-8 text-2xl lefty">
+        <img src="images/slash.png" alt="Slash icon" width="30" height="30" />
+        Skills and Tools
+    </h2>
         <div className="skill flex flex-wrap m-2 gap-6">
             <img src="images/html.png" alt="HTML" className="w-12 h-12 rounded-lg hover:scale-110 appear" width="40" height="40" />
             <img src="images/css-3.png" alt="CSS" className="w-12 h-12 rounded-lg hover:scale-110 appear" width="40" height="40" />
