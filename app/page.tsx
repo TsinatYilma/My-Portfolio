@@ -2,40 +2,40 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="bg-black relative text-white body">
-    <div className="header text-white flex justify-between m-4 mt-0 pt-4">
-      <div className="leftHeader flex items-center gap-5">
-        <img src="images/code.png" alt="Code icon" width="40" height="40" />
-        <p className="whatRU sm:text-xl">Web-Developer</p>
-      </div>
-  
-      <div className="rightHeader">
-        <div className="menuOverlay absolute top-0 left-0 w-full h-screen bg-burgandy flex justify-center items-center clip">
-          <div className="absolute top-4 left-3 right-3 header text-white flex justify-between">
-            <div className="leftHeader flex items-center gap-5">
-              <img src="images/code.png" alt="Code icon" width="40" height="40" />
-              <p className="whatRU sm:text-xl">Web-Developer</p>
-            </div>
-            <div className="rightHeader flex justify-center items-center">
-              <button className="menuButton">
-                <img src="images/cross-mark.png" alt="Close menu" width="30" height="30" />
-              </button>
-            </div>
-          </div>
-  
-          <ul className="nav flex flex-col justify-center items-center gap-4 text-white text-3xl font-bold">
-            <li><a href="#Home">Home</a></li>
-            <li><a href="#Home">About</a></li> {/* Consider changing href to #about if that's the intended section */}
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
-  
-        <button className="menuButton">
-          <img src="images/menu.png" alt="Open menu" width="40" height="40" />
-        </button>
-      </div>
+   <div className="bg-black relative text-white body">
+  <div className="header text-white flex justify-between m-4 mt-0 pt-4">
+    <div className="leftHeader flex items-center gap-5">
+      <img src="images/code.png" alt="Code icon" width="40" height="40" />
+      <p className="whatRU sm:text-xl">Web-Developer</p>
     </div>
+
+    <div className="rightHeader">
+      <div className="menuOverlay absolute top-0 left-0 w-full h-screen bg-burgandy flex justify-center items-center clip">
+        <div className="absolute top-4 left-3 right-3 header text-white flex justify-between">
+          <div className="leftHeader flex items-center gap-5">
+            <img src="images/code.png" alt="Code icon" width="40" height="40" />
+            <p className="whatRU sm:text-xl">Web-Developer</p>
+          </div>
+          <div className="rightHeader flex justify-center items-center">
+            <button className="menuButton">
+              <img src="images/cross-mark.png" alt="Close menu" width="30" height="30" />
+            </button>
+          </div>
+        </div>
+
+        <ul className="nav flex flex-col justify-center items-center gap-4 text-white text-3xl font-bold">
+          <li><a href="#Home">Home</a></li>
+          <li><a href="#Home">About</a></li> {/* Consider changing href to #about if that's the intended section */}
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <button className="menuButton">
+        <img src="images/menu.png" alt="Open menu" width="40" height="40" />
+      </button>
+    </div>
+  </div>
     <div className="main md:ml-16 md:mr-16">
   <div
     id="Home"
@@ -104,120 +104,164 @@ export default function Home() {
         </div>
 
         <div className="m-5" id="projects">
-            <h2 className="flex font-bold mb-8 text-2xl"><img src="images\slash.png" alt="" width="30" height="30">My Works</h2>
-            <div className="projects rounded flex flex-col sm:grid sm:grid-cols-2 gap-14" >
-                <div className="flex flex-col righty">
-                    <div className="flex  flex-col justify-around bg-burgandy">
-                        <div className="flex items-center justify-center gap-2">
-                            <img src="images\startup.png" alt="" className="w-6 h-6" />
-                            <p className="font-bold text-xl ">Space X</p>
-                        </div>
-                        <div className="m-5 ">
-                            <img src="images\spaceX.png" alt="" className="rounded">
-                        </div>
-                    </div>
-                    <div className="description">
-                        <h3 className="mb-5 mt-5 text-xl">Space Tourism Website</h3>
-                        <p className="text-start">I successfully built the multi-page space tourism website. It’s fully responsive, allows seamless toggling between tabs, and includes hover states for all interactive elements.</p>
-                        <div className="flex gap-7 mt-5">
-                            <div className="flex items-center text-[20px]"><a className="hover:border-b-[1px] border-white" href="">Live</a><a href=""><img src="images\diagonal-arrow.png" className="w-5 h-5 ml-1" alt=""></a></div>
-                            <div className="flex items-center text-[20px]"><a className="hover:border-b-[1px] border-white" href="">Github</a><a href=""><img src="images\diagonal-arrow.png" className="w-5 h-5 ml-1" alt=""></a></div>
-                        </div>
-                    </div>
-                </div>
-                <div className="flex flex-col lefty">
-                    <div className="flex  flex-col justify-around bg-burgandy">
-                        <div className="flex items-center justify-center gap-2">
-                            <img src="images\sneakers.png" alt="" className=" w-6 h-6" />
-                            <p className="font-bold text-xl ">Sneaker market</p>
-                        </div>
-                        <div className="m-5 ">
-                            <img src="images\sneakerpic.png" alt="" className="rounded">
-                        </div>
-                    </div>
-                    <div className="description">
-                        <h3 className="mb-5 mt-5 text-xl">Online Sneaker Market</h3>
-                        <p className="text-start">I effeciently built the multi-page space tourism website. It’s fully responsive, allows seamless toggling between tabs, and includes hover states for all interactive elements.</p>
-                        <div className="flex gap-7 mt-5">
-                            <div className="flex items-center text-[20px]"><a className="hover:border-b-[1px] border-white" href="">Live</a><a href=""><img src="images\diagonal-arrow.png" className="w-5 h-5 ml-1" alt=""></a></div>
-                            <div className="flex items-center text-[20px]"><a className="hover:border-b-[1px] border-white" href="">Github</a><a href=""><img src="images\diagonal-arrow.png" className="w-5 h-5 ml-1" alt=""></a></div>
-                        </div>
-                    </div>
-                </div>
-                <div className="flex flex-col lefty md:righty">
-                    <div className="flex  flex-col justify-around bg-burgandy">
-                        <div className="flex items-center justify-center gap-2">
-                            <img src="images\weathericon.png" alt="" className=" w-6 h-6" />
-                            <p className="font-bold text-xl ">Weather Boy</p>
-                        </div>
-                        <div className="m-5 ">
-                            <img src="images\weather.png" alt="" className="rounded">
-                        </div>
-                    </div>
-                    <div className="description">
-                        <h3 className="mb-5 mt-5 text-xl">Weather App</h3>
-                        <p className="text-start">I skillfully built a web page that fetches weather data from a weather API, based on either the user's location or a user-inputted location. The page displays current weather conditions, temperature, and other key details clearly and interactively.</p>
-                        <div className="flex gap-7 mt-5">
-                            <div className="flex items-center text-[20px]"><a className="hover:border-b-[1px] border-white" href="">Live</a><a href=""><img src="images\diagonal-arrow.png" className="w-5 h-5 ml-1" alt=""></a></div>
-                            <div className="flex items-center text-[20px]"><a className="hover:border-b-[1px] border-white" href="">Github</a><a href=""><img src="images\diagonal-arrow.png" className="w-5 h-5 ml-1" alt=""></a></div>
-                        </div>
-                    </div>
-                </div>
-                <div className="flex flex-col righty md:lefty">
-                    <div className="flex  flex-col justify-around bg-burgandy">
-                        <div className="flex items-center justify-center gap-2">
-                            <img src="images\stopW.png" alt="" className=" w-6 h-6" />
-                            <p className="font-bold text-xl ">Stop Watch</p>
-                        </div>
-                        <div className="m-5 ">
-                            <img src="images\stopwatch.png" alt="" className="rounded">
-                        </div>
-                    </div>
-                    <div className="description anime">
-                        <h3 className="mb-5 mt-5 text-xl">Stop Watch Web Application</h3>
-                        <p className="text-start">I efficiently built a stopwatch web application using HTML, CSS, and JavaScript. It includes functionalities for starting, pausing, resetting, and tracking lap times, allowing users to measure and record time intervals with ease. The result is an interactive, intuitive, and user-friendly tool</p>
-                        <div className="flex gap-7 mt-5">
-                            <div className="flex items-center text-[20px]"><a className="hover:border-b-[1px] border-white" href="">Live</a><a href=""><img src="images\diagonal-arrow.png" className="w-5 h-5 ml-1" alt=""></a></div>
-                            <div className="flex items-center text-[20px]"><a className="hover:border-b-[1px] border-white" href="">Github</a><a href=""><img src="images\diagonal-arrow.png" className="w-5 h-5 ml-1" alt=""></a></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+  <h2 className="flex font-bold mb-8 text-2xl">
+    <img src="images/slash.png" alt="Slash icon" width="30" height="30" />
+    My Works
+  </h2>
+
+  <div className="projects rounded flex flex-col sm:grid sm:grid-cols-2 gap-14">
+    {/* Project 1 */}
+    <div className="flex flex-col righty">
+      <div className="flex flex-col justify-around bg-burgandy">
+        <div className="flex items-center justify-center gap-2">
+          <img src="images/startup.png" alt="Startup icon" className="w-6 h-6" />
+          <p className="font-bold text-xl">Space X</p>
         </div>
-        <div className="footer m-5 mt-32 border-b-[1px] border-white lefty" id="contact">
-            <hr className="border-2 w-32 mb-5" />
-            <p className="font-bold">
-                interested in working together <br /> Let's talk!
-            </p>
-            <form action="/submit" method="POST" className="mt-8 flex flex-col gap-10 sm:w-1/2">
-                <input
-                className="border-b-4 border-white bg-transparent font-bold"
-                type="text"
-                id="name"
-                name="name"
-                placeholder="Enter your name"
-                required
-                />
-                <input
-                className="border-b-4 border-white bg-transparent font-bold"
-                type="email"
-                id="email"
-                name="email"
-                placeholder="Enter your email"
-                required
-                />
-                <textarea
-                className="border-b-4 border-white bg-transparent font-bold"
-                id="message"
-                name="message"
-                rows="5"
-                cols="30"
-                placeholder="Describe your project"
-                required
-                ></textarea>
-                <button className="font-bold flex gap-2 items-center" type="submit">
-                Send <img src="images/submit.png" alt="" className="w-4 h-4" />
-                </button>
+        <div className="m-5">
+          <img src="images/spaceX.png" alt="SpaceX project" className="rounded" />
+        </div>
+      </div>
+      <div className="description">
+        <h3 className="mb-5 mt-5 text-xl">Space Tourism Website</h3>
+        <p className="text-start">
+          I successfully built the multi-page space tourism website. It’s fully responsive, allows seamless toggling between tabs, and includes hover states for all interactive elements.
+        </p>
+        <div className="flex gap-7 mt-5">
+          <div className="flex items-center text-[20px]">
+            <a className="hover:border-b-[1px] border-white" href="">Live</a>
+            <a href=""><img src="images/diagonal-arrow.png" className="w-5 h-5 ml-1" alt="Live arrow" /></a>
+          </div>
+          <div className="flex items-center text-[20px]">
+            <a className="hover:border-b-[1px] border-white" href="">Github</a>
+            <a href=""><img src="images/diagonal-arrow.png" className="w-5 h-5 ml-1" alt="GitHub arrow" /></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    {/* Project 2 */}
+    <div className="flex flex-col lefty">
+      <div className="flex flex-col justify-around bg-burgandy">
+        <div className="flex items-center justify-center gap-2">
+          <img src="images/sneakers.png" alt="Sneaker icon" className="w-6 h-6" />
+          <p className="font-bold text-xl">Sneaker Market</p>
+        </div>
+        <div className="m-5">
+          <img src="images/sneakerpic.png" alt="Sneaker project" className="rounded" />
+        </div>
+      </div>
+      <div className="description">
+        <h3 className="mb-5 mt-5 text-xl">Online Sneaker Market</h3>
+        <p className="text-start">
+          I efficiently built the multi-page sneaker market website. It’s fully responsive, allows seamless toggling between tabs, and includes hover states for all interactive elements.
+        </p>
+        <div className="flex gap-7 mt-5">
+          <div className="flex items-center text-[20px]">
+            <a className="hover:border-b-[1px] border-white" href="">Live</a>
+            <a href=""><img src="images/diagonal-arrow.png" className="w-5 h-5 ml-1" alt="Live arrow" /></a>
+          </div>
+          <div className="flex items-center text-[20px]">
+            <a className="hover:border-b-[1px] border-white" href="">Github</a>
+            <a href=""><img src="images/diagonal-arrow.png" className="w-5 h-5 ml-1" alt="GitHub arrow" /></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    {/* Project 3 */}
+    <div className="flex flex-col lefty md:righty">
+      <div className="flex flex-col justify-around bg-burgandy">
+        <div className="flex items-center justify-center gap-2">
+          <img src="images/weathericon.png" alt="Weather icon" className="w-6 h-6" />
+          <p className="font-bold text-xl">Weather Boy</p>
+        </div>
+        <div className="m-5">
+          <img src="images/weather.png" alt="Weather project" className="rounded" />
+        </div>
+      </div>
+      <div className="description">
+        <h3 className="mb-5 mt-5 text-xl">Weather App</h3>
+        <p className="text-start">
+          I skillfully built a web page that fetches weather data from a weather API, based on either the user's location or a user-inputted location. The page displays current weather conditions, temperature, and other key details clearly and interactively.
+        </p>
+        <div className="flex gap-7 mt-5">
+          <div className="flex items-center text-[20px]">
+            <a className="hover:border-b-[1px] border-white" href="">Live</a>
+            <a href=""><img src="images/diagonal-arrow.png" className="w-5 h-5 ml-1" alt="Live arrow" /></a>
+          </div>
+          <div className="flex items-center text-[20px]">
+            <a className="hover:border-b-[1px] border-white" href="">Github</a>
+            <a href=""><img src="images/diagonal-arrow.png" className="w-5 h-5 ml-1" alt="GitHub arrow" /></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    {/* Project 4 */}
+    <div className="flex flex-col righty md:lefty">
+      <div className="flex flex-col justify-around bg-burgandy">
+        <div className="flex items-center justify-center gap-2">
+          <img src="images/stopW.png" alt="Stopwatch icon" className="w-6 h-6" />
+          <p className="font-bold text-xl">Stop Watch</p>
+        </div>
+        <div className="m-5">
+          <img src="images/stopwatch.png" alt="Stopwatch project" className="rounded" />
+        </div>
+      </div>
+      <div className="description anime">
+        <h3 className="mb-5 mt-5 text-xl">Stop Watch Web Application</h3>
+        <p className="text-start">
+          I efficiently built a stopwatch web application using HTML, CSS, and JavaScript. It includes functionalities for starting, pausing, resetting, and tracking lap times, allowing users to measure and record time intervals with ease. The result is an interactive, intuitive, and user-friendly tool.
+        </p>
+        <div className="flex gap-7 mt-5">
+          <div className="flex items-center text-[20px]">
+            <a className="hover:border-b-[1px] border-white" href="">Live</a>
+            <a href=""><img src="images/diagonal-arrow.png" className="w-5 h-5 ml-1" alt="Live arrow" /></a>
+          </div>
+          <div className="flex items-center text-[20px]">
+            <a className="hover:border-b-[1px] border-white" href="">Github</a>
+            <a href=""><img src="images/diagonal-arrow.png" className="w-5 h-5 ml-1" alt="GitHub arrow" /></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <div className="footer m-5 mt-32 border-b-[1px] border-white lefty" id="contact">
+        <hr className="border-2 w-32 mb-5" />
+        <p className="font-bold">
+            interested in working together <br /> Let's talk!
+        </p>
+        <form action="/submit" method="POST" className="mt-8 flex flex-col gap-10 sm:w-1/2">
+            <input
+            className="border-b-4 border-white bg-transparent font-bold"
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Enter your name"
+            required
+            />
+            <input
+            className="border-b-4 border-white bg-transparent font-bold"
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter your email"
+            required
+            />
+            <textarea
+            className="border-b-4 border-white bg-transparent font-bold"
+            id="message"
+            name="message"
+            rows={5}
+            cols={30}
+            placeholder="Describe your project"
+            required
+            ></textarea>
+            <button className="font-bold flex gap-2 items-center" type="submit">
+            Send <img src="images/submit.png" alt="" className="w-4 h-4" /> </button>
+             
             </form>
 
             <div className="flex gap-8 mt-14 items-center righty">
