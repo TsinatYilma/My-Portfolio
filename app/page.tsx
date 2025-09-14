@@ -2,33 +2,39 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="bg-black relative   text-white body">
-     
-    <div className="header text-white flex justify-between  m-4 mt-0 pt-4">
-        <div className="leftHeader  flex items-center gap-5">
-         <img src="images\code.png" alt="" width="40" height="40">
-         <p className="whatRU sm:text-xl">Web-Developer</p>
-        </div>
-        <div className="rightHeader">
-            <div className="menuOverlay absolute top-0 left-0 w-[100%] h-screen bg-burgandy flex justify-center items-center clip">
-                <div className="absolute top-4 left-3 right-3 header text-white flex justify-between ">
-                    <div className="leftHeader  flex items-center gap-5">
-                    <img src="images\code.png" alt="" width="40" height="40">
-                    <p className="whatRU sm:text-xl">Web-Developer</p>
-                    </div>
-                    <div className="rightHeader flex justify-center items-center">
-                        <button className="menuButton"><img src="images\cross-mark.png" alt="" width="30" height="30"></button>
-                    </div>
-                </div>
-                <ul className="nav  flex flex-col justify-center items-center gap-4  text-white text-3xl font-bold">
-                    <li className=""><a href="#Home">Home</a></li>
-                    <li className=""><a href="Home">About</a></li>
-                    <li className=""><a href="#projects">Projects</a></li>
-                    <li className=""><a href="#contact">Contact</a></li>
-                </ul>
+    <div className="bg-black relative text-white body">
+    <div className="header text-white flex justify-between m-4 mt-0 pt-4">
+      <div className="leftHeader flex items-center gap-5">
+        <img src="images/code.png" alt="Code icon" width="40" height="40" />
+        <p className="whatRU sm:text-xl">Web-Developer</p>
+      </div>
+  
+      <div className="rightHeader">
+        <div className="menuOverlay absolute top-0 left-0 w-full h-screen bg-burgandy flex justify-center items-center clip">
+          <div className="absolute top-4 left-3 right-3 header text-white flex justify-between">
+            <div className="leftHeader flex items-center gap-5">
+              <img src="images/code.png" alt="Code icon" width="40" height="40" />
+              <p className="whatRU sm:text-xl">Web-Developer</p>
             </div>
-            <button className="menuButton"><img src="images\menu.png" alt="" width="40" height="40"></button>
+            <div className="rightHeader flex justify-center items-center">
+              <button className="menuButton">
+                <img src="images/cross-mark.png" alt="Close menu" width="30" height="30" />
+              </button>
+            </div>
+          </div>
+  
+          <ul className="nav flex flex-col justify-center items-center gap-4 text-white text-3xl font-bold">
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#Home">About</a></li> {/* Consider changing href to #about if that's the intended section */}
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
         </div>
+  
+        <button className="menuButton">
+          <img src="images/menu.png" alt="Open menu" width="40" height="40" />
+        </button>
+      </div>
     </div>
     <div className="main md:ml-16 md:mr-16">
   <div
