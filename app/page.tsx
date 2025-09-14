@@ -54,26 +54,30 @@ export default function Home() {
         </div>
 
         <div className="m-5 mb-20" id="wait">
-            <h2 className="flex font-bold mb-8 text-2xl lefty"><img src="images\slash.png" alt="" width="30" height="30">Skills and Tools</h2>
-            <div className="skill flex flex-wrap m-2 gap-6 ">
-              <img src="images\html.png" alt="" className="w-12 h-12 rounded-lg hover:scale-110 appear" width="40" height="40">
-              <img src="images\css-3.png" alt="" className="w-12 h-12 rounded-lg hover:scale-110 appear" width="40" height="40">
-              <img src="images\js.png" alt="" className="w-12 h-12 rounded-lg hover:scale-110 appear " width="40" height="40">
-              <img src="images\bootstrap.png" alt="" className="w-12 h-12 rounded-lg hover:scale-110 appear" width="40" height="40">
-              <img src="images\tailwindcss.png" alt="" className="w-12 h-12 rounded-lg hover:scale-110 appear " width="40" height="40">
-              <img src="images\python.png" alt="" className="w-12 h-12 rounded-lg hover:scale-110 appear" width="40" height="40">
-              <img src="images\github-sign.png" alt="" className="w-12 h-12 rounded-lg hover:scale-110 appear" width="40" height="40">
-              <img src="images\social.png" alt="" className="w-12 h-12 rounded-lg hover:scale-110 appear" width="40" height="40">
-              <img src="images\vscode.png" alt="" className="w-12 h-12 rounded-lg hover:scale-110 appear">
-            </div>
+  <h2 className="flex font-bold mb-8 text-2xl lefty">
+    <img src="images/slash.png" alt="" width="30" height="30" />
+    Skills and Tools
+  </h2>
+        <div className="skill flex flex-wrap m-2 gap-6">
+            <img src="images/html.png" alt="HTML" className="w-12 h-12 rounded-lg hover:scale-110 appear" width="40" height="40" />
+            <img src="images/css-3.png" alt="CSS" className="w-12 h-12 rounded-lg hover:scale-110 appear" width="40" height="40" />
+            <img src="images/js.png" alt="JavaScript" className="w-12 h-12 rounded-lg hover:scale-110 appear" width="40" height="40" />
+            <img src="images/bootstrap.png" alt="Bootstrap" className="w-12 h-12 rounded-lg hover:scale-110 appear" width="40" height="40" />
+            <img src="images/tailwindcss.png" alt="Tailwind CSS" className="w-12 h-12 rounded-lg hover:scale-110 appear" width="40" height="40" />
+            <img src="images/python.png" alt="Python" className="w-12 h-12 rounded-lg hover:scale-110 appear" width="40" height="40" />
+            <img src="images/github-sign.png" alt="GitHub" className="w-12 h-12 rounded-lg hover:scale-110 appear" width="40" height="40" />
+            <img src="images/social.png" alt="Social Tools" className="w-12 h-12 rounded-lg hover:scale-110 appear" width="40" height="40" />
+            <img src="images/vscode.png" alt="VS Code" className="w-12 h-12 rounded-lg hover:scale-110 appear" width="40" height="40" />
         </div>
+        </div>
+
         <div className="m-5" id="projects">
             <h2 className="flex font-bold mb-8 text-2xl"><img src="images\slash.png" alt="" width="30" height="30">My Works</h2>
             <div className="projects rounded flex flex-col sm:grid sm:grid-cols-2 gap-14" >
                 <div className="flex flex-col righty">
                     <div className="flex  flex-col justify-around bg-burgandy">
                         <div className="flex items-center justify-center gap-2">
-                            <img src="images\startup.png" alt="" className="w-6 h-6">
+                            <img src="images\startup.png" alt="" className="w-6 h-6" />
                             <p className="font-bold text-xl ">Space X</p>
                         </div>
                         <div className="m-5 ">
@@ -92,7 +96,7 @@ export default function Home() {
                 <div className="flex flex-col lefty">
                     <div className="flex  flex-col justify-around bg-burgandy">
                         <div className="flex items-center justify-center gap-2">
-                            <img src="images\sneakers.png" alt="" className=" w-6 h-6">
+                            <img src="images\sneakers.png" alt="" className=" w-6 h-6" />
                             <p className="font-bold text-xl ">Sneaker market</p>
                         </div>
                         <div className="m-5 ">
@@ -111,7 +115,7 @@ export default function Home() {
                 <div className="flex flex-col lefty md:righty">
                     <div className="flex  flex-col justify-around bg-burgandy">
                         <div className="flex items-center justify-center gap-2">
-                            <img src="images\weathericon.png" alt="" className=" w-6 h-6">
+                            <img src="images\weathericon.png" alt="" className=" w-6 h-6" />
                             <p className="font-bold text-xl ">Weather Boy</p>
                         </div>
                         <div className="m-5 ">
@@ -130,7 +134,7 @@ export default function Home() {
                 <div className="flex flex-col righty md:lefty">
                     <div className="flex  flex-col justify-around bg-burgandy">
                         <div className="flex items-center justify-center gap-2">
-                            <img src="images\stopW.png" alt="" className=" w-6 h-6">
+                            <img src="images\stopW.png" alt="" className=" w-6 h-6" />
                             <p className="font-bold text-xl ">Stop Watch</p>
                         </div>
                         <div className="m-5 ">
@@ -148,39 +152,76 @@ export default function Home() {
                 </div>
             </div>
         </div>
-        <div className="footer m-5 mt-32 border-b-[1px] border-white lefty " id="contact">
-            <hr className="border-2 w-32 mb-5">
-            <p className="font-bold">interested in working together <br> Let's talk!</p>
+        <div className="footer m-5 mt-32 border-b-[1px] border-white lefty" id="contact">
+            <hr className="border-2 w-32 mb-5" />
+            <p className="font-bold">
+                interested in working together <br /> Let's talk!
+            </p>
             <form action="/submit" method="POST" className="mt-8 flex flex-col gap-10 sm:w-1/2">
-                
-                <input className="border-b-4 border-white bg-transparent font-bold" type="text" id="name" name="name" placeholder="Enter your name" required />
-            
-                
-                <input className="border-b-4 border-white bg-transparent font-bold" type="email" id="email" name="email" placeholder="Enter your email" required />
+                <input
+                className="border-b-4 border-white bg-transparent font-bold"
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Enter your name"
+                required
+                />
+                <input
+                className="border-b-4 border-white bg-transparent font-bold"
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Enter your email"
+                required
+                />
+                <textarea
+                className="border-b-4 border-white bg-transparent font-bold"
+                id="message"
+                name="message"
+                rows="5"
+                cols="30"
+                placeholder="Describe your project"
+                required
+                ></textarea>
+                <button className="font-bold flex gap-2 items-center" type="submit">
+                Send <img src="images/submit.png" alt="" className="w-4 h-4" />
+                </button>
+            </form>
 
-                <!-- Message Field -->
-                <textarea className="border-b-4 border-white bg-transparent font-bold" id="message" name="message" rows="5" cols="30" placeholder="Describe your project" required></textarea>
+            <div className="flex gap-8 mt-14 items-center righty">
+                <img src="images/kinpe.jpg" alt="" className="w-20 h-20 rounded-full" />
+                <p className="text-purp font-bold">
+                <span className="font-bold text-white text-2xl">Tsinat Yilma</span>
+                <br />
+                Junior Front-end web Developer.
+                </p>
+            </div>
 
-                <button className="font-bold flex gap-2 items-center" type="submit">Send <img src="images\submit.png" alt="" className="w-4 h-4"></button>
-              </form>
+            <div className="social flex flex-wrap gap-5 mt-6 m-5 mb-14">
+                <a href="">
+                <img src="images/logos/facebook.png" alt="" className="w-6 h-6" />
+                </a>
+                <a href="">
+                <img src="images/logos/telegram.png" alt="" className="w-6 h-6" />
+                </a>
+                <a href="">
+                <img src="images/logos/twitter.png" alt="" className="w-6 h-6" />
+                </a>
+                <a href="">
+                <img src="images/logos/instagram.png" alt="" className="w-6 h-6" />
+                </a>
+                <a href="">
+                <img src="images/github-sign.png" alt="" className="w-6 h-6" />
+                </a>
+            </div>
+            </div>
 
-              <div className="flex gap-8 mt-14 items-center righty">
-                <img src="images\kinpe.jpg" alt="" className="w-20 h-20 rounded-full">
-                <p className="text-purp font-bold"><span className="font-bold text-white text-2xl">Tsinat Yilma</span><br>Junior Front-end web Developer.</p>
-              </div>
-              <div className="social flex flex-wrap gap-5 mt-6 m-5 mb-14">
-                 <a href=""><img src="images\logos\facebook.png" alt="" className="w-6 h-6"></a>
-                 <a href=""><img src="images\logos\telegram.png" alt="" className="w-6 h-6"></a>
-                 <a href=""><img src="images\logos\twitter.png" alt="" className="w-6 h-6"></a>
-                 <a href=""><img src="images\logos\instagram.png" alt="" className="w-6 h-6"></a>
-                 <a href=""><img src="images\github-sign.png" alt="" className="w-6 h-6"></a>
-              </div>
-        </div>
         <div className="flex justify-center text-[16px] font-bold text-purp  gap-4 md:text-xl md:gap-7 ">
             <a className="hover:text-white" href="">Home</a><a className="hover:text-white" href="">About</a>
             <a className="hover:text-white" href="">Projects</a><a className="hover:text-white" href="">contact</a>
         </div>
     </div>
+    
   </div>
   )
 }
