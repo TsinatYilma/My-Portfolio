@@ -1,4 +1,5 @@
 import Image from "next/image";
+import '@/app/globals.css'
 
 export default function Home() {
   
@@ -91,17 +92,44 @@ export default function Home() {
         <img src="/images/slash.png" alt="Slash icon" width="30" height="30" />
         Skills and Tools
     </h2>
-        <div className="skill flex flex-wrap m-2 gap-6">
-            <img src="/images/html.png" alt="HTML" className="w-12 h-12 rounded-lg hover:scale-110 appear" width="40" height="40" />
-            <img src="/images/css-3.png" alt="CSS" className="w-12 h-12 rounded-lg hover:scale-110 appear" width="40" height="40" />
-            <img src="/images/js.png" alt="JavaScript" className="w-12 h-12 rounded-lg hover:scale-110 appear" width="40" height="40" />
-            <img src="/images/bootstrap.png" alt="Bootstrap" className="w-12 h-12 rounded-lg hover:scale-110 appear" width="40" height="40" />
-            <img src="/images/tailwindcss.png" alt="Tailwind CSS" className="w-12 h-12 rounded-lg hover:scale-110 appear" width="40" height="40" />
-            <img src="/images/python.png" alt="Python" className="w-12 h-12 rounded-lg hover:scale-110 appear" width="40" height="40" />
-            <img src="/images/github-sign.png" alt="GitHub" className="w-12 h-12 rounded-lg hover:scale-110 appear" width="40" height="40" />
-            <img src="/images/social.png" alt="Social Tools" className="w-12 h-12 rounded-lg hover:scale-110 appear" width="40" height="40" />
-            <img src="/images/vscode.png" alt="VS Code" className="w-12 h-12 rounded-lg hover:scale-110 appear" width="40" height="40" />
-        </div>
+    <section className="client-area-service-page">
+          <div className="container large">
+            <div className="client-area-inner section-spacing-top">
+              <div className="section-content fade-anim">
+                <div className="section-title-wrapper">
+                  <div className="title-wrapper">
+                    <h2 className="section-title font-sequelsans-romanbody">
+                      <span>Client:</span> Helping brands to grow and say their success stories to the world.
+                    </h2>
+                  </div>
+                </div>
+                <div className="text-wrapper">
+                  <p className="text">
+                    We’re a great team of creatives with a strongest capabilities to helping progressive fields achieve their goals. With the best talent on every project done successfully
+                  </p>
+                </div>
+              </div>
+              <div className="client-capsule-wrapper-box fade-animation" data-t-throwable-scene="false">
+                <div className="client-capsule-wrapper">
+                  {[
+                    9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22
+                  ].map((num, i) => (
+                    <p key={num} data-t-throwable-el="">
+                      <span className={`client-box${i === 0 ? ' border' : ''}`}>
+                        <img src={`assets/imgs/client/client-${num}.webp`} alt="image" />
+                      </span>
+                    </p>
+                  ))}
+                </div>
+              </div>
+              <div className="lines-wrapper">
+                {Array.from({ length: 8 }).map((_, i) => (
+                  <div key={i} className="line"></div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
         </div>
 
         <div className="m-5" id="projects">
