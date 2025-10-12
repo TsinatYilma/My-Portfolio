@@ -1,11 +1,19 @@
-
+"use client"
 import '@/app/globals.css'
+import Image from 'next/image';
 import Script from "next/script";
+import { motion } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
+ 
 
 export default function Home() {
+  const { ref, inView } = useInView({
+    triggerOnce: true, // animate only once
+    threshold: 0.2,     // 20% of the element must be visible
+  });
   
   return (
-   <>
+    <div className="bg-black relative text-white border">
            {/* Vendor Scripts */}
       <Script src="/assets/vendor/jquery-3.7.1.min.js" strategy="beforeInteractive" />
       <Script src="/assets/vendor/bootstrap.bundle.min.js" strategy="beforeInteractive" />
@@ -28,22 +36,22 @@ export default function Home() {
       <Script src="/assets/js/magiccursor.js" strategy="afterInteractive" />
       <Script src="/assets/js/main.js" strategy="afterInteractive" />
 
-     <div className="bg-black relative text-white ">
-        <div className="header text-white flex justify-between m-4 mt-0 pt-4">
+     
+     <div className="header text-white flex justify-between m-4 mt-0 pt-4 ">
         <div className="leftHeader flex items-center gap-5">
-          <img src="/imgs/code.png" alt="Code icon" width="40" height="40" />
+          <Image src="/imgs/code.png" alt="Code icon" width="40" height="40" />
           <p className="whatRU sm:text-xl">Web-Developer</p>
         </div>
-        <div className="rightHeader">
+        <div className="rightHeader ">
           <div className="menuOverlay absolute top-0 left-0 w-full h-screen bg-burgandy flex justify-center items-center clip">
             <div className="absolute top-4 left-3 right-3 header text-white flex justify-between">
               <div className="leftHeader flex items-center gap-5">
-                <img src="/imgs/code.png" alt="Code icon" width="40" height="40" />
+                <Image src="/imgs/code.png" alt="Code icon" width="40" height="40" />
                 <p className="whatRU sm:text-xl">Web-Developer</p>
               </div>
               <div className="rightHeader flex justify-center items-center">
                 <button className="menuButton">
-                  <img src="/imgs/cross-mark.png" alt="Close menu" width="30" height="30" />
+                  <Image src="/imgs/cross-mark.png" alt="Close menu" width="30" height="30" />
                 </button>
               </div>
             </div>
@@ -55,16 +63,16 @@ export default function Home() {
             </ul>
           </div>
           <button className="menuButton">
-            <img src="/imgs/menu.png" alt="Open menu" width="40" height="40" />
+            <Image src="/imgs/menu.png" alt="Open menu" width="40" height="40" />
           </button>
         </div>
-        </div>
-        <div className="main md:ml-16 md:mr-16">
+      </div>
+        <div className="main md:ml-16 md:mr-16 ">
         <div
         id="Home"
-        className="top m-5 flex flex-col justify-center gap-10 md:h-screen md:items-center mb-20 md:flex-row md:justify-between md:gap-24 lg:gap-64 bg-none md:bg-profile bg-no-repeat bg-center md:m-0 md:-ml-14 md:-mr-14"
+        className=" top m-5 flex flex-col justify-center gap-10 md:h-screen md:items-center mb-20 md:flex-row md:justify-between md:gap-24 lg:gap-64 bg-none md:bg-profile bg-no-repeat bg-center md:m-0 md:-ml-14 md:-mr-14 min-h-screen"
         >
-        <div className="intro mt-20">
+        <div className="intro mt-20 ">
           <hr className="border-2 w-32 mb-5" />
           <p className="who text-start">
             <span className="text-4xl font-bold">Shalom!, I'm Tsinat</span>
@@ -72,7 +80,7 @@ export default function Home() {
             I am a junior web developer who loves to work on client-based web applications and looks forward to solving human problems through the web.
           </p>
           <a href="#wait">
-            <img className="m-5 mt-10" src="/imgs/chevron-double-down.png" alt="Scroll down" width="40" height="40" />
+            <Image className="m-5 mt-10" src="/imgs/chevron-double-down.png" alt="Scroll down" width="40" height="40" />
           </a>
         </div>
         <div className="flex flex-col gap-10">
@@ -86,7 +94,7 @@ export default function Home() {
                 </p>
                 <a href="#wait">
                 <button className="flex gap-5 items-center">
-                    MORE <img src="/imgs/down.png" alt="More about me" width="20" height="20" />
+                    MORE <Image src="/imgs/down.png" alt="More about me" width="20" height="20" />
                 </button>
                 </a>
             </div>
@@ -99,104 +107,89 @@ export default function Home() {
                 </p>
                 <a href="#projects">
                 <button className="flex gap-5 items-center">
-                    MORE <img src="/imgs/down.png" alt="See projects" width="20" height="20" />
+                    MORE <Image src="/imgs/down.png" alt="See projects" width="20" height="20" />
                 </button>
                 </a>
             </div>
             </div>
         </div>
-        <div className="m-5 mb-20" id="wait">
+        <motion.div 
+        ref={ref}
+        initial={{ opacity: 0, y: 50 }}
+        animate={inView ? { opacity: 1, y: 0 } : {}}
+        transition={{ duration: 2, ease: 'easeOut' }}
+        className="p-6  rounded shadow  min-h-screen">
             <h2 className="flex font-bold mb-8 text-2xl lefty">
-            <img src="/imgs/slash.png" alt="Slash icon" width="30" height="30" />
+            <Image src="/imgs/slash.png" alt="Slash icon" width="30" height="30" />
             Skills and Tools
         </h2>
-        <section className="client-area-service-page border-2 border-white">
+        <section className="client-area-service-page   md:px-20">
               <div className="container large">
                 <div className="client-area-inner section-spacing-top">
                   <div className="section-content fade-anim">
                     <div className="section-title-wrapper">
-                      <div className="title-wrapper">
-                        <h2 className="section-title font-sequelsans-romanbody">
-                          <span>Client:</span> Helping brands to grow and say their success stories to the world.
-                        </h2>
-                      </div>
-                    </div>
-                    <div className="text-wrapper">
-                      <p className="text">
-                        We’re a great team of creatives with a strongest capabilities to helping progressive fields achieve their goals. With the best talent on every project done successfully
-                      </p>
                     </div>
                   </div>
                   <div className="client-capsule-wrapper-box fade-animation" data-t-throwable-scene="false">
                     <div className="client-capsule-wrapper ">
                     <p data-t-throwable-el="">
-                      <span className="client-box ">
-                        <img src="assets/imgs/client/client-9.webp"  alt="img"/>
+                      <span className="client-box px-2 py-1.5 sm:px-4 md:px-8  ">
+                      <Image src="/imgs/vscode.png" alt="VS Code" className="w-6 h-6 sm:w-6 sm:h-8 md:w-10 md:h-10   rounded-lg hover:scale-110 appear" width="40" height="40" />
                       </span>
                     </p>
                     <p data-t-throwable-el="">
-                      <span className="client-box">
-                        <img src="assets/imgs/client/client-10.webp"  alt="img"/>
+                      <span className="client-box px-2 py-1.5 sm:px-4 md:px-8  ">
+                        <Image src="/imgs/css.png" alt="CSS" className="w-6 h-6 sm:w-6 sm:h-8 md:w-10 md:h-10  rounded-lg hover:scale-110 appear" width="40" height="40" />
                       </span>
                     </p>
                     <p data-t-throwable-el="">
-                      <span className="client-box">
-                        <img src="assets/imgs/client/client-11.webp"  alt="img"/>
+                      <span className="client-box px-2 py-1.5 sm:px-4 md:px-8 ">
+                       <Image src="/imgs/js.png" alt="JavaScript" className="w-6 h-6 sm:w-6 sm:h-8 md:w-10 md:h-10  rounded-lg hover:scale-110 appear" width="40" height="40" />
                       </span>
                     </p>
                     <p data-t-throwable-el="">
-                      <span className="client-box">
-                        <img src="assets/imgs/client/client-12.webp"  alt="img"/>
+                      <span className="client-box px-2 py-1.5 sm:px-4 md:px-8 ">
+                       <Image src="/imgs/bootstrap.png" alt="Bootstrap" className="w-6 h-6 sm:w-6 sm:h-8 md:w-10 md:h-10  rounded-lg hover:scale-110 appear" width="40" height="40" />
                       </span>
                     </p>
                     <p data-t-throwable-el="">
-                      <span className="client-box">
-                        <img src="assets/imgs/client/client-13.webp"  alt="img"/>
+                      <span className="client-box px-2 py-1.5 sm:px-4 md:px-8 ">
+                       <Image src="/imgs/tailwindcss.png" alt="Tailwind CSS" className="w-6 h-6 sm:w-6 sm:h-8 md:w-10 md:h-10  rounded-lg hover:scale-110 appear" width="40" height="40" />
                       </span>
                     </p>
                     <p data-t-throwable-el="">
-                      <span className="client-box">
-                        <img src="assets/imgs/client/client-14.webp"  alt="img"/>
+                      <span className="client-box px-2 py-1.5 sm:px-4 md:px-8 ">
+                       <Image src="/imgs/python.png" alt="Python" className="w-6 h-6 sm:w-6 sm:h-8 md:w-10 md:h-10  rounded-lg hover:scale-110 appear" width="40" height="40" />
                       </span>
                     </p>
                     <p data-t-throwable-el="">
-                      <span className="client-box">
-                        <img src="assets/imgs/client/client-15.webp"  alt="img"/>
+                      <span className="client-box px-2 py-1.5 sm:px-4 md:px-8 ">
+                       <Image src="/imgs/github-sign.png" alt="GitHub" className="w-6 h-6 sm:w-6 sm:h-8 md:w-10 md:h-10  rounded-lg hover:scale-110 appear" width="40" height="40" />
                       </span>
                     </p>
                     <p data-t-throwable-el="">
-                      <span className="client-box">
-                        <img src="assets/imgs/client/client-16.webp"  alt="img"/>
+                      <span className="client-box px-2 py-1.5 sm:px-4 md:px-8 ">
+                       <Image src="/imgs/html.png" alt="HTML" className="w-6 h-6 sm:w-6 sm:h-8 md:w-10 md:h-10  rounded-lg hover:scale-110 appear" width="40" height="40" />
                       </span>
                     </p>
                     <p data-t-throwable-el="">
-                      <span className="client-box">
-                        <img src="assets/imgs/client/client-17.webp"  alt="img"/>
+                      <span className="client-box px-2 py-1.5 sm:px-4 md:px-8 ">
+                       <Image src="/imgs/nextjs.png" alt="HTML" className="w-6 h-6 sm:w-6 sm:h-8 md:w-10 md:h-10  rounded-lg hover:scale-110 appear" width="40" height="40" />
                       </span>
                     </p>
                     <p data-t-throwable-el="">
-                      <span className="client-box">
-                        <img src="assets/imgs/client/client-18.webp"  alt="img"/>
+                      <span className="client-box px-2 py-1.5 sm:px-4 md:px-8 ">
+                      <Image src="/imgs/react.png" alt="HTML" className="w-6 h-6 sm:w-6 sm:h-8 md:w-10 md:h-10  rounded-lg hover:scale-110 appear" width="40" height="40" />
                       </span>
                     </p>
                     <p data-t-throwable-el="">
-                      <span className="client-box">
-                        <img src="assets/imgs/client/client-19.webp"  alt="img"/>
+                      <span className="client-box px-2 py-1.5 sm:px-4 md:px-8 ">
+                      <Image src="/imgs/typescript.png" alt="HTML" className="w-6 h-6 sm:w-6 sm:h-8 md:w-10 md:h-10  rounded-lg hover:scale-110 appear" width="40" height="40" />
                       </span>
                     </p>
                     <p data-t-throwable-el="">
-                      <span className="client-box">
-                        <img src="assets/imgs/client/client-20.webp"  alt="img"/>
-                      </span>
-                    </p>
-                    <p data-t-throwable-el="">
-                      <span className="client-box">
-                        <img src="assets/imgs/client/client-21.webp"  alt="img"/>
-                      </span>
-                    </p>
-                    <p data-t-throwable-el="">
-                      <span className="client-box ">
-                        <img src="assets/imgs/client/client-22.webp"  alt="img"/>
+                      <span className="client-box px-2 py-1.5 sm:px-4 md:px-8 ">
+                        <Image src="/imgs/shadcn.png" alt="HTML" className="w-6 h-6 sm:w-6 sm:h-8 md:w-10 md:h-10  rounded-lg hover:scale-110 appear" width="40" height="40" />
                       </span>
                     </p>
                   </div>
@@ -209,10 +202,10 @@ export default function Home() {
                 </div>
               </div>
             </section>
-            </div>
+        </motion.div>
             <div className="m-5" id="projects">
         <h2 className="flex font-bold mb-8 text-2xl">
-        <img src="/imgs/slash.png" alt="Slash icon" width="30" height="30" />
+        <Image src="/imgs/slash.png" alt="Slash icon" width="30" height="30" />
         My Works
         </h2>
       
@@ -398,7 +391,7 @@ export default function Home() {
             </div>
         </div>
       
-       </div>
-   </>
+    </div>
+   
   )
 }
