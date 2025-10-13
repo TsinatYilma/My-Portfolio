@@ -228,7 +228,7 @@ body {
   padding-top: 30px;
   padding-bottom: 30px;
   display: grid;
-  grid-template-columns: 1fr 410px 545px;
+  grid-template-columns:  300px 410px 1fri;
   align-items: flex-start;
 }
 @media only screen and (max-width: 1199px) {
@@ -320,7 +320,7 @@ body {
   object-fit: cover;
   height: 265px;
   border-radius: 20px;
-  transition: width 0.8s ease;
+  transition: width 3s ease;
 }
 .grow.in-view{
   width: 100%;
