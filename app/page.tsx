@@ -31,13 +31,14 @@ export default function Home() {
       <Script src="/assets/vendor/backToTop.js" strategy="beforeInteractive" />
       <Script src="/assets/vendor/matter.js" strategy="beforeInteractive" />
       <Script src="/assets/vendor/throwable.js" strategy="beforeInteractive" />
+      <Script src="/assets/vendor/imageObserver.js" strategy="beforeInteractive" />
 
       {/* Custom Scripts */}
       <Script src="/assets/js/magiccursor.js" strategy="afterInteractive" />
       <Script src="/assets/js/main.js" strategy="afterInteractive" />
 
      
-     <div className="header text-white flex justify-between m-4 mt-0 pt-4 ">
+     <div className="header text-white flex justify-between m-4 mt-0 pt-4 border">
         <div className="leftHeader flex items-center gap-5">
           <Image src="/imgs/code.png" alt="Code icon" width="40" height="40" />
           <p className="whatRU sm:text-xl">Web-Developer</p>
@@ -67,263 +68,198 @@ export default function Home() {
           </button>
         </div>
       </div>
-        <div className="main md:ml-16 md:mr-16 ">
+        <div className="main px-6 border">
         <div
         id="Home"
         className=" top m-5 flex flex-col justify-center gap-10 md:h-screen md:items-center mb-20 md:flex-row md:justify-between md:gap-24 lg:gap-64 bg-none md:bg-profile bg-no-repeat bg-center md:m-0 md:-ml-14 md:-mr-14 min-h-screen"
         >
         <div className="intro mt-20 ">
-          <hr className="border-2 w-32 mb-5" />
-          <p className="who text-start">
-            <span className="text-4xl font-bold">Shalom!, I'm Tsinat</span>
+          <hr className="w-32 mb-5" />
+          <div className="text-start max-w-[800px] ">
+            <p className="text-6xl font-bold   "><span className='text-7xl '>Shalom!</span>, I'm The One Your Are Looking For.</p>
             <br />
-            I am a junior web developer who loves to work on client-based web applications and looks forward to solving human problems through the web.
-          </p>
+            <p className="">I am a junior web developer who loves to work on client-based web applications and looks forward to solving human problems through the web.</p>
+          </div>
           <a href="#wait">
             <Image className="m-5 mt-10" src="/imgs/chevron-double-down.png" alt="Scroll down" width="40" height="40" />
           </a>
         </div>
-        <div className="flex flex-col gap-10">
+        <div className="flex flex-col gap-10  flex-1 h-full justify-center ">
             <div className="aboutnav">
-                <p className="text-start mb-5">
-                <span className="font-bold text-2xl">About Me</span>
-                <br />
-                <br />
-                My name is Tsinat Yilma. I'm a 21-year-old software engineering student at Addis Ababa University. I started my programming journey when I{" "}
-                <a href="#" className="text-[12px]">. . . more</a>
-                </p>
-                <a href="#wait">
-                <button className="flex gap-5 items-center">
-                    MORE <Image src="/imgs/down.png" alt="More about me" width="20" height="20" />
-                </button>
-                </a>
+                <img src="/imgs/propt.png" alt="" className='w-full  '/>
             </div>
-            <div className="aboutnav">
-                <p className="text-start mb-5">
-                <span className="font-bold text-2xl">My Work</span>
-                <br />
-                <br />
-                You can see some of my recent projects. Navigate to the projects section using the link below.
-                </p>
-                <a href="#projects">
-                <button className="flex gap-5 items-center">
-                    MORE <Image src="/imgs/down.png" alt="See projects" width="20" height="20" />
-                </button>
-                </a>
-            </div>
-            </div>
+          </div>
         </div>
         <motion.div 
         ref={ref}
         initial={{ opacity: 0, y: 50 }}
         animate={inView ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 2, ease: 'easeOut' }}
-        className="p-6  rounded shadow  min-h-screen">
+        className="rounded shadow  min-h-screen">
             <h2 className="flex font-bold mb-8 text-2xl lefty">
-            <Image src="/imgs/slash.png" alt="Slash icon" width="30" height="30" />
-            Skills and Tools
-        </h2>
-        <section className="client-area-service-page   md:px-20">
-              <div className="container large">
-                <div className="client-area-inner section-spacing-top">
-                  <div className="section-content fade-anim">
-                    <div className="section-title-wrapper">
+              <Image src="/imgs/slash.png" alt="Slash icon" width="30" height="30" />
+              Skills and Tools
+            </h2>
+            <section className="client-area-service-page   ">
+                  <div className="container large">
+                    <div className="client-area-inner section-spacing-top">
+                      <div className="section-content fade-anim">
+                        <div className="section-title-wrapper">
+                        </div>
+                      </div>
+                      <div className="client-capsule-wrapper-box fade-animation" data-t-throwable-scene="false">
+                        <div className="client-capsule-wrapper ">
+                        <p data-t-throwable-el="">
+                          <span className="client-box px-2 py-1.5 sm:px-4 md:px-8  ">
+                          <Image src="/imgs/vscode.png" alt="VS Code" className="w-6 h-6 sm:w-6 sm:h-8 md:w-10 md:h-10   rounded-lg hover:scale-110 appear" width="40" height="40" />
+                          </span>
+                        </p>
+                        <p data-t-throwable-el="">
+                          <span className="client-box px-2 py-1.5 sm:px-4 md:px-8  ">
+                            <Image src="/imgs/css.png" alt="CSS" className="w-6 h-6 sm:w-6 sm:h-8 md:w-10 md:h-10  rounded-lg hover:scale-110 appear" width="40" height="40" />
+                          </span>
+                        </p>
+                        <p data-t-throwable-el="">
+                          <span className="client-box px-2 py-1.5 sm:px-4 md:px-8 ">
+                          <Image src="/imgs/js.png" alt="JavaScript" className="w-6 h-6 sm:w-6 sm:h-8 md:w-10 md:h-10  rounded-lg hover:scale-110 appear" width="40" height="40" />
+                          </span>
+                        </p>
+                        <p data-t-throwable-el="">
+                          <span className="client-box px-2 py-1.5 sm:px-4 md:px-8 ">
+                          <Image src="/imgs/bootstrap.png" alt="Bootstrap" className="w-6 h-6 sm:w-6 sm:h-8 md:w-10 md:h-10  rounded-lg hover:scale-110 appear" width="40" height="40" />
+                          </span>
+                        </p>
+                        <p data-t-throwable-el="">
+                          <span className="client-box px-2 py-1.5 sm:px-4 md:px-8 ">
+                          <Image src="/imgs/tailwindcss.png" alt="Tailwind CSS" className="w-6 h-6 sm:w-6 sm:h-8 md:w-10 md:h-10  rounded-lg hover:scale-110 appear" width="40" height="40" />
+                          </span>
+                        </p>
+                        <p data-t-throwable-el="">
+                          <span className="client-box px-2 py-1.5 sm:px-4 md:px-8 ">
+                          <Image src="/imgs/python.png" alt="Python" className="w-6 h-6 sm:w-6 sm:h-8 md:w-10 md:h-10  rounded-lg hover:scale-110 appear" width="40" height="40" />
+                          </span>
+                        </p>
+                        <p data-t-throwable-el="">
+                          <span className="client-box px-2 py-1.5 sm:px-4 md:px-8 ">
+                          <Image src="/imgs/github-sign.png" alt="GitHub" className="w-6 h-6 sm:w-6 sm:h-8 md:w-10 md:h-10  rounded-lg hover:scale-110 appear" width="40" height="40" />
+                          </span>
+                        </p>
+                        <p data-t-throwable-el="">
+                          <span className="client-box px-2 py-1.5 sm:px-4 md:px-8 ">
+                          <Image src="/imgs/html.png" alt="HTML" className="w-6 h-6 sm:w-6 sm:h-8 md:w-10 md:h-10  rounded-lg hover:scale-110 appear" width="40" height="40" />
+                          </span>
+                        </p>
+                        <p data-t-throwable-el="">
+                          <span className="client-box px-2 py-1.5 sm:px-4 md:px-8 ">
+                          <Image src="/imgs/nextjs.png" alt="HTML" className="w-6 h-6 sm:w-6 sm:h-8 md:w-10 md:h-10  rounded-lg hover:scale-110 appear" width="40" height="40" />
+                          </span>
+                        </p>
+                        <p data-t-throwable-el="">
+                          <span className="client-box px-2 py-1.5 sm:px-4 md:px-8 ">
+                          <Image src="/imgs/react.png" alt="HTML" className="w-6 h-6 sm:w-6 sm:h-8 md:w-10 md:h-10  rounded-lg hover:scale-110 appear" width="40" height="40" />
+                          </span>
+                        </p>
+                        <p data-t-throwable-el="">
+                          <span className="client-box px-2 py-1.5 sm:px-4 md:px-8 ">
+                          <Image src="/imgs/typescript.png" alt="HTML" className="w-6 h-6 sm:w-6 sm:h-8 md:w-10 md:h-10  rounded-lg hover:scale-110 appear" width="40" height="40" />
+                          </span>
+                        </p>
+                        <p data-t-throwable-el="">
+                          <span className="client-box px-2 py-1.5 sm:px-4 md:px-8 ">
+                            <Image src="/imgs/shadcn.png" alt="HTML" className="w-6 h-6 sm:w-6 sm:h-8 md:w-10 md:h-10  rounded-lg hover:scale-110 appear" width="40" height="40" />
+                          </span>
+                        </p>
+                      </div>
+                      </div>
+                      <div className="lines-wrapper">
+                        {Array.from({ length: 8 }).map((_, i) => (
+                          <div key={i} className="line"></div>
+                        ))}
+                      </div>
                     </div>
                   </div>
-                  <div className="client-capsule-wrapper-box fade-animation" data-t-throwable-scene="false">
-                    <div className="client-capsule-wrapper ">
-                    <p data-t-throwable-el="">
-                      <span className="client-box px-2 py-1.5 sm:px-4 md:px-8  ">
-                      <Image src="/imgs/vscode.png" alt="VS Code" className="w-6 h-6 sm:w-6 sm:h-8 md:w-10 md:h-10   rounded-lg hover:scale-110 appear" width="40" height="40" />
-                      </span>
-                    </p>
-                    <p data-t-throwable-el="">
-                      <span className="client-box px-2 py-1.5 sm:px-4 md:px-8  ">
-                        <Image src="/imgs/css.png" alt="CSS" className="w-6 h-6 sm:w-6 sm:h-8 md:w-10 md:h-10  rounded-lg hover:scale-110 appear" width="40" height="40" />
-                      </span>
-                    </p>
-                    <p data-t-throwable-el="">
-                      <span className="client-box px-2 py-1.5 sm:px-4 md:px-8 ">
-                       <Image src="/imgs/js.png" alt="JavaScript" className="w-6 h-6 sm:w-6 sm:h-8 md:w-10 md:h-10  rounded-lg hover:scale-110 appear" width="40" height="40" />
-                      </span>
-                    </p>
-                    <p data-t-throwable-el="">
-                      <span className="client-box px-2 py-1.5 sm:px-4 md:px-8 ">
-                       <Image src="/imgs/bootstrap.png" alt="Bootstrap" className="w-6 h-6 sm:w-6 sm:h-8 md:w-10 md:h-10  rounded-lg hover:scale-110 appear" width="40" height="40" />
-                      </span>
-                    </p>
-                    <p data-t-throwable-el="">
-                      <span className="client-box px-2 py-1.5 sm:px-4 md:px-8 ">
-                       <Image src="/imgs/tailwindcss.png" alt="Tailwind CSS" className="w-6 h-6 sm:w-6 sm:h-8 md:w-10 md:h-10  rounded-lg hover:scale-110 appear" width="40" height="40" />
-                      </span>
-                    </p>
-                    <p data-t-throwable-el="">
-                      <span className="client-box px-2 py-1.5 sm:px-4 md:px-8 ">
-                       <Image src="/imgs/python.png" alt="Python" className="w-6 h-6 sm:w-6 sm:h-8 md:w-10 md:h-10  rounded-lg hover:scale-110 appear" width="40" height="40" />
-                      </span>
-                    </p>
-                    <p data-t-throwable-el="">
-                      <span className="client-box px-2 py-1.5 sm:px-4 md:px-8 ">
-                       <Image src="/imgs/github-sign.png" alt="GitHub" className="w-6 h-6 sm:w-6 sm:h-8 md:w-10 md:h-10  rounded-lg hover:scale-110 appear" width="40" height="40" />
-                      </span>
-                    </p>
-                    <p data-t-throwable-el="">
-                      <span className="client-box px-2 py-1.5 sm:px-4 md:px-8 ">
-                       <Image src="/imgs/html.png" alt="HTML" className="w-6 h-6 sm:w-6 sm:h-8 md:w-10 md:h-10  rounded-lg hover:scale-110 appear" width="40" height="40" />
-                      </span>
-                    </p>
-                    <p data-t-throwable-el="">
-                      <span className="client-box px-2 py-1.5 sm:px-4 md:px-8 ">
-                       <Image src="/imgs/nextjs.png" alt="HTML" className="w-6 h-6 sm:w-6 sm:h-8 md:w-10 md:h-10  rounded-lg hover:scale-110 appear" width="40" height="40" />
-                      </span>
-                    </p>
-                    <p data-t-throwable-el="">
-                      <span className="client-box px-2 py-1.5 sm:px-4 md:px-8 ">
-                      <Image src="/imgs/react.png" alt="HTML" className="w-6 h-6 sm:w-6 sm:h-8 md:w-10 md:h-10  rounded-lg hover:scale-110 appear" width="40" height="40" />
-                      </span>
-                    </p>
-                    <p data-t-throwable-el="">
-                      <span className="client-box px-2 py-1.5 sm:px-4 md:px-8 ">
-                      <Image src="/imgs/typescript.png" alt="HTML" className="w-6 h-6 sm:w-6 sm:h-8 md:w-10 md:h-10  rounded-lg hover:scale-110 appear" width="40" height="40" />
-                      </span>
-                    </p>
-                    <p data-t-throwable-el="">
-                      <span className="client-box px-2 py-1.5 sm:px-4 md:px-8 ">
-                        <Image src="/imgs/shadcn.png" alt="HTML" className="w-6 h-6 sm:w-6 sm:h-8 md:w-10 md:h-10  rounded-lg hover:scale-110 appear" width="40" height="40" />
-                      </span>
-                    </p>
+            </section>
+        </motion.div>
+        <div className="services-wrapper-box fade-anim border">
+                <div className="services-wrapper-1">
+                  <div className="service-box fade-anim">
+                    <div className="count border">
+                      <span className="number">(01)</span>
+                    </div>
+
+                    <div className="content">
+                      <h3 className="title"><a href="service-details.html">Branding</a></h3>
+                      <ul className="service-list">
+                        <li><a href="service-details.html">Creative Direction</a></li>
+                        <li><a href="service-details.html">Brand Identity</a></li>
+                        <li><a href="service-details.html">Branding Strategy</a></li>
+                        <li><a href="service-details.html">Graphic Design</a></li>
+                        <li><a href="service-details.html">Startup</a></li>
+                      </ul>
+                    </div>
+                    <div className="thumb ">
+                      <img className="grow " src="/imgs/sneakerpic.png" alt="image" />
+                    </div>
                   </div>
+                  <div className="service-box fade-anim">
+                    <div className="count">
+                      <span className="number">(02)</span>
+                    </div>
+
+                    <div className="content border">
+                      <h3 className="title"><a href="service-details.html">UI-UX Design</a></h3>
+                      <ul className="service-list">
+                        <li><a href="service-details.html">UI UX Consulting</a></li>
+                        <li><a href="service-details.html">UX Research</a></li>
+                        <li><a href="service-details.html">Usability Testing</a></li>
+                        <li><a href="service-details.html">Wireframing</a></li>
+                        <li><a href="service-details.html">Prototyping</a></li>
+                      </ul>
+                    </div>
+                    <div className="thumb border">
+                      <img className="grow min-w-full" src="/imgs/image-4.webp" alt="image"/>
+                    </div>
                   </div>
-                  <div className="lines-wrapper">
-                    {Array.from({ length: 8 }).map((_, i) => (
-                      <div key={i} className="line"></div>
-                    ))}
+                  <div className="service-box fade-anim">
+                    <div className="count">
+                      <span className="number">(03)</span>
+                    </div>
+
+                    <div className="content">
+                      <h3 className="title"><a href="service-details.html">Development</a></h3>
+                      <ul className="service-list">
+                        <li><a href="service-details.html">WordPress</a></li>
+                        <li><a href="service-details.html">Webflow</a></li>
+                        <li><a href="service-details.html">Laravel Framework</a></li>
+                        <li><a href="service-details.html">React & Flutter</a></li>
+                        <li><a href="service-details.html">Design System</a></li>
+                      </ul>
+                    </div>
+                    <div className="thumb">
+                      <img className="grow" src="assets/imgs/gallery/image-5.webp" alt="image"/>
+                    </div>
+                  </div>
+                  <div className="service-box fade-anim">
+                    <div className="count">
+                      <span className="number">(04)</span>
+                    </div>
+
+                    <div className="content">
+                      <h3 className="title"><a href="service-details.html">Digital Marketing</a></h3>
+                      <ul className="service-list">
+                        <li><a href="service-details.html">Online Marketing</a></li>
+                        <li><a href="service-details.html">SEO-Marketing</a></li>
+                        <li><a href="service-details.html">Strategy</a></li>
+                        <li><a href="service-details.html">Market Research</a></li>
+                        <li><a href="service-details.html">Social Reform</a></li>
+                      </ul>
+                    </div>
+                    <div className="thumb">
+                      <img className="grow min-w-full" src="assets/imgs/gallery/image-6.webp" alt="image"/>
+                    </div>
                   </div>
                 </div>
               </div>
-            </section>
-        </motion.div>
-            <div className="m-5" id="projects">
-        <h2 className="flex font-bold mb-8 text-2xl">
-        <Image src="/imgs/slash.png" alt="Slash icon" width="30" height="30" />
-        My Works
-        </h2>
-      
-        <div className="projects rounded flex flex-col sm:grid sm:grid-cols-2 gap-14">
-        {/* Project 1 */}
-        <div className="flex flex-col righty">
-          <div className="flex flex-col justify-around bg-burgandy">
-            <div className="flex items-center justify-center gap-2">
-              <img src="/imgs/startup.png" alt="Startup icon" className="w-6 h-6" />
-              <p className="font-bold text-xl">Space X</p>
-            </div>
-            <div className="m-5">
-              <img src="/imgs/spaceX.png" alt="SpaceX project" className="rounded" />
-            </div>
-          </div>
-          <div className="description">
-            <h3 className="mb-5 mt-5 text-xl">Space Tourism Website</h3>
-            <p className="text-start">
-              I successfully built the multi-page space tourism website. It’s fully responsive, allows seamless toggling between tabs, and includes hover states for all interactive elements.
-            </p>
-            <div className="flex gap-7 mt-5">
-              <div className="flex items-center text-[20px]">
-                <a className="hover:border-b-[1px] border-white" href="">Live</a>
-                <a href=""><img src="/imgs/diagonal-arrow.png" className="w-5 h-5 ml-1" alt="Live arrow" /></a>
-              </div>
-              <div className="flex items-center text-[20px]">
-                <a className="hover:border-b-[1px] border-white" href="">Github</a>
-                <a href=""><img src="/imgs/diagonal-arrow.png" className="w-5 h-5 ml-1" alt="GitHub arrow" /></a>
-              </div>
-            </div>
-          </div>
-        </div>
-        {/* Project 2 */}
-        <div className="flex flex-col lefty">
-          <div className="flex flex-col justify-around bg-burgandy">
-            <div className="flex items-center justify-center gap-2">
-              <img src="/imgs/sneakers.png" alt="Sneaker icon" className="w-6 h-6" />
-              <p className="font-bold text-xl">Sneaker Market</p>
-            </div>
-            <div className="m-5">
-              <img src="/imgs/sneakerpic.png" alt="Sneaker project" className="rounded" />
-            </div>
-          </div>
-          <div className="description">
-            <h3 className="mb-5 mt-5 text-xl">Online Sneaker Market</h3>
-            <p className="text-start">
-              I efficiently built the multi-page sneaker market website. It’s fully responsive, allows seamless toggling between tabs, and includes hover states for all interactive elements.
-            </p>
-            <div className="flex gap-7 mt-5">
-              <div className="flex items-center text-[20px]">
-                <a className="hover:border-b-[1px] border-white" href="">Live</a>
-                <a href=""><img src="/imgs/diagonal-arrow.png" className="w-5 h-5 ml-1" alt="Live arrow" /></a>
-              </div>
-              <div className="flex items-center text-[20px]">
-                <a className="hover:border-b-[1px] border-white" href="">Github</a>
-                <a href=""><img src="/imgs/diagonal-arrow.png" className="w-5 h-5 ml-1" alt="GitHub arrow" /></a>
-              </div>
-            </div>
-          </div>
-        </div>
-        {/* Project 3 */}
-        <div className="flex flex-col lefty md:righty">
-          <div className="flex flex-col justify-around bg-burgandy">
-            <div className="flex items-center justify-center gap-2">
-              <img src="/imgs/weathericon.png" alt="Weather icon" className="w-6 h-6" />
-              <p className="font-bold text-xl">Weather Boy</p>
-            </div>
-            <div className="m-5">
-              <img src="/imgs/weather.png" alt="Weather project" className="rounded" />
-            </div>
-          </div>
-          <div className="description">
-            <h3 className="mb-5 mt-5 text-xl">Weather App</h3>
-            <p className="text-start">
-              I skillfully built a web page that fetches weather data from a weather API, based on either the user's location or a user-inputted location. The page displays current weather conditions, temperature, and other key details clearly and interactively.
-            </p>
-            <div className="flex gap-7 mt-5">
-              <div className="flex items-center text-[20px]">
-                <a className="hover:border-b-[1px] border-white" href="">Live</a>
-                <a href=""><img src="/imgs/diagonal-arrow.png" className="w-5 h-5 ml-1" alt="Live arrow" /></a>
-              </div>
-              <div className="flex items-center text-[20px]">
-                <a className="hover:border-b-[1px] border-white" href="">Github</a>
-                <a href=""><img src="/imgs/diagonal-arrow.png" className="w-5 h-5 ml-1" alt="GitHub arrow" /></a>
-              </div>
-            </div>
-          </div>
-        </div>
-        {/* Project 4 */}
-        <div className="flex flex-col righty md:lefty">
-          <div className="flex flex-col justify-around bg-burgandy">
-            <div className="flex items-center justify-center gap-2">
-              <img src="/imgs/stopW.png" alt="Stopwatch icon" className="w-6 h-6" />
-              <p className="font-bold text-xl">Stop Watch</p>
-            </div>
-            <div className="m-5">
-              <img src="/imgs/stopwatch.png" alt="Stopwatch project" className="rounded" />
-            </div>
-          </div>
-          <div className="description anime">
-            <h3 className="mb-5 mt-5 text-xl">Stop Watch Web Application</h3>
-            <p className="text-start">
-              I efficiently built a stopwatch web application using HTML, CSS, and JavaScript. It includes functionalities for starting, pausing, resetting, and tracking lap times, allowing users to measure and record time intervals with ease. The result is an interactive, intuitive, and user-friendly tool.
-            </p>
-            <div className="flex gap-7 mt-5">
-              <div className="flex items-center text-[20px]">
-                <a className="hover:border-b-[1px] border-white" href="">Live</a>
-                <a href=""><img src="/imgs/diagonal-arrow.png" className="w-5 h-5 ml-1" alt="Live arrow" /></a>
-              </div>
-              <div className="flex items-center text-[20px]">
-                <a className="hover:border-b-[1px] border-white" href="">Github</a>
-                <a href=""><img src="/imgs/diagonal-arrow.png" className="w-5 h-5 ml-1" alt="GitHub arrow" /></a>
-              </div>
-            </div>
-          </div>
-        </div>
-        </div>
-      </div>
         <div className="footer m-5 mt-32 border-b-[1px] border-white lefty" id="contact">
             <hr className="border-2 w-32 mb-5" />
             <p className="font-bold">
