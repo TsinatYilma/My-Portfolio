@@ -524,8 +524,7 @@ body {
 /* circular shape area style  */
 .circular-shape-wrapper {
   height: 100vh;
-  background-color: var(--primary);
-  display: flex;
+  background-color: rgb(244, 157, 18);
   justify-content: center;
   align-items: center;
   overflow: hidden;
@@ -555,11 +554,15 @@ body {
 }
 .cta-area-inner .area-bg {
   position: absolute;
-  height: 390px;
-  width: 390px;
-  background-color: var(--black);
-  border-radius: 100%;
-  z-index: -1;
+  top: 50%;
+  left: 50%;
+  width: 50px;
+  height: 50px;
+  background: #f29807;
+  border-radius: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  z-index: -1000;
+  pointer-events: none;
 }
 .dark .cta-area-inner .area-bg {
   background-color: var(--theme);

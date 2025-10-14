@@ -2,11 +2,11 @@
 import '@/app/globals.css'
 import Image from 'next/image';
 import Script from "next/script";
+import { useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import ScrollWidthBox from './ScrollEffect'
- 
-
+ import SmoothScroll from './scrollSmother'
 export default function Home() {
   const { ref: sectionRef, inView } = useInView({
     triggerOnce: true,
@@ -44,7 +44,7 @@ export default function Home() {
       <Script src="/assets/js/main.js" strategy="afterInteractive" />
 
      
-     
+         
         <div className="main px-6 ">
             <div id="Home" className="flex flex-col justify-center  items-center min-h-screen border border-amber-500"
             >
@@ -78,13 +78,13 @@ export default function Home() {
               initial={{ opacity: 0, y: 50 }}
               animate={inViewProjects ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 2, ease: 'easeOut' }} className="services-wrapper-box fade-anim ">
-                    <div className="services-wrapper-1">
-                      <div className="service-box fade-anim">
-                        <div className="count ">
+                    <div className="services-wrapper-1" >
+                      <div className="service-box fade-anim  " >
+                        <div className="count " >
                           <span className="number">(01)</span>
                         </div>
 
-                        <div className="content">
+                        <div className="content" >
                           <h3 className="title"><a href="service-details.html">Branding</a></h3>
                           <ul className="service-list">
                             <li><a href="service-details.html">Creative Direction</a></li>
