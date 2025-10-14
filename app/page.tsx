@@ -1,6 +1,5 @@
 "use client"
 import '@/app/globals.css'
-import '@/app/assets/css/style.css'
 import Image from 'next/image';
 import Script from "next/script";
 import { motion } from 'framer-motion';
@@ -39,7 +38,6 @@ export default function Home() {
       <Script src="/assets/vendor/matter.js" strategy="beforeInteractive" />
       <Script src="/assets/vendor/throwable.js" strategy="beforeInteractive" />
       <Script src="/assets/vendor/imageObserver.js" strategy="beforeInteractive" />
-      <link rel="stylesheet" href="assets/vendor/bootstrap.min.css"/>
       <link rel="stylesheet" href="assets/vendor/fontawesome.min.css"/>
       <link rel="stylesheet" href="assets/vendor/swiper-bundle.min.css"/>
       <link rel="stylesheet" href="assets/vendor/meanmenu.min.css"/>
@@ -100,7 +98,7 @@ export default function Home() {
                             <li><a href="service-details.html">Startup</a></li>
                           </ul>
                         </div>
-                        <ScrollWidthBox/>
+                        <ScrollWidthBox img={"/imgs/image-3.webp"}/>
                       </div>
                       <div className="service-box fade-anim">
                         <div className="count">
@@ -118,7 +116,7 @@ export default function Home() {
                           </ul>
                         </div>
                         <div className="thumb ">
-                          <img className="grow" src="/imgs/image-4.webp" alt="image" />                
+                        <ScrollWidthBox img={"/imgs/image-4.webp"}/>             
                         </div>
                       </div>
                       <div className="service-box fade-anim">
@@ -137,7 +135,7 @@ export default function Home() {
                           </ul>
                         </div>
                         <div className="thumb">
-                          <img className="grow" src="imgs/image-6.webp" alt="image"/>
+                         <ScrollWidthBox img={"/imgs/image-6.webp"}/>
                         </div>
                       </div>
                       <div className="service-box fade-anim">
@@ -155,9 +153,9 @@ export default function Home() {
                             <li><a href="service-details.html">Social Reform</a></li>
                           </ul>
                         </div>
-                        <div className="thumb ">
-                          <img className='grow' src="/imgs/image-5.webp" alt="" />                
-                        </div>
+                        
+                          <ScrollWidthBox img={"/imgs/image-5.webp"}/>               
+                        
                       </div>
                     </div>
             </motion.div>

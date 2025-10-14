@@ -229,7 +229,7 @@ body {
   padding-bottom: 30px;
   display: grid;
   gap: 20px 30px;
-  grid-template-columns: 1fr 410px 545px;
+  grid-template-columns:  300px 410px 1fr;
   align-items: flex-start;
 }
 @media only screen and (max-width: 1199px) {
@@ -301,7 +301,6 @@ body {
   text-align: left;
 }
 .services-wrapper-1 .service-box .thumb img {
-  width: 35%;
   object-fit: cover;
   height: 265px;
   border-radius: 20px;

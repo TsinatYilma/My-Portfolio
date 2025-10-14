@@ -1,30 +1,33 @@
-// components/ScrollWidthBox.js
-import { useEffect, useState } from 'react';
+import { useEffect, useRef } from "react";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-export default function ScrollWidthBox() {
-  const [width, setWidth] = useState(100); // initial width in pixels
+gsap.registerPlugin(ScrollTrigger);
+
+export default function ScrollWidthBox({img}) {
+  const imgRef = useRef(null);
 
   useEffect(() => {
-    const handleScroll = () => {
-      const scrollY = window.scrollY;
-      const newWidth = 100 + scrollY * 0.5; // adjust multiplier as needed
-      setWidth(newWidth);
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    gsap.to(imgRef.current, {
+      width: "100%", // target width
+      scrollTrigger: {
+        trigger: imgRef.current,
+        start: "top 100%", // when image enters viewport
+        end: "top 10%",
+        scrub: true, // syncs animation with scroll
+        markers: true, // optional: shows start/end markers
+      },
+    });
   }, []);
 
   return (
-    <div
-      style={{
-        height: '50px',
-        backgroundColor: '#4CAF50',
-        width: `${width}px`,
-        transition: 'width 0.1s ease-out',
-      }}
-    >
-      Scroll to Grow
+    <div className="thumb flex justify-end ">
+      <img
+        ref={imgRef}
+        src={img}
+        alt="image"
+        style={{ width: "35%" }}
+      />
     </div>
   );
 }
