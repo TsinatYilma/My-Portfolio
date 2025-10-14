@@ -1,4 +1,4 @@
-const section = document.querySelector('.grow');
+const section = document.querySelectorAll('.grow');
 
 const observer = new IntersectionObserver(
   ([entry]) => {
@@ -8,7 +8,7 @@ const observer = new IntersectionObserver(
       section.classList.remove('in-view');
     }
   },
-  { threshold: 0.3 } // Adjust as needed
+  { threshold: 0.9 } // Adjust as needed
 );
 
 observer.observe(section);

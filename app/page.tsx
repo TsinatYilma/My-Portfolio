@@ -1,9 +1,11 @@
 "use client"
 import '@/app/globals.css'
+import '@/app/assets/css/style.css'
 import Image from 'next/image';
 import Script from "next/script";
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
+import ScrollWidthBox from './ScrollEffect'
  
 
 export default function Home() {
@@ -42,7 +44,6 @@ export default function Home() {
       <link rel="stylesheet" href="assets/vendor/swiper-bundle.min.css"/>
       <link rel="stylesheet" href="assets/vendor/meanmenu.min.css"/>
       <link rel="stylesheet" href="assets/vendor/magnific-popup.css"/>
-      <link rel="stylesheet" href="assets/vendor/animate.min.css"/>
 
       {/* Custom Scripts */}
       <Script src="/assets/js/magiccursor.js" strategy="afterInteractive" />
@@ -99,9 +100,7 @@ export default function Home() {
                             <li><a href="service-details.html">Startup</a></li>
                           </ul>
                         </div>
-                        <div className="thumb ">
-                          <img className="grow " src="/imgs/sneakerpic.png" alt="image" />
-                        </div>
+                        <ScrollWidthBox/>
                       </div>
                       <div className="service-box fade-anim">
                         <div className="count">
@@ -118,8 +117,8 @@ export default function Home() {
                             <li><a href="service-details.html">Prototyping</a></li>
                           </ul>
                         </div>
-                        <div className="thumb border">
-                          <img className="grow min-w-full" src="/imgs/image-4.webp" alt="image"/>
+                        <div className="thumb ">
+                          <img className="grow" src="/imgs/image-4.webp" alt="image" />                
                         </div>
                       </div>
                       <div className="service-box fade-anim">
@@ -138,7 +137,7 @@ export default function Home() {
                           </ul>
                         </div>
                         <div className="thumb">
-                          <img className="grow" src="assets/imgs/gallery/image-5.webp" alt="image"/>
+                          <img className="grow" src="imgs/image-6.webp" alt="image"/>
                         </div>
                       </div>
                       <div className="service-box fade-anim">
@@ -156,8 +155,8 @@ export default function Home() {
                             <li><a href="service-details.html">Social Reform</a></li>
                           </ul>
                         </div>
-                        <div className="thumb">
-                          <img className="grow min-w-full" src="assets/imgs/gallery/image-6.webp" alt="image"/>
+                        <div className="thumb ">
+                          <img className='grow' src="/imgs/image-5.webp" alt="" />                
                         </div>
                       </div>
                     </div>
