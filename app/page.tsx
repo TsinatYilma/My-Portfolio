@@ -38,10 +38,6 @@ export default function Home() {
       <Script src="/assets/vendor/matter.js" strategy="beforeInteractive" />
       <Script src="/assets/vendor/throwable.js" strategy="beforeInteractive" />
       <Script src="/assets/vendor/imageObserver.js" strategy="beforeInteractive" />
-      <link rel="stylesheet" href="assets/vendor/fontawesome.min.css"/>
-      <link rel="stylesheet" href="assets/vendor/swiper-bundle.min.css"/>
-      <link rel="stylesheet" href="assets/vendor/meanmenu.min.css"/>
-      <link rel="stylesheet" href="assets/vendor/magnific-popup.css"/>
 
       {/* Custom Scripts */}
       <Script src="/assets/js/magiccursor.js" strategy="afterInteractive" />
@@ -251,34 +247,51 @@ export default function Home() {
                   </section>
             </motion.div>
             <section className="team-area border">
-          <div className="container large">
-            <div className="team-area-inner section-spacing">
-              <div className="ceo-spotlight fade-anim">
-                <div className="ceo-container">
-                  <div className="ceo-image-wrapper">
-                    <div className="ceo-thumb">
-                      <a href="team-details.html"><img src="imgs/Kirubel-habtamu.webp" alt="Kirubel Habtamu"/></a>
+                <div className="container large">
+                  <div className="team-area-inner section-spacing">
+                    <div className="ceo-spotlight fade-anim">
+                      <div className="ceo-container">
+                        <div className="ceo-image-wrapper">
+                          <div className="ceo-thumb">
+                            <a href="team-details.html"><img src="imgs/Kirubel-habtamu.webp" alt="Kirubel Habtamu"/></a>
+                          </div>
+                        </div>
+                        <div className="ceo-content">
+                          <div className="ceo-info">
+                            <h2 className="ceo-name"><a href="team-details.html">Kirubel Habtamu</a></h2>
+                            <span className="ceo-position">CEO / Co-Founder</span>
+                            <div className="ceo-description">
+                              <p>Leading ENZIRA PRODUCTION with a vision to revolutionize digital experiences through innovative design and cutting-edge technology solutions. With extensive experience in creative direction and business strategy.</p>
+                            </div>
+                            <div className="ceo-social">
+                              <a href="#" className="social-link">LinkedIn</a>
+                              <a href="#" className="social-link">Twitter</a>
+                              <a href="https://instagram.com/kinfish_." className="social-link">Instagram</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
-                  <div className="ceo-content">
-                    <div className="ceo-info">
-                      <h2 className="ceo-name"><a href="team-details.html">Kirubel Habtamu</a></h2>
-                      <span className="ceo-position">CEO / Co-Founder</span>
-                      <div className="ceo-description">
-                        <p>Leading ENZIRA PRODUCTION with a vision to revolutionize digital experiences through innovative design and cutting-edge technology solutions. With extensive experience in creative direction and business strategy.</p>
-                      </div>
-                      <div className="ceo-social">
-                        <a href="#" className="social-link">LinkedIn</a>
-                        <a href="#" className="social-link">Twitter</a>
-                        <a href="https://instagram.com/kinfish_." className="social-link">Instagram</a>
-                      </div>
+                </div>
+            </section>
+            <div className="p-relative overflow-hidden">
+          <section className="cta-area">
+            <div className="cta-area-inner section-spacing">
+              <div className="area-bg"></div>
+              <div className="container large">
+                <div className="section-content">
+                  <div className="section-title-wrapper">
+                    <div className="title-wrapper">
+                      <h2 className="section-title font-instrumentsans-medium char-anim"><a href="contact.html">Let’s
+                          Work</a></h2>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-        </section>
+          </section>
+        </div>
             <div className="footer m-5 mt-32 border-b-[1px] border-white lefty" id="contact">
                 <hr className="border-2 w-32 mb-5" />
                 <p className="font-bold">

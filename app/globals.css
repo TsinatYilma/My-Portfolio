@@ -186,7 +186,7 @@ body {
   transform: translate(-50%, -50%) rotate(0rad);
 }
 .client-area-service-page .line {
-  border-bottom: 1px solid var(--primary);
+  border-bottom: 1px solid white;
 }
 .client-area-service-page .lines-wrapper {
   display: grid;
@@ -533,4 +533,77 @@ body {
 .circular-shape-wrapper .shape-thumb img {
   transform: scale(1) rotate(0);
   opacity: 0.9;
+}
+
+
+
+/* cta area style  */
+.cta-area {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+}
+.cta-area-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+}
+.cta-area-inner .area-bg {
+  position: absolute;
+  height: 390px;
+  width: 390px;
+  background-color: var(--black);
+  border-radius: 100%;
+  z-index: -1;
+}
+.dark .cta-area-inner .area-bg {
+  background-color: var(--theme);
+}
+@media only screen and (max-width: 1919px) {
+  .cta-area-inner .area-bg {
+    height: 300px;
+    width: 300px;
+  }
+}
+@media only screen and (max-width: 1399px) {
+  .cta-area-inner .area-bg {
+    height: 260px;
+    width: 260px;
+  }
+}
+@media only screen and (max-width: 1199px) {
+  .cta-area-inner .area-bg {
+    height: 200px;
+    width: 200px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .cta-area-inner .area-bg {
+    height: 160px;
+    width: 160px;
+  }
+}
+.cta-area .section-title {
+  font-family: var(--font_thunder);
+  font-size: 360px;
+  font-weight: 700;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: var(--white);
+  display: inline-block;
+  font-size: 4vw;
+}
+.cta-area .section-title a:hover {
+  color: var(--white);
+}
+.cta-area .section-content {
+  text-align: center;
+}
+.p-relative {
+  position: relative;
 }
