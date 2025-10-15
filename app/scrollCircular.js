@@ -1,28 +1,33 @@
-import gsap from "gsap";
-import ScrollTrigger from "gsap/ScrollTrigger";
-import Lenis from "@studio-freight/lenis";
+"use client"
+import  {useEffect}  from 'react';
+import gsap from 'gsap';
+import ScrollTrigger from 'gsap/ScrollTrigger';
 
 gsap.registerPlugin(ScrollTrigger);
 
-// Optional: Smooth scroll setup
-const lenis = new Lenis();
-function raf(time) {
-  lenis.raf(time);
-  requestAnimationFrame(raf);
-}
-requestAnimationFrame(raf);
+const ExpandingCircle = () => {
+  useEffect(() => {
+    gsap.to('.circle', {
+      scale: 30, // Adjust to fully cover screen
+      ease: 'power2.out',
+      scrollTrigger: {
+        trigger: '.content',
+        start: 'top top',
+        end: 'bottom bottom',
+        scrub: true,
+      },
+    });
+  }, []);
 
-// Circle expand animation
-gsap.timeline({
-  scrollTrigger: {
-    trigger: ".area-bg",
-    start: "top center",
-    end: "bottom center",
-    scrub: true,
-  }
-})
-.to(".area-bg", {
-  scale: 50, // Adjust to fully cover screen
-  duration: 1,
-  ease: "power2.inOut"
-});
+  return (
+    <>
+      <div className="circle" />
+      <section className="content">
+        <h1>Scroll down to expand the circle</h1>
+        <div style={{ height: '200vh' }} />
+      </section>
+    </>
+  );
+};
+
+export default ExpandingCircle;

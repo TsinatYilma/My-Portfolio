@@ -22,7 +22,7 @@ export default function ScrollWidthBox({img}) {
   }, []);
 
   return (
-    <div className="thumb flex justify-end ">
+    <div className="thumb flex justify-end " data-lag='2'>
       <img
         ref={imgRef}
         src={img}

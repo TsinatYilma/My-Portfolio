@@ -7,6 +7,7 @@ import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import ScrollWidthBox from './ScrollEffect'
  import SmoothScroll from './scrollSmother'
+ import ExpandingCircle from './scrollCircular'
 export default function Home() {
   const { ref: sectionRef, inView } = useInView({
     triggerOnce: true,
@@ -276,21 +277,7 @@ export default function Home() {
                 </div>
             </section>
             <div className="p-relative overflow-hidden">
-          <section className="cta-area">
-            <div className="cta-area-inner section-spacing">
-              <div className="area-bg"></div>
-              <div className="container large">
-                <div className="section-content">
-                  <div className="section-title-wrapper">
-                    <div className="title-wrapper">
-                      <h2 className="section-title font-instrumentsans-medium char-anim"><a href="contact.html">Let’s
-                          Work</a></h2>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
+          <ExpandingCircle/>
         </div>
             <div className="footer m-5 mt-32 border-b-[1px] border-white lefty" id="contact">
                 <hr className="border-2 w-32 mb-5" />
