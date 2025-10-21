@@ -623,9 +623,17 @@ body, html {
   left: 50%;
   width: 50px;
   height: 50px;
-  background: rgb(235, 197, 12);
+  background: rgb(18, 63, 77);
   border-radius: 50%;
   transform: translate(-50%, -50%) scale(1);
   z-index: 1;
   pointer-events: none;
+}
+
+@utility text-gradient {
+  background: linear-gradient(to bottom, #00CED1, #123f4d);
+  background: linear-gradient(to right, #00CED1 0%, #FFFFFF 30%, #FFFFFF 70%, #00CED1 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }

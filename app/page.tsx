@@ -6,8 +6,11 @@ import { useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import ScrollWidthBox from './ScrollEffect'
+import IntroText from './components/IntroText'
  import SmoothScroll from './scrollSmother'
  import ExpandingCircle from './scrollCircular'
+import Projects from './components/projects'
+ 
 export default function Home() {
   const { ref: sectionRef, inView } = useInView({
     triggerOnce: true,
@@ -49,114 +52,10 @@ export default function Home() {
         <div className="main px-6 ">
             <div id="Home" className="flex flex-col justify-center  items-center min-h-screen border border-amber-500"
             >
-                <div className="intro mt-20  ">
-                  <hr className="w-32 mb-5" />
-                  <div className="flex flex-col items-center text-center max-w-[1000px] ">
-                    <p className="text-6xl font-bold text-transparent "
-                    style={{
-                        background: 'linear-gradient(to right, #238E8E 0%, #FFFFFF 30%, #FFFFFF 70%, #238E8E 100%)',
-                        WebkitBackgroundClip: 'text',
-                        backgroundClip: 'text',
-                      }}>
-                        <span className='text-7xl '>Shalom!</span>, I'm The Developer  Your Are Looking For.</p>
-                    <br />
-                    <p className="max-w-[600px] ">I am a junior web developer who loves to work on client-based web applications and looks forward to solving human problems through the web.</p>
-                  </div>
-                  <a href="#wait">
-                    <Image className="m-5 mt-10" src="/imgs/chevron-double-down.png" alt="Scroll down" width="40" height="40" />
-                  </a>
-                </div>
+            <IntroText />
             </div>
-            <div className="mb--1">
-            <div className="circular-shape-wrapper  bg-white">
-              <div className="shape-thumb  ">
-                <img src="imgs/shape-8.svg" alt="image"/>
-              </div>
-            </div>
-          </div>
-            <motion.div    
-              ref={projectsRef}
-              initial={{ opacity: 0, y: 50 }}
-              animate={inViewProjects ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 2, ease: 'easeOut' }} className="services-wrapper-box fade-anim ">
-                    <div className="services-wrapper-1" >
-                      <div className="service-box fade-anim  " >
-                        <div className="count " >
-                          <span className="number">(01)</span>
-                        </div>
-
-                        <div className="content" >
-                          <h3 className="title"><a href="service-details.html">Branding</a></h3>
-                          <ul className="service-list">
-                            <li><a href="service-details.html">Creative Direction</a></li>
-                            <li><a href="service-details.html">Brand Identity</a></li>
-                            <li><a href="service-details.html">Branding Strategy</a></li>
-                            <li><a href="service-details.html">Graphic Design</a></li>
-                            <li><a href="service-details.html">Startup</a></li>
-                          </ul>
-                        </div>
-                        <ScrollWidthBox img={"/imgs/image-3.webp"}/>
-                      </div>
-                      <div className="service-box fade-anim">
-                        <div className="count">
-                          <span className="number">(02)</span>
-                        </div>
-
-                        <div className="content ">
-                          <h3 className="title"><a href="service-details.html">UI-UX Design</a></h3>
-                          <ul className="service-list">
-                            <li><a href="service-details.html">UI UX Consulting</a></li>
-                            <li><a href="service-details.html">UX Research</a></li>
-                            <li><a href="service-details.html">Usability Testing</a></li>
-                            <li><a href="service-details.html">Wireframing</a></li>
-                            <li><a href="service-details.html">Prototyping</a></li>
-                          </ul>
-                        </div>
-                        <div className="thumb ">
-                        <ScrollWidthBox img={"/imgs/image-4.webp"}/>             
-                        </div>
-                      </div>
-                      <div className="service-box fade-anim">
-                        <div className="count">
-                          <span className="number">(03)</span>
-                        </div>
-
-                        <div className="content">
-                          <h3 className="title"><a href="service-details.html">Development</a></h3>
-                          <ul className="service-list">
-                            <li><a href="service-details.html">WordPress</a></li>
-                            <li><a href="service-details.html">Webflow</a></li>
-                            <li><a href="service-details.html">Laravel Framework</a></li>
-                            <li><a href="service-details.html">React & Flutter</a></li>
-                            <li><a href="service-details.html">Design System</a></li>
-                          </ul>
-                        </div>
-                        <div className="thumb">
-                         <ScrollWidthBox img={"/imgs/image-6.webp"}/>
-                        </div>
-                      </div>
-                      <div className="service-box fade-anim">
-                        <div className="count">
-                          <span className="number">(04)</span>
-                        </div>
-
-                        <div className="content">
-                          <h3 className="title"><a href="service-details.html">Digital Marketing</a></h3>
-                          <ul className="service-list">
-                            <li><a href="service-details.html">Online Marketing</a></li>
-                            <li><a href="service-details.html">SEO-Marketing</a></li>
-                            <li><a href="service-details.html">Strategy</a></li>
-                            <li><a href="service-details.html">Market Research</a></li>
-                            <li><a href="service-details.html">Social Reform</a></li>
-                          </ul>
-                        </div>
-                        
-                          <ScrollWidthBox img={"/imgs/image-5.webp"}/>               
-                        
-                      </div>
-                    </div>
-            </motion.div>
             
+            <Projects />
             <motion.div    
               ref={sectionRef}
               initial={{ opacity: 0, y: 50 }}
