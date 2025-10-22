@@ -27,7 +27,7 @@ export default function ScrollWidthBox({img}) {
         ref={imgRef}
         src={img}
         alt="image"
-        style={{ width: "35%" }}
+        style={{ width: "35%",   }}
       />
     </div>
   );

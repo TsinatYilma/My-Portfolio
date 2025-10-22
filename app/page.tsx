@@ -8,8 +8,9 @@ import { useInView } from 'react-intersection-observer';
 import ScrollWidthBox from './ScrollEffect'
 import IntroText from './components/IntroText'
  import SmoothScroll from './scrollSmother'
- import ExpandingCircle from './scrollCircular'
+ import ExpandingCircle from './components/scrollCircular'
 import Projects from './components/projects'
+import Skills from './components/skills'
  
 export default function Home() {
   const { ref: sectionRef, inView } = useInView({
@@ -56,96 +57,7 @@ export default function Home() {
             </div>
             
             <Projects />
-            <motion.div    
-              ref={sectionRef}
-              initial={{ opacity: 0, y: 50 }}
-              animate={inView ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 2, ease: 'easeOut' }}
-              className="rounded shadow  min-h-screen ">
-                  <h2 className="flex font-bold mb-8 text-2xl lefty">
-                    <Image src="/imgs/slash.png" alt="Slash icon" width="30" height="30" />
-                    Skills and Tools
-                  </h2>
-                  <section className="client-area-service-page   ">
-                        <div className="container large">
-                          <div className="client-area-inner section-spacing-top">
-                            <div className="section-content fade-anim">
-                              <div className="section-title-wrapper">
-                              </div>
-                            </div>
-                            <div className="client-capsule-wrapper-box fade-animation" data-t-throwable-scene="false">
-                              <div className="client-capsule-wrapper ">
-                              <p data-t-throwable-el="">
-                                <span className="client-box px-2 py-1.5 sm:px-4 md:px-8  ">
-                                <Image src="/imgs/vscode.png" alt="VS Code" className="w-6 h-6 sm:w-6 sm:h-8 md:w-10 md:h-10   rounded-lg hover:scale-110 appear" width="40" height="40" />
-                                </span>
-                              </p>
-                              <p data-t-throwable-el="">
-                                <span className="client-box px-2 py-1.5 sm:px-4 md:px-8  ">
-                                  <Image src="/imgs/css.png" alt="CSS" className="w-6 h-6 sm:w-6 sm:h-8 md:w-10 md:h-10  rounded-lg hover:scale-110 appear" width="40" height="40" />
-                                </span>
-                              </p>
-                              <p data-t-throwable-el="">
-                                <span className="client-box px-2 py-1.5 sm:px-4 md:px-8 ">
-                                <Image src="/imgs/js.png" alt="JavaScript" className="w-6 h-6 sm:w-6 sm:h-8 md:w-10 md:h-10  rounded-lg hover:scale-110 appear" width="40" height="40" />
-                                </span>
-                              </p>
-                              <p data-t-throwable-el="">
-                                <span className="client-box px-2 py-1.5 sm:px-4 md:px-8 ">
-                                <Image src="/imgs/bootstrap.png" alt="Bootstrap" className="w-6 h-6 sm:w-6 sm:h-8 md:w-10 md:h-10  rounded-lg hover:scale-110 appear" width="40" height="40" />
-                                </span>
-                              </p>
-                              <p data-t-throwable-el="">
-                                <span className="client-box px-2 py-1.5 sm:px-4 md:px-8 ">
-                                <Image src="/imgs/tailwindcss.png" alt="Tailwind CSS" className="w-6 h-6 sm:w-6 sm:h-8 md:w-10 md:h-10  rounded-lg hover:scale-110 appear" width="40" height="40" />
-                                </span>
-                              </p>
-                              <p data-t-throwable-el="">
-                                <span className="client-box px-2 py-1.5 sm:px-4 md:px-8 ">
-                                <Image src="/imgs/python.png" alt="Python" className="w-6 h-6 sm:w-6 sm:h-8 md:w-10 md:h-10  rounded-lg hover:scale-110 appear" width="40" height="40" />
-                                </span>
-                              </p>
-                              <p data-t-throwable-el="">
-                                <span className="client-box px-2 py-1.5 sm:px-4 md:px-8 ">
-                                <Image src="/imgs/github-sign.png" alt="GitHub" className="w-6 h-6 sm:w-6 sm:h-8 md:w-10 md:h-10  rounded-lg hover:scale-110 appear" width="40" height="40" />
-                                </span>
-                              </p>
-                              <p data-t-throwable-el="">
-                                <span className="client-box px-2 py-1.5 sm:px-4 md:px-8 ">
-                                <Image src="/imgs/html.png" alt="HTML" className="w-6 h-6 sm:w-6 sm:h-8 md:w-10 md:h-10  rounded-lg hover:scale-110 appear" width="40" height="40" />
-                                </span>
-                              </p>
-                              <p data-t-throwable-el="">
-                                <span className="client-box px-2 py-1.5 sm:px-4 md:px-8 ">
-                                <Image src="/imgs/nextjs.png" alt="HTML" className="w-6 h-6 sm:w-6 sm:h-8 md:w-10 md:h-10  rounded-lg hover:scale-110 appear" width="40" height="40" />
-                                </span>
-                              </p>
-                              <p data-t-throwable-el="">
-                                <span className="client-box px-2 py-1.5 sm:px-4 md:px-8 ">
-                                <Image src="/imgs/react.png" alt="HTML" className="w-6 h-6 sm:w-6 sm:h-8 md:w-10 md:h-10  rounded-lg hover:scale-110 appear" width="40" height="40" />
-                                </span>
-                              </p>
-                              <p data-t-throwable-el="">
-                                <span className="client-box px-2 py-1.5 sm:px-4 md:px-8 ">
-                                <Image src="/imgs/typescript.png" alt="HTML" className="w-6 h-6 sm:w-6 sm:h-8 md:w-10 md:h-10  rounded-lg hover:scale-110 appear" width="40" height="40" />
-                                </span>
-                              </p>
-                              <p data-t-throwable-el="">
-                                <span className="client-box px-2 py-1.5 sm:px-4 md:px-8 ">
-                                  <Image src="/imgs/shadcn.png" alt="HTML" className="w-6 h-6 sm:w-6 sm:h-8 md:w-10 md:h-10  rounded-lg hover:scale-110 appear" width="40" height="40" />
-                                </span>
-                              </p>
-                            </div>
-                            </div>
-                            <div className="lines-wrapper">
-                              {Array.from({ length: 8 }).map((_, i) => (
-                                <div key={i} className="line"></div>
-                              ))}
-                            </div>
-                          </div>
-                        </div>
-                  </section>
-            </motion.div>
+            <Skills/>
             <section className="team-area border">
                 <div className="container large">
                   <div className="team-area-inner section-spacing">

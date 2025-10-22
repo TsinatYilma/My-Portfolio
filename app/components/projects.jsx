@@ -6,10 +6,7 @@ import SmoothScroll from '../scrollSmother'
 import { useGSAP } from '@gsap/react';
 
 const projects = () => {
-    const { ref: sectionRef, inView } = useInView({
-        triggerOnce: true,
-        threshold: 0.2,
-      });
+   
     
       const { ref: projectsRef, inView: inViewProjects } = useInView({
         triggerOnce: true,
@@ -17,7 +14,7 @@ const projects = () => {
       });
       useGSAP(()=>{
         
-        
+
       })
   return (
     <motion.div    
@@ -26,6 +23,7 @@ const projects = () => {
               animate={inViewProjects ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 2, ease: 'easeOut' }} className="services-wrapper-box fade-anim ">
                     <div className="services-wrapper-1" >
+                        <h1 className="text-5xl my-16 ">Recent Projects</h1>
                       <div className="service-box fade-anim  " >
                         <div className="count " >
                           <span className="number">(01)</span>
