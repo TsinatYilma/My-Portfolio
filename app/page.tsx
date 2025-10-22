@@ -2,7 +2,7 @@
 import '@/app/globals.css'
 import Image from 'next/image';
 import Script from "next/script";
-import { useEffect } from 'react';
+import { useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import ScrollWidthBox from './ScrollEffect'
@@ -11,42 +11,26 @@ import IntroText from './components/IntroText'
  import ExpandingCircle from './components/scrollCircular'
 import Projects from './components/projects'
 import Skills from './components/skills'
+import gsap, { ScrollSmoother, ScrollTrigger } from 'gsap/all';
+import { useGSAP } from '@gsap/react';
+import { Content } from 'next/font/google';
+import Smoother from './components/smoothScroll'
+
  
 export default function Home() {
+
   const { ref: sectionRef, inView } = useInView({
     triggerOnce: true,
     threshold: 0.2,
   });
-
+  
   const { ref: projectsRef, inView: inViewProjects } = useInView({
     triggerOnce: true,
     threshold: 0.2,
   });
-  
   return (
     <div className="bg-black relative text-white border">
            {/* Vendor Scripts */}
-      <Script src="/assets/vendor/jquery-3.7.1.min.js" strategy="beforeInteractive" />
-      <Script src="/assets/vendor/bootstrap.bundle.min.js" strategy="beforeInteractive" />
-      <Script src="/assets/vendor/jquery.magnific-popup.min.js" strategy="beforeInteractive" />
-      <Script src="/assets/vendor/swiper-bundle.min.js" strategy="beforeInteractive" />
-      <Script src="/assets/vendor/gsap.min.js" strategy="beforeInteractive" />
-      <Script src="/assets/vendor/ScrollTrigger.min.js" strategy="beforeInteractive" />
-      <Script src="/assets/vendor/ScrollSmoother.min.js" strategy="beforeInteractive" />
-      <Script src="/assets/vendor/ScrollToPlugin.min.js" strategy="beforeInteractive" />
-      <Script src="/assets/vendor/SplitText.min.js" strategy="beforeInteractive" />
-      <Script src="/assets/vendor/TextPlugin.js" strategy="beforeInteractive" />
-      <Script src="/assets/vendor/customEase.js" strategy="beforeInteractive" />
-      <Script src="/assets/vendor/Flip.min.js" strategy="beforeInteractive" /> 
-      <Script src="/assets/vendor/jquery.meanmenu.min.js" strategy="beforeInteractive" />
-      <Script src="/assets/vendor/backToTop.js" strategy="beforeInteractive" />
-      <Script src="/assets/vendor/matter.js" strategy="beforeInteractive" />
-      <Script src="/assets/vendor/throwable.js" strategy="beforeInteractive" />
-      <Script src="/assets/vendor/imageObserver.js" strategy="beforeInteractive" />
-
-      {/* Custom Scripts */}
-      <Script src="/assets/js/magiccursor.js" strategy="afterInteractive" />
-      <Script src="/assets/js/main.js" strategy="afterInteractive" />
 
      
          
@@ -88,8 +72,32 @@ export default function Home() {
                 </div>
             </section>
             <div className="p-relative overflow-hidden">
-          <ExpandingCircle/>
-        </div>
+              <ExpandingCircle/>
+            </div>
+            <div  id="content " className='relative  h-[80vh] max-h-[500px] border my-48'>
+                <img
+                  src="/imgs/image-7.webp"
+                  alt="image"
+                  className="imgy absolute w-full h-[160%] object-cover bottom-0 border"
+                  data-speed="0.1"
+                />
+             </div>
+             <Script id="gsap-smoother" strategy="afterInteractive">
+                {`
+                  gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
+
+                  const smoother = ScrollSmoother.create({
+                    content: "#content",
+                    smooth: 3,
+                    effects: true
+                  });
+
+                  smoother.effects("img", { speed: "auto" });
+                `}
+              </Script>
+             
+
+        
             <div className="footer m-5 mt-32 border-b-[1px] border-white lefty" id="contact">
                 <hr className="border-2 w-32 mb-5" />
                 <p className="font-bold">
