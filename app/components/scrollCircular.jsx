@@ -66,7 +66,7 @@ const ExpandingCircle = () => {
                       <div className="ceo-container">
                         <div className="ceo-image-wrapper">
                           <div className="ceo-thumb">
-                            <a href="team-details.html"><img src="imgs/Kirubel-habtamu.webp" alt="Kirubel Habtamu"/></a>
+                            <a href="team-details.html"><img src="/imgs/me-pn.jpg" alt="Kirubel Habtamu"/></a>
                           </div>
                         </div>
                         <div className="ceo-content">
