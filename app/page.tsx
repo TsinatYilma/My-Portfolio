@@ -74,7 +74,7 @@ export default function Home() {
             <div className="p-relative overflow-hidden">
               <ExpandingCircle/>
             </div>
-            <div  id="content " className='relative  h-[80vh] max-h-[500px] border my-48'>
+            <div  id="content " className='image-wrapper parallax-view relative overflow-hidden  h-[80vh] max-h-[500px] border my-48'>
                 <img
                   src="/imgs/image-7.webp"
                   alt="image"
@@ -82,19 +82,6 @@ export default function Home() {
                   data-speed="0.1"
                 />
              </div>
-             <Script id="gsap-smoother" strategy="afterInteractive">
-                {`
-                  gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
-
-                  const smoother = ScrollSmoother.create({
-                    content: "#content",
-                    smooth: 3,
-                    effects: true
-                  });
-
-                  smoother.effects("img", { speed: "auto" });
-                `}
-              </Script>
              
 
         
@@ -164,6 +151,27 @@ export default function Home() {
                     <a className="hover:text-white" href="">Projects</a><a className="hover:text-white" href="">contact</a>
                 </div>
         </div>
+        <Script src="/assets/vendor/jquery-3.7.1.min.js" strategy="beforeInteractive" />
+      <Script src="/assets/vendor/bootstrap.bundle.min.js" strategy="beforeInteractive" />
+      <Script src="/assets/vendor/jquery.magnific-popup.min.js" strategy="beforeInteractive" />
+      <Script src="/assets/vendor/swiper-bundle.min.js" strategy="beforeInteractive" />
+      <Script src="/assets/vendor/gsap.min.js" strategy="beforeInteractive" />
+      <Script src="/assets/vendor/ScrollTrigger.min.js" strategy="beforeInteractive" />
+      <Script src="/assets/vendor/ScrollSmoother.min.js" strategy="beforeInteractive" />
+      <Script src="/assets/vendor/ScrollToPlugin.min.js" strategy="beforeInteractive" />
+      <Script src="/assets/vendor/SplitText.min.js" strategy="beforeInteractive" />
+      <Script src="/assets/vendor/TextPlugin.js" strategy="beforeInteractive" />
+      <Script src="/assets/vendor/customEase.js" strategy="beforeInteractive" />
+      <Script src="/assets/vendor/Flip.min.js" strategy="beforeInteractive" /> 
+      <Script src="/assets/vendor/jquery.meanmenu.min.js" strategy="beforeInteractive" />
+      <Script src="/assets/vendor/backToTop.js" strategy="beforeInteractive" />
+      <Script src="/assets/vendor/matter.js" strategy="beforeInteractive" />
+      <Script src="/assets/vendor/throwable.js" strategy="beforeInteractive" />
+      <Script src="/assets/vendor/imageObserver.js" strategy="beforeInteractive" />
+
+      {/* Custom Scripts */}
+      <Script src="/assets/js/magiccursor.js" strategy="afterInteractive" />
+      <Script src="/assets/js/main.js" strategy="afterInteractive" />
       
     </div>
    
