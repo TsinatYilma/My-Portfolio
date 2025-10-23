@@ -21,7 +21,7 @@ const projects = () => {
               ref={projectsRef}
               initial={{ opacity: 0, y: 50 }}
               animate={inViewProjects ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 2, ease: 'easeOut' }} className="services-wrapper-box fade-anim ">
+              transition={{ duration: 1, ease: 'easeOut' }} className="services-wrapper-box fade-anim ">
                     <div className="services-wrapper-1" >
                         <h1 className="text-5xl my-16 ">Recent Projects</h1>
                       <div className="service-box fade-anim  " >

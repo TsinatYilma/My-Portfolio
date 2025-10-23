@@ -17,7 +17,7 @@ const Skills = () => {
               initial={{ opacity: 0, y: 50 }}
               animate={inView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 2, ease: 'easeOut' }}
-              className="rounded shadow  min-h-screen my-38 ">
+              className="rounded shadow  min-h-screen mt-32 ">
                   <h2 className="flex font-bold mb-8 text-2xl lefty pl-10">
                     <Image src="/imgs/slash.png" alt="Slash icon" width="30" height="30" />
                     Skills and Tools

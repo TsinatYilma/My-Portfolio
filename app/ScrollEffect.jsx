@@ -15,8 +15,7 @@ export default function ScrollWidthBox({img}) {
         trigger: imgRef.current,
         start: "top 100%", // when image enters viewport
         end: "top 10%",
-        scrub: 3, // syncs animation with scroll
-        markers: true, // optional: shows start/end markers
+        scrub: 3, // syncs animation with scroll // optional: shows start/end markers
       },
     });
   }, []);

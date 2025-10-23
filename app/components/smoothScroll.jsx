@@ -1,39 +1,39 @@
 'use client';
-
-import { useGSAP } from '@gsap/react';
+import { useEffect } from 'react';
 import gsap from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
-import ScrollSmoother from 'gsap/ScrollSmoother';
 
-gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
+gsap.registerPlugin(ScrollTrigger);
 
 export default function Smoother() {
-    useGSAP(() => {
-        gsap.timeline({
-          scrollTrigger: {
-            trigger: '#content',
-            start: 'top bottom',
-            end: 'bottom top',
-            scrub: true,
-          },
-        }).to('.imgy', {
-          y: -100,
-          scale: 1.1,
-          ease: 'none',
-        });
-      });
-      
+  useEffect(() => {
+    console.log("ScrollTrigger initialized");
+
+    gsap.from(".imgy", {
+      y: 100, // adjust for stronger or subtler parallax
+      ease: "none",
+      scrollTrigger: {
+        trigger: ".image_cont",
+        start: "top bottom",
+        end: "bottom top",
+        scrub: true,
+        // pin: true, // optional: only if you want to pin the container
+      },
+    });
+  }, []);
 
   return (
-    <div  id="content " className='relative overflow-hidden  h-[80vh] max-h-[500px] border my-48'>
-                <img
-                  src="/imgs/image-7.webp"
-                  alt="image"
-                  className="imgy absolute w-full h-[160%] object-cover bottom-0 border"
-                  data-speed="0.1"
-                />
-    </div>
+    <section className="border-2 border-amber-400">
+      <div className="image_cont h-[80vh] overflow-hidden relative">
+        <img
+          className="imgy absolute w-full h-[160%] object-cover bottom-0"
+          src="/imgs/image-7.webp"
+          alt=""
+        />
+      </div>
+    </section>
   );
 }
+
 
 
