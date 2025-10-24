@@ -17,18 +17,20 @@ const Skills = () => {
               initial={{ opacity: 0, y: 50 }}
               animate={inView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 2, ease: 'easeOut' }}
-              className="rounded shadow  min-h-screen mt-32 ">
-                  <h2 className="flex font-bold mb-8 text-2xl lefty pl-10">
-                    <Image src="/imgs/slash.png" alt="Slash icon" width="30" height="30" />
-                    Skills and Tools
-                  </h2>
-                  <section className="client-area-service-page   ">
-                        <div className="container large  mx-auto">
+              className="rounded shadow  min-h-screen mt-32 border">
+                  <div class="title-wrapper  px-44 ">
+                    <h2 class="section-title font-instrumentsans-medium word-anim text-7xl font-instBold"><span className='text-[#A53B2F]'>Client:</span> Helping brands
+                      to grow
+                      and say their success stories to
+                      the world.</h2>
+                  </div>
+                  <section className="client-area-service-page border  ">
+                        <div className="container large  mx-auto border">
                           <div className="client-area-inner section-spacing-top">
                             <div className="section-content fade-anim">
                               <div className="section-title-wrapper">
                               </div>
-                            </div>
+                            </div> 
                             <div className="client-capsule-wrapper-box fade-animation" data-t-throwable-scene="false">
                               <div className="client-capsule-wrapper ">
                               <p data-t-throwable-el="">
