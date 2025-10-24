@@ -21,7 +21,7 @@ const projects = () => {
               ref={projectsRef}
               initial={{ opacity: 0, y: 50 }}
               animate={inViewProjects ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 1, ease: 'easeOut' }} className="services-wrapper-box fade-anim ">
+              transition={{ duration: 1, ease: 'easeOut' }} className="services-wrapper-box fade-anim px-10">
                     <div className="services-wrapper-1" >
                         <h1 className="text-5xl my-16 ">Recent Projects</h1>
                       <div className="service-box fade-anim  " >
@@ -30,16 +30,10 @@ const projects = () => {
                         </div>
 
                         <div className="content" >
-                          <h3 className="title"><a href="service-details.html">Branding</a></h3>
-                          <ul className="service-list">
-                            <li><a href="service-details.html">Creative Direction</a></li>
-                            <li><a href="service-details.html">Brand Identity</a></li>
-                            <li><a href="service-details.html">Branding Strategy</a></li>
-                            <li><a href="service-details.html">Graphic Design</a></li>
-                            <li><a href="service-details.html">Startup</a></li>
-                          </ul>
+                          <h3 className="title"><a href="service-details.html">Book-Store</a></h3>
+                          <p className="font-instRegular text-lg mt-10 pr-24">This book-store website is your go-to destination for exploring everything about a book — from detailed descriptions and author info to genre tags and reader reviews. You can easily filter titles by genre, discover personalized recommendations, and dive into community ratings to find your next great read.</p>
                         </div>
-                        <ScrollWidthBox img={"/imgs/image-3.webp"}/>
+                        <ScrollWidthBox img={"/imgs/book-store.png"}/>
                       </div>
                       <div className="service-box fade-anim">
                         <div className="count">
@@ -47,17 +41,11 @@ const projects = () => {
                         </div>
 
                         <div className="content ">
-                          <h3 className="title"><a href="service-details.html">UI-UX Design</a></h3>
-                          <ul className="service-list">
-                            <li><a href="service-details.html">UI UX Consulting</a></li>
-                            <li><a href="service-details.html">UX Research</a></li>
-                            <li><a href="service-details.html">Usability Testing</a></li>
-                            <li><a href="service-details.html">Wireframing</a></li>
-                            <li><a href="service-details.html">Prototyping</a></li>
-                          </ul>
+                          <h3 className="title"><a href="service-details.html">Wedase Mariam Zema</a></h3>
+                          <p className="text-lg"></p>
                         </div>
                         <div className="thumb ">
-                        <ScrollWidthBox img={"/imgs/image-4.webp"}/>             
+                        <ScrollWidthBox img={"/imgs/wedaseMariam.png"}/>             
                         </div>
                       </div>
                       <div className="service-box fade-anim">
@@ -66,37 +54,25 @@ const projects = () => {
                         </div>
 
                         <div className="content">
-                          <h3 className="title"><a href="service-details.html">Development</a></h3>
-                          <ul className="service-list">
-                            <li><a href="service-details.html">WordPress</a></li>
-                            <li><a href="service-details.html">Webflow</a></li>
-                            <li><a href="service-details.html">Laravel Framework</a></li>
-                            <li><a href="service-details.html">React & Flutter</a></li>
-                            <li><a href="service-details.html">Design System</a></li>
-                          </ul>
+                          <h3 className="title"><a href="service-details.html">Better-Auth UI</a></h3>
+                          <p className="text-lg font-instRegular mt-10 pr-24">This site showcases a clean and secure authentication flow, built to demonstrate better login and session handling. I contributed to the UI development, helping bring the design and interactions to life with a focus on clarity and usability..</p>
                         </div>
                         <div className="thumb">
-                         <ScrollWidthBox img={"/imgs/image-6.webp"}/>
+                         <ScrollWidthBox img={"/imgs/betterauth-ui.png"}/>
                         </div>
                       </div>
                       <div className="service-box fade-anim">
                         <div className="count">
                           <span className="number">(04)</span>
                         </div>
-
                         <div className="content">
-                          <h3 className="title"><a href="service-details.html">Digital Marketing</a></h3>
-                          <ul className="service-list">
-                            <li><a href="service-details.html">Online Marketing</a></li>
-                            <li><a href="service-details.html">SEO-Marketing</a></li>
-                            <li><a href="service-details.html">Strategy</a></li>
-                            <li><a href="service-details.html">Market Research</a></li>
-                            <li><a href="service-details.html">Social Reform</a></li>
-                          </ul>
+                          <h3 className="title"><a href="service-details.html">Weather App</a></h3>
+                          <p className="text-lg font-instRegular mt-10 pr-24">This is a beautifully crafted weather app I built during my early learning stage. It features a clean, responsive design and delivers real-time weather data with intuitive visuals. Building it helped me grasp core concepts like API integration, dynamic UI updates, and layout structuring.</p>
                         </div>
                         
-                          <ScrollWidthBox img={"/imgs/image-5.webp"}/>               
-                        
+                        <div className="thumb">
+                         <ScrollWidthBox img={"/imgs/weather.png"}/>
+                        </div>      
                       </div>
                     </div>
             </motion.div>

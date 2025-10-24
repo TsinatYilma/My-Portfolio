@@ -30,12 +30,12 @@ const Skills = () => {
               animate={inView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 2, ease: 'easeOut' }}
               className="rounded shadow  h- mt-44  ">
-                  <div className="title-wrapper  px-44 ">
+                  <div className="title-wrapper  px-48 ">
                     <h2 className="section-title font-instrumentsans-medium word-anim text-7xl font-instRegular"><span className='text-[#A53B2F]'>In Tech</span>, the tools you choose shape the solutions you build.</h2>
                   </div>
                   <section className="client-area-service-page   ">
                         <div className="container large  mx-auto ">
-                          <div className="client-area-inner section-spacing-top border-r border-dashed ">
+                          <div className="client-area-inner section-spacing-top border-r border-l border-dashed linear-gradient(to right, black 80%, transparent 100%)">
                             <div className="section-content fade-anim">
                               <div className="section-title-wrapper">
                               </div>

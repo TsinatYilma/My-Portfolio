@@ -45,16 +45,16 @@ const ExpandingCircle = () => {
 
   return (
     <>
-    <div id='art' className='h-screen min-w-full overflow-hidden flex'>
+    <div id='art' className='h-screen  min-w-full overflow-hidden flex  border'>
           <div className="circle flex justify-center items-center p-10 bg-[#A53B2F]">
             <h1 className="circleText text-5xl  font-instBold">LET'S WORK</h1>
           </div>
-          <div className="circleIn text-center absolute left-1/2 bottom-40 -translate-x-1/2">
-            <h1 className="font-[var(--font_instrumentsans)] text-8xl ">
+          <div className="circleIn min-w-full text-center  bottom-30 border border-amber-300 ">
+            <h1 className="font-[var(--font_instrumentsans)] text-8xl border w-full">
                 It’s all about the <br />
                 unique <span className="text-gray-600">thinking</span> with <br />
-                <span className="text-gray-600">creativity</span> and <span className="text-gray-600">quality</span> for
-                complex solution in 
+                <span className="text-gray-600">creativity</span> and <span className="text-gray-600">quality</span> <br /> for
+                complex solution <br /> in 
                 easy way
             </h1>
           </div>
