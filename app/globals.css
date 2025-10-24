@@ -12,6 +12,7 @@
 }
 @theme{
   --font-instBold: "InstrumentSansBold", sans-serif;
+  --font-instRegular: "instrumentSans"
 }
 :root {
   --font_instrumentsans: "InstrumentSans", sans-serif;
@@ -640,7 +641,7 @@ body, html {
   width: 400px;
   height: 400px;
   border-radius: 50%;
-  background-color: #238E8E;
+  background-color: #A53B2F;
   z-index: 10;
 }
 

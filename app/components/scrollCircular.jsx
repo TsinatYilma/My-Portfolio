@@ -15,13 +15,13 @@ const ExpandingCircle = () => {
         scrollTrigger: {
             trigger: '#art',
             start: 'top top',
-            end: '+=2000',
-            scrub: 1.5,
+            end: '+=4000',
+            scrub: 0.2,
             pin: true,
         }
     })
     .to('.circle',{
-        scale: 30, opacity: 0.1, maskPosition: 'center', maskSize: '400%', duration: 3, ease: 'power1.inOut', delay: 5,
+        scale: 30, opacity: 0.1, maskPosition: 'center', maskSize: '400%', duration: 3, ease: 'power1.inOut', 
     })
     .to('.circleText',{
       scale: 30, opacity: 0, maskPosition: 'center', maskSize: '400%', duration: 1, ease: 'power1.inOut', 
@@ -45,9 +45,9 @@ const ExpandingCircle = () => {
 
   return (
     <>
-    <div id='art' className=' min-h-screen min-w-full overflow-hidden flex'>
-          <div className="circle flex justify-center items-center p-10">
-            <h1 className="circleText text-5xl font-bold ">LET'S WORK</h1>
+    <div id='art' className='h-screen min-w-full overflow-hidden flex'>
+          <div className="circle flex justify-center items-center p-10 bg-[#A53B2F]">
+            <h1 className="circleText text-5xl  font-instBold">LET'S WORK</h1>
           </div>
           <div className="circleIn text-center absolute left-1/2 bottom-40 -translate-x-1/2">
             <h1 className="font-[var(--font_instrumentsans)] text-8xl ">
@@ -70,7 +70,7 @@ const ExpandingCircle = () => {
                           </div>
                         </div>
                         <div className="ceo-content">
-                          <div className="ceo-info">
+                          <div className="ceo-info font-instRegular">
                             <h2 className="ceo-name"><a href="team-details.html">Tsinat Yilma</a></h2>
                             <span className="ceo-position">Software Developer</span>
                             <div className="ceo-description">

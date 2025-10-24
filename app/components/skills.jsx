@@ -5,28 +5,37 @@ import { useInView } from 'react-intersection-observer';
 import ScrollWidthBox from '../ScrollEffect'
 import SmoothScroll from '../scrollSmother'
 import { useGSAP } from '@gsap/react';
+import gsap from 'gsap/all';
 
 const Skills = () => {
    const { ref: sectionRef, inView } = useInView({
           triggerOnce: true,
           threshold: 0.2,
         });
+  useGSAP(()=>{
+    const paraSplit = new SplitText('.section-title', {type: 'lines'})
+
+    gsap.from(paraSplit.lines,{
+      opacity: 0,
+      yPercent: 50,
+      scale: 1.5,
+      ease: "power3.inOut",
+      stagger: 0.06,
+    })
+    })
   return (
     <motion.div    
               ref={sectionRef}
               initial={{ opacity: 0, y: 50 }}
               animate={inView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 2, ease: 'easeOut' }}
-              className="rounded shadow  min-h-screen mt-32 border">
-                  <div class="title-wrapper  px-44 ">
-                    <h2 class="section-title font-instrumentsans-medium word-anim text-7xl font-instBold"><span className='text-[#A53B2F]'>Client:</span> Helping brands
-                      to grow
-                      and say their success stories to
-                      the world.</h2>
+              className="rounded shadow  h- mt-44  ">
+                  <div className="title-wrapper  px-44 ">
+                    <h2 className="section-title font-instrumentsans-medium word-anim text-7xl font-instRegular"><span className='text-[#A53B2F]'>In Tech</span>, the tools you choose shape the solutions you build.</h2>
                   </div>
-                  <section className="client-area-service-page border  ">
-                        <div className="container large  mx-auto border">
-                          <div className="client-area-inner section-spacing-top">
+                  <section className="client-area-service-page   ">
+                        <div className="container large  mx-auto ">
+                          <div className="client-area-inner section-spacing-top border-r border-dashed ">
                             <div className="section-content fade-anim">
                               <div className="section-title-wrapper">
                               </div>
