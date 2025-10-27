@@ -24,35 +24,46 @@ const projects = () => {
             { scale: 1 },
             {
               scale: 1.2,
-              duration: 1.6,
+              duration: 2,
               ease: "power2.inOut",
               scrollTrigger: {
                 trigger: el,
-                start: "top bottom",
+                start: "top 80%",
                 end: "bottom top",
                 toggleActions: "play reverse play reverse",
               },
             }
           );
+         
         });
+        gsap.from(".work-area-work-page",{
+          opacity: 0,
+          duration: 1.5,
+          ease: "power2.inOut",
+          scrollTrigger: {
+            trigger: ".work-area-work-page",
+            start: "top 60%",
+            end: "bottom top",
+          },
+        }
+      );
       });
   return (
-  <section className="work-area-work-page border">
+  <section className="work-area-work-page ">
           <div className="work-area-work-page-inner">
-            <div className="container large">
-              <div className="section-header fade-anim">
-                <div className="section-title-wrapper">
+            <div className="container large  text-center min-w-full">
+              <div className="section-header fade-anim ">
+                <div className="section-title-wrapper ">
                   <div className="subtitle-wrapper">
-                    <span className="section-subtitle">Recent work</span>
+                    <span className="section-subtitle text-[1.5vw]">Recent work</span>
                   </div>
-                  <div className="title-wrapper">
-                    <h2 className="section-title font-sequelsans-romanbody">Creative works
-                      with our incredible
-                      people.</h2>
+                  <div className="title-wrapper text-[1.3vw]">
+                    <h2 className="section-title  text-start font-instRegular text-[4vw] leading-none  w-full">Creative works
+                      with awsome output.</h2>
                   </div>
                 </div>
               </div>
-              <div className="section-content-wrapper fade-anim">
+              <div className="section-content-wrapper fade-anim text-[1.3vw] text-gray-500">
                 <div className="info-list">
                   <ul>
                     <li>design</li>
@@ -63,7 +74,7 @@ const projects = () => {
                 </div>
                 <div className="section-content">
                   <div className="text-wrapper" data-direction="right">
-                    <p className="text">We take a comprehensive approach to the creation and development of brands. We
+                    <p className="text text-[1.3vw]">We take a comprehensive approach to the creation and development of brands. We
                       help local companies and services enter the market, and well-known brands expand an audience.
                     </p>
                   </div>
@@ -71,16 +82,16 @@ const projects = () => {
               </div>
 
             </div>
-            <div className="works-wrapper-box">
+            <div className="works-wrapper-box  flex justify-center">
               <div className="container large">
                 <div className="works-wrapper-8">
-                  <div className="work-box border">
-                    <div className="thumb border">
-                      <div className="image " data-cursor-text="View Project">
-                        <a href=""><img className='h-[350px]  scale' src="/imgs/book-store.png" alt="image"/></a>
+                  <div className="work-box " data-cursor-text="View Project" onClick={() => window.open("https://github.com/TsinatYilma/book-store", "_blank")}>
+                    <div className="thumb " >
+                      <div className="image "> 
+                        <a href=""><img className='h-[25vw]  scale' src="/imgs/book-store.png" alt="image"/></a>
                       </div>
                     </div>
-                    <div className="content border px-14">
+                    <div className="content  px-[4.5vw]">
                       <h3 className="title"><a href="portfolio-details.html">Book Store</a></h3>
                       <div className="meta">
                         <span className="date">2025</span>
@@ -88,10 +99,24 @@ const projects = () => {
                       </div>
                     </div>
                   </div>
-                  <div className="work-box">
-                    <div className="thumb  border">
-                      <div className="image  border" data-cursor-text="View Project">
-                        <a href="portfolio-details.html"><img className='h-[350px] scale' src="/imgs/betterauth-ui.png" alt="image"/></a>
+                  <div className="work-box" data-cursor-text="View Project"  onClick={() => window.open("https://gsap-cpr.vercel.app/", "_blank")}>
+                    <div className="thumb  ">
+                      <div className="image  " >
+                        <a href=""><img className='h-[25vw] scale' src="/imgs/mojito.png" alt="image"/></a>
+                      </div>
+                    </div>
+                    <div className="content">
+                      <h3 className="title"><a href="">MOJITO</a></h3>
+                      <div className="meta">
+                        <span className="date">2025</span>
+                        <span className="tag">Client App</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="work-box" data-cursor-text="View Project"  onClick={() => window.open("https://better-auth.farmui.com", "_blank")}>
+                    <div className="thumb  ">
+                      <div className="image  " >
+                        <a href=""><img className='h-[25vw] scale' src="/imgs/betterauth-ui.png" alt="image"/></a>
                       </div>
                     </div>
                     <div className="content">
@@ -102,41 +127,41 @@ const projects = () => {
                       </div>
                     </div>
                   </div>
-                  <div className="work-box">
+                  <div className="work-box" data-cursor-text="View Project">
                     <div className="thumb">
-                      <div className="image  border" data-cursor-text="View Project">
-                        <a href="portfolio-details.html"><img className='h-[350px] scale' src="/imgs/image-5.webp" alt="image"/></a>
+                      <div className="image  " >
+                        <a href="portfolio-details.html"><img className='h-[25vw] scale' src="/imgs/image-5.webp" alt="image"/></a>
                       </div>
                     </div>
-                    <div className="content px-14">
-                      <h3 className="title"><a href="portfolio-details.html"></a></h3>
+                    <div className="content px-[4.5vw]">
+                      <h3 className="title"><a href="portfolio-details.html">Blog-It</a></h3>
                       <div className="meta">
                         <span className="date">2010</span>
                         <span className="tag">Marketing</span>
                       </div>
                     </div>
                   </div>
-                  <div className="work-box">
+                  <div className="work-box" data-cursor-text="View Project" onClick={() => window.open("https://abiye-wedase.vercel.app/", "_blank")}>
                     <div className="thumb">
-                      <div className="image " data-cursor-text="View Project">
-                        <a href="portfolio-details.html"><img className='h-[350px] scale' src="/imgs/wedaseMariam.png" alt="image"/></a>
+                      <div className="image " >
+                        <a href=""><img className='h-[25vw] scale' src="/imgs/wedaseMariam.png" alt="image"/></a>
                       </div>
                     </div>
                     <div className="content">
-                      <h3 className="title"><a href="portfolio-details.html">Wedase Mariam Zema</a></h3>
+                      <h3 className="title"><a href="">Wedase Mariam Zema</a></h3>
                       <div className="meta">
                         <span className="date">2024</span>
                         <span className="tag">Spritual</span>
                       </div>
                     </div>
                   </div>
-                  <div className="work-box">
+                  <div className="work-box" data-cursor-text="View Project" onClick={() => window.open("https://github.com/TsinatYilma/BookStoreApp", "_blank")}>
                     <div className="thumb">
-                      <div className="image " data-cursor-text="View Project"> 
-                        <a href="portfolio-details.html"><img className='h-[350px] scale' src="/imgs/image-3.webp" alt="image"/></a>
+                      <div className="image " > 
+                        <a href=""><img className='h-[25vw] scale' src="/imgs/image-3.webp" alt="image"/></a>
                       </div>
                     </div>
-                    <div className="content px-14">
+                    <div className="content px-[4.5vw]">
                       <h3 className="title"><a href="portfolio-details.html">BookStore-App</a></h3>
                       <div className="meta">
                         <span className="date">2025</span>
@@ -144,10 +169,10 @@ const projects = () => {
                       </div>
                     </div>
                   </div>
-                  <div className="work-box">
+                  <div className="work-box" data-cursor-text="View Project" onClick={() => window.open("https://github.com/TsinatYilma/BookStoreApp", "_blank")}>
                     <div className="thumb">
-                      <div className="image " data-cursor-text="View Project">
-                        <a href="portfolio-details.html"><img className='h-[350px] scale' src="/imgs/weather.png" alt="image"/></a>
+                      <div className="image " >
+                        <a href=""><img className='h-[25vw] scale' src="/imgs/weather.png" alt="image"/></a>
                       </div>
                     </div>
                     <div className="content">
@@ -162,6 +187,7 @@ const projects = () => {
               </div>
             </div>
           </div>
+          
           <Script src="/assets/vendor/jquery-3.7.1.min.js" strategy="beforeInteractive" />
       <Script src="/assets/vendor/bootstrap.bundle.min.js" strategy="beforeInteractive" />
       <Script src="/assets/vendor/jquery.magnific-popup.min.js" strategy="beforeInteractive" />

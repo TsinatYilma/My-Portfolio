@@ -35,7 +35,7 @@ export default function Home() {
      
          
         <div className="main ">
-            <div id="Home" className="flex flex-col justify-center  items-center min-h-screen border border-amber-500"
+            <div id="Home" className="flex flex-col justify-center  items-center min-h-screen  "
             >
             <IntroText />
             </div>
