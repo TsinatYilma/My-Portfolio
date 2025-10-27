@@ -87,9 +87,10 @@ const ExpandingCircle = () => {
                     </p>
                   </div>
                   <div className="ceo-social flex gap-[2vw] justify-start mt-[2vw] ">
+                    <a href="https://t.me/dvlinz" target="_blank" rel="noopener noreferrer" className="socialLink text-[1.2vw]"><button>Telegram</button></a>
                     <a href="#" className="socialLink text-[1.2vw] transition-all z-50 duration-300 hover:bg-[#A53B2F] hover:border-[#A53B2F] hover:-translate-y-0.5 hover:underline ">LinkedIn</a>
                     <a href="#" className="socialLink text-[1.2vw]">Twitter</a>
-                    <a href="https://instagram.com/kinfish_." className="socialLink text-[1.2vw]">Instagram</a>
+                    
                   </div>
                 </div>
               </div>
@@ -98,14 +99,6 @@ const ExpandingCircle = () => {
         </div>
       </div>
     </section>
-
-    {/* Navigation Links */}
-    <div className="flex justify-center text-[1vw] font-bold text-purp gap-[2vw] md:text-[1.2vw] md:gap-[3vw]">
-      <a className="hover:text-white" href="">Home</a>
-      <a className="hover:text-white" href="">About</a>
-      <a className="hover:text-white" href="">Projects</a>
-      <a className="hover:text-white" href="">Contact</a>
-    </div>
   </div>
 </div>
 

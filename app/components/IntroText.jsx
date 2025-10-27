@@ -31,7 +31,7 @@ const IntroText = () => {
     <div className="intro mt-20  ">
         <hr className="w-32 mb-5" />
         <div className="flex flex-col items-center text-center min-w-[1000px]  ">
-            <h2 id='introHead' className="title  text-[4vw] font-bold text-gradient"
+            <h2 id='introHead' className="title  text-[4vw] font-bold text-gradient leading-tight "
             >
                 Shalom!, I'm The Developer  You <br /> have been Looking For.</h2>
             <br />

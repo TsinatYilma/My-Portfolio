@@ -531,10 +531,10 @@ body {
 }
 
 a.socialLink:hover {
-  background: #A53B2F;
-  border-color: #A53B2F;
-  color: #ffffff;
-  transform: translateY(-2px);
+  background: #A53B2F !important;
+  border-color: #A53B2F !important;
+  color: #ffffff !important;
+  transform: translateY(-2px) !important;
 }
 
 /* circular shape area style  */

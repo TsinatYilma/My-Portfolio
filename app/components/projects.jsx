@@ -119,7 +119,7 @@ const projects = () => {
                         <a href=""><img className='h-[25vw] scale' src="/imgs/betterauth-ui.png" alt="image"/></a>
                       </div>
                     </div>
-                    <div className="content">
+                    <div className="content px-[4.5vw]">
                       <h3 className="title"><a href="portfolio-details.html">BetterAuth-UI</a></h3>
                       <div className="meta">
                         <span className="date">2025</span>
@@ -133,7 +133,7 @@ const projects = () => {
                         <a href="portfolio-details.html"><img className='h-[25vw] scale' src="/imgs/image-5.webp" alt="image"/></a>
                       </div>
                     </div>
-                    <div className="content px-[4.5vw]">
+                    <div className="content ">
                       <h3 className="title"><a href="portfolio-details.html">Blog-It</a></h3>
                       <div className="meta">
                         <span className="date">2010</span>
@@ -147,7 +147,7 @@ const projects = () => {
                         <a href=""><img className='h-[25vw] scale' src="/imgs/wedaseMariam.png" alt="image"/></a>
                       </div>
                     </div>
-                    <div className="content">
+                    <div className="content px-[4.5vw]">
                       <h3 className="title"><a href="">Wedase Mariam Zema</a></h3>
                       <div className="meta">
                         <span className="date">2024</span>
@@ -161,7 +161,7 @@ const projects = () => {
                         <a href=""><img className='h-[25vw] scale' src="/imgs/image-3.webp" alt="image"/></a>
                       </div>
                     </div>
-                    <div className="content px-[4.5vw]">
+                    <div className="content ">
                       <h3 className="title"><a href="portfolio-details.html">BookStore-App</a></h3>
                       <div className="meta">
                         <span className="date">2025</span>
@@ -169,20 +169,7 @@ const projects = () => {
                       </div>
                     </div>
                   </div>
-                  <div className="work-box" data-cursor-text="View Project" onClick={() => window.open("https://github.com/TsinatYilma/BookStoreApp", "_blank")}>
-                    <div className="thumb">
-                      <div className="image " >
-                        <a href=""><img className='h-[25vw] scale' src="/imgs/weather.png" alt="image"/></a>
-                      </div>
-                    </div>
-                    <div className="content">
-                      <h3 className="title"><a href="portfolio-details.html">Weather site</a></h3>
-                      <div className="meta">
-                        <span className="date">2024</span>
-                        <span className="tag">better-ui</span>
-                      </div>
-                    </div>
-                  </div>
+                  
                 </div>
               </div>
             </div>
