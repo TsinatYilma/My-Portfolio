@@ -43,9 +43,6 @@ export default function Home() {
             <Projects />
             <Skills/>
             
-            <div className=" overflow-hidden">
-              <ExpandingCircle/>
-            </div>
             
 
             
