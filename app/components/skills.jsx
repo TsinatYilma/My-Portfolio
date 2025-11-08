@@ -131,14 +131,11 @@ const Skills = () => {
       <Script src="/assets/vendor/customEase.js" strategy="beforeInteractive" />
       <Script src="/assets/vendor/Flip.min.js" strategy="beforeInteractive" /> 
       <Script src="/assets/vendor/jquery.meanmenu.min.js" strategy="beforeInteractive" />
-      <Script src="/assets/vendor/backToTop.js" strategy="beforeInteractive" />
       <Script src="/assets/vendor/matter.js" strategy="beforeInteractive" />
       <Script src="/assets/vendor/throwable.js" strategy="beforeInteractive" />
       <Script src="/assets/vendor/imageObserver.js" strategy="beforeInteractive" />
 
       {/* Custom Scripts */}
-      <Script src="/assets/js/magiccursor.js" strategy="afterInteractive" />
-      <Script src="/assets/js/main.js" strategy="afterInteractive" />
             </motion.div>
   )
 }
