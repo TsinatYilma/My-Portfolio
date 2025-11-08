@@ -1,12 +1,10 @@
-import React from 'react'
+"use client"
+import React, {useEffect} from 'react'
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import ScrollWidthBox from '../ScrollEffect'
 import SmoothScroll from '../scrollSmother'
-import { useGSAP } from '@gsap/react';
-import gsap from 'gsap/all';
-import { SplitText } from 'gsap/all';
 import Script from 'next/script';
 
 const Skills = () => {
@@ -14,17 +12,7 @@ const Skills = () => {
           triggerOnce: true,
           threshold: 0.2,
         });
-  useGSAP(()=>{
-    const paraSplit = new SplitText('.section-title', {type: 'lines'})
-
-    gsap.from(paraSplit.lines,{
-      opacity: 0,
-      yPercent: 50,
-      scale: 1.5,
-      ease: "power3.inOut",
-      stagger: 0.06,
-    })
-    })
+        
   return (
     <motion.div    
               ref={sectionRef}
@@ -44,7 +32,7 @@ const Skills = () => {
                               <div className="section-title-wrapper">
                               </div>
                             </div> 
-                            <div className="client-capsule-wrapper-box fade-animation" data-t-throwable-scene="false">
+                            <div className="client-capsule-wrapper-box fade-anim" data-t-throwable-scene="false">
                               <div className="client-capsule-wrapper ">
                               <p data-t-throwable-el="">
                                 <span className="client-box px-2 py-1.5 sm:px-4 md:px-8  ">
@@ -119,10 +107,10 @@ const Skills = () => {
                   
           
       <Script src="/assets/vendor/jquery-3.7.1.min.js" strategy="beforeInteractive" />
+      <Script src="/assets/vendor/gsap.min.js" strategy="beforeInteractive" />
       <Script src="/assets/vendor/matter.js" strategy="beforeInteractive" />
       <Script src="/assets/vendor/throwable.js" strategy="beforeInteractive" />
 
-      {/* Custom Scripts */}
             </motion.div>
   )
 }
