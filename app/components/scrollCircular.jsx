@@ -15,7 +15,7 @@ const ExpandingCircle = () => {
         scrollTrigger: {
             trigger: '#art',
             start: 'top top',
-            end: '+=1000',
+            end: '+=2000',
             scrub: 0.2,
             pin: true,
         }

@@ -6,7 +6,8 @@ import ScrollWidthBox from '../ScrollEffect'
 import SmoothScroll from '../scrollSmother'
 import { useGSAP } from '@gsap/react';
 import gsap from 'gsap/all';
-import { SplitText } from 'gsap/all'
+import { SplitText } from 'gsap/all';
+import Script from 'next/script';
 
 const Skills = () => {
    const { ref: sectionRef, inView } = useInView({
@@ -115,6 +116,29 @@ const Skills = () => {
                           </div>
                         </div>
                   </section>
+                  
+          
+          <Script src="/assets/vendor/jquery-3.7.1.min.js" strategy="beforeInteractive" />
+      <Script src="/assets/vendor/bootstrap.bundle.min.js" strategy="beforeInteractive" />
+      <Script src="/assets/vendor/jquery.magnific-popup.min.js" strategy="beforeInteractive" />
+      <Script src="/assets/vendor/swiper-bundle.min.js" strategy="beforeInteractive" />
+      <Script src="/assets/vendor/gsap.min.js" strategy="beforeInteractive" />
+      <Script src="/assets/vendor/ScrollTrigger.min.js" strategy="beforeInteractive" />
+      <Script src="/assets/vendor/ScrollSmoother.min.js" strategy="beforeInteractive" />
+      <Script src="/assets/vendor/ScrollToPlugin.min.js" strategy="beforeInteractive" />
+      <Script src="/assets/vendor/SplitText.min.js" strategy="beforeInteractive" />
+      <Script src="/assets/vendor/TextPlugin.js" strategy="beforeInteractive" />
+      <Script src="/assets/vendor/customEase.js" strategy="beforeInteractive" />
+      <Script src="/assets/vendor/Flip.min.js" strategy="beforeInteractive" /> 
+      <Script src="/assets/vendor/jquery.meanmenu.min.js" strategy="beforeInteractive" />
+      <Script src="/assets/vendor/backToTop.js" strategy="beforeInteractive" />
+      <Script src="/assets/vendor/matter.js" strategy="beforeInteractive" />
+      <Script src="/assets/vendor/throwable.js" strategy="beforeInteractive" />
+      <Script src="/assets/vendor/imageObserver.js" strategy="beforeInteractive" />
+
+      {/* Custom Scripts */}
+      <Script src="/assets/js/magiccursor.js" strategy="afterInteractive" />
+      <Script src="/assets/js/main.js" strategy="afterInteractive" />
             </motion.div>
   )
 }
