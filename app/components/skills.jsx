@@ -121,7 +121,7 @@ const Skills = () => {
           <Script src="/assets/vendor/jquery-3.7.1.min.js" strategy="beforeInteractive" />
       <Script src="/assets/vendor/bootstrap.bundle.min.js" strategy="beforeInteractive" />
       <Script src="/assets/vendor/jquery.magnific-popup.min.js" strategy="beforeInteractive" />
-      <Script src="/assets/vendor/swiper-bundle.min.js" strategy="beforeInteractive" />
+      <Script src="/assets/vendor/gsap.min.js" strategy="beforeInteractive" />
       <Script src="/assets/vendor/ScrollTrigger.min.js" strategy="beforeInteractive" />
       <Script src="/assets/vendor/ScrollSmoother.min.js" strategy="beforeInteractive" />
       <Script src="/assets/vendor/ScrollToPlugin.min.js" strategy="beforeInteractive" />
