@@ -6,6 +6,7 @@ import ScrollWidthBox from '../ScrollEffect'
 import SmoothScroll from '../scrollSmother'
 import { useGSAP } from '@gsap/react';
 import gsap from 'gsap/all';
+import { SplitText } from 'gsap/all'
 
 const Skills = () => {
    const { ref: sectionRef, inView } = useInView({
