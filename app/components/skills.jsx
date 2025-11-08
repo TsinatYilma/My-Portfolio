@@ -119,7 +119,6 @@ const Skills = () => {
                   
           
       <Script src="/assets/vendor/jquery-3.7.1.min.js" strategy="beforeInteractive" />
-      <Script src="/assets/vendor/gsap.min.js" strategy="beforeInteractive" />
       <Script src="/assets/vendor/matter.js" strategy="beforeInteractive" />
       <Script src="/assets/vendor/throwable.js" strategy="beforeInteractive" />
 
