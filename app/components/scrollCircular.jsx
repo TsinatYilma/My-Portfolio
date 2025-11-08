@@ -45,7 +45,7 @@ const ExpandingCircle = () => {
 
   return (
     <>
-    <div id="art" className="min-h-screen w-full overflow-hidden flex border ">
+    <div id="art" className="min-h-screen w-full overflow-hidden flex ">
       {/* Hero Circle Section */}
       <div className="circle flex justify-center items-center p-[2%] bg-[#A53B2F] ">
         <h1 className="circleText text-[2vw] font-instBold tracking-tighter ">LET'S WORK</h1>
