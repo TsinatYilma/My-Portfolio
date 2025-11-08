@@ -8,7 +8,7 @@ import { useInView } from 'react-intersection-observer';
 import ScrollWidthBox from './ScrollEffect'
 import IntroText from './components/IntroText'
  import SmoothScroll from './scrollSmother'
- import ExpandingCircle from './components/scrollCircular'
+import ExpandingCircle from './components/scrollCircular'
 import Projects from './components/projects'
 import Skills from './components/skills'
 import gsap, { ScrollSmoother, ScrollTrigger } from 'gsap/all';
@@ -42,7 +42,7 @@ export default function Home() {
             
             <Projects />
             <Skills/>
-            
+            <ExpandingCircle/>
             
 
             
