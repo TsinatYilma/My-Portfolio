@@ -79,16 +79,16 @@ const projects = () => {
               </div>
 
             </div>
-            <div className="works-wrapper-box  flex justify-center">
-              <div className="container large">
-                <div className="works-wrapper-8">
+            <div className="works-wrapper-box  flex-col sm:flex justify-center border">
+              <div className="container large border min-w-full">
+                <div className="works-wrapper-8 border  ">
                   <div className="work-box " data-cursor-text="View Project" onClick={() => window.open("https://github.com/TsinatYilma/book-store", "_blank")}>
                     <div className="thumb " >
                       <div className="image "> 
                         <a href=""><img className='h-[25vw]  scale' src="/imgs/book-store.png" alt="image"/></a>
                       </div>
                     </div>
-                    <div className="content  px-[4.5vw]">
+                    <div className="content  sm:px-[4.5vw]">
                       <h3 className="title"><a href="portfolio-details.html">Book Store</a></h3>
                       <div className="meta">
                         <span className="date">2025</span>
@@ -110,13 +110,13 @@ const projects = () => {
                       </div>
                     </div>
                   </div>
-                  <div className="work-box" data-cursor-text="View Project"  onClick={() => window.open("https://better-auth.farmui.com", "_blank")}>
+                  <div className="work-box border" data-cursor-text="View Project"  onClick={() => window.open("https://better-auth.farmui.com", "_blank")}>
                     <div className="thumb  ">
                       <div className="image  " >
                         <a href=""><img className='h-[25vw] scale' src="/imgs/betterauth-ui.png" alt="image"/></a>
                       </div>
                     </div>
-                    <div className="content px-[4.5vw]">
+                    <div className="content sm:px-[4.5vw]">
                       <h3 className="title"><a href="portfolio-details.html">BetterAuth-UI</a></h3>
                       <div className="meta">
                         <span className="date">2025</span>
@@ -144,7 +144,7 @@ const projects = () => {
                         <a href=""><img className='h-[25vw] scale' src="/imgs/wedaseMariam.png" alt="image"/></a>
                       </div>
                     </div>
-                    <div className="content px-[4.5vw]">
+                    <div className="content sm:px-[4.5vw]">
                       <h3 className="title"><a href="">Wedase Mariam Zema</a></h3>
                       <div className="meta">
                         <span className="date">2024</span>

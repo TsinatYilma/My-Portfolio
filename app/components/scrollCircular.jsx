@@ -45,9 +45,9 @@ const ExpandingCircle = () => {
 
   return (
     <>
-    <div id="art" className="min-h-screen w-full overflow-hidden flex ">
+    <div id="art" className="min-h-screen w-full overflow-hidden flex border ">
       {/* Hero Circle Section */}
-      <div className="circle flex justify-center items-center p-[2%] bg-[#A53B2F] ">
+      <div className="circle flex justify-center items-center p-[2%] bg-[#A53B2F] border">
         <h1 className="circleText text-[2vw] font-instBold tracking-tighter ">LET'S WORK</h1>
       </div>
 
@@ -67,33 +67,33 @@ const ExpandingCircle = () => {
           <div className="container px-[5%] absolute bottom-0 ">
             <div className="team-area-inner py-[5%] "> 
               <div className="ceo-spotlight fade-anim  relative bottom-0 ">
-                <div className="ceo-container absolute bottom-0">
-                  <div className="ceo-image-wrapper">
-                    <div className="ceo-thumb">
-                      <a href="team-details.html">
-                        <img src="/imgs/me-pn.jpg" alt="Kirubel Habtamu" className=" max-h-[35vw] rounded " />
-                      </a>
+                <div className="ceo-container absolute bottom-0  min-w-full border">
+                   <div className="ceo-image-wrapper border border-red-600  ">
+                       <div className="ceo-thumb ">
+                          <a href="team-details.html">
+                            <img src="/imgs/me-pn.jpg" alt="Kirubel Habtamu" className=" max-h-[35vw] rounded " />
+                          </a>
+                        </div>
                     </div>
-                  </div>
-                  <div className="ceo-content">
-                    <div className="ceo-info font-instRegular">
-                      <h2 className="ceo-name text-[2vw] font-bold">
-                        <a href="team-details.html">Tsinat Yilma</a>
-                      </h2>
-                      <span className="ceo-position text-[1.4vw]">Software Developer</span>
-                      <div className="ceo-description text-[1.2vw] max-w-[60ch] mx-auto">
-                        <p>
-                          I'm Tsinat Yilma, a front-end developer focused on building fast, responsive interfaces with React and Next.js. I love crafting smooth animations, clean layouts, and immersive user experiences.
-                        </p>
-                      </div>
-                      <div className="ceo-social flex gap-[2vw] justify-start mt-[2vw] ">
-                        <a href="https://t.me/dvlinz" target="_blank" rel="noopener noreferrer" className="socialLink text-[1.2vw]"><button>Telegram</button></a>
-                        <a href="#" className="socialLink text-[1.2vw] transition-all z-50 duration-300 hover:bg-[#A53B2F] hover:border-[#A53B2F] hover:-translate-y-0.5 hover:underline ">LinkedIn</a>
-                        <a href="#" className="socialLink text-[1.2vw]">Twitter</a>
-                        
-                      </div>
+                    <div className="ceo-content border">
+                        <div className="ceo-info font-instRegular ">
+                          <h2 className="ceo-name text-sm sm:text-[2vw] font-bold">
+                            <a href="">Tsinat Yilma</a>
+                          </h2>
+                          <span className="ceo-position text-[1.4vw]">Software Developer</span>
+                          <div className="ceo-description text-[1.2vw] max-w-[90ch] mx-auto">
+                            <p>
+                              I'm Tsinat Yilma, a front-end developer focused on building fast, responsive interfaces with React and Next.js. I love crafting smooth animations, clean layouts, and immersive user experiences.
+                            </p>
+                          </div>
+                          <div className="ceo-social flex gap-[2vw] justify-start mt-[2vw] ">
+                            <a href="https://t.me/dvlinz" target="_blank" rel="noopener noreferrer" className="socialLink text-[1.2vw]"><button>Telegram</button></a>
+                            <a href="#" className="socialLink text-[1.2vw] transition-all z-50 duration-300 hover:bg-[#A53B2F] hover:border-[#A53B2F] hover:-translate-y-0.5 hover:underline ">LinkedIn</a>
+                            <a href="#" className="socialLink text-[1.2vw]">Twitter</a>
+                            
+                          </div>
+                        </div>
                     </div>
-                  </div>
                 </div>
               </div>
             </div>

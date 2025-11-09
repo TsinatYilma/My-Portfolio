@@ -443,14 +443,33 @@ body {
 .ceo-container {
   display: flex;
   align-items: center;
-  gap: 60px;
+  gap: 0px;
   max-width: 1200px;
   margin: 0 auto;
 }
 
-.ceo-image-wrapper {
-  flex: 0 0 400px;
+
+@media (max-width: 768px) {
+  .ceo-container {
+    flex-direction: column;
+    gap: 40px;
+  }
+  
+  .ceo-image-wrapper {
+    flex: none;
+    max-width: 300px;
+  }
+  
+  .ceo-content {
+    padding-left: 0;
+    text-align: center;
+  }
+  
+  .ceo-name {
+    font-size: 36px;
+  }
 }
+
 
 .ceo-thumb {
   position: relative;
@@ -816,7 +835,8 @@ body, html {
 }
 @media (max-width: 575px) {
   .works-wrapper-8 {
-    grid-template-columns: repeat(1, 1fr);
+    display: flex;
+    flex-direction: column;
   }
 }
 .works-wrapper-8 > * .image {
@@ -829,7 +849,7 @@ body, html {
   overflow: hidden;
   position: relative;
   border-radius: 20px;
-}
+} 
 .works-wrapper-8 .work-box .thumb:hover .t-btn {
   opacity: 1;
 }
