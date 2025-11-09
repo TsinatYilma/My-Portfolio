@@ -16,7 +16,11 @@ import { useGSAP } from '@gsap/react';
 import { Content } from 'next/font/google';
 import Smoother from './components/smoothScroll'
 
- 
+
+if (typeof window !== 'undefined') {
+  window.gsap = gsap;
+}
+
 export default function Home() {
 
   const { ref: sectionRef, inView } = useInView({
