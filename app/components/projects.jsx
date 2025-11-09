@@ -155,11 +155,11 @@ const projects = () => {
                   <div className="work-box" data-cursor-text="View Project" onClick={() => window.open("https://github.com/TsinatYilma/BookStoreApp", "_blank")}>
                     <div className="thumb">
                       <div className="image " > 
-                        <a href=""><img className='h-[25vw] scale' src="/imgs/image-3.webp" alt="image"/></a>
+                        <a href=""><img className='h-[25vw] scale' src="/imgs/bookstoreapp.png" alt="image"/></a>
                       </div>
                     </div>
                     <div className="content ">
-                      <h3 className="title"><a href="portfolio-details.html">BookStore-App</a></h3>
+                      <h3 className="title"><a href="https://github.com/TsinatYilma/BookStoreApp">BookStore-App</a></h3>
                       <div className="meta">
                         <span className="date">2025</span>
                         <span className="tag">mobile app</span>
