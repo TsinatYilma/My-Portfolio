@@ -53,7 +53,7 @@ const ExpandingCircle = () => {
 
       {/* Headline Section */}
       <div className="circleIn w-full text-center relative bottom-0  flex items-center">
-        <h1 className="font-[var(--font_instrumentsans)]  sm:text-[4vw] absolute sm:bottom-[10vw] leading-tight  w-full px-[5%]">
+        <h1 className="font-[var(--font_instrumentsans)] text-[8vw]  sm:text-[4vw] absolute sm:bottom-[10vw] leading-tight  w-full px-[5%]">
           It’s all about the <br />
           unique <span className="text-gray-600">thinking</span> with <br />
           <span className="text-gray-600">creativity</span> and <span className="text-gray-600">quality</span> <br />

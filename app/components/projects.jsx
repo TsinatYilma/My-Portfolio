@@ -46,7 +46,7 @@ const projects = () => {
       );
       });
   return (
-  <section className="work-area-work-page ">
+  <section className="work-area-work-page  px-2 ">
           <div className="work-area-work-page-inner">
             <div className="container large  text-center min-w-full">
               <div className="section-header fade-anim ">
@@ -79,13 +79,13 @@ const projects = () => {
               </div>
 
             </div>
-            <div className="works-wrapper-box    flex-col sm:flex justify-center ">
+            <div className="works-wrapper-box  flex-col   sm:flex justify-center ">
               <div className="container large  min-w-full">
                 <div className="works-wrapper-8  ">
                   <div className="work-box " data-cursor-text="View Project" onClick={() => window.open("https://github.com/TsinatYilma/book-store", "_blank")}>
                     <div className="thumb  " >
-                      <div className="image "> 
-                        <a href=""><img className='h-40 sm:h-[25vw]  scale' src="/imgs/book-store.png" alt="image"/></a>
+                      <div className="image   "> 
+                        <a href=""><img className='h-50 sm:h-[25vw]   scale' src="/imgs/book-store.png" alt="image"/></a>
                       </div>
                     </div>
                     <div className="content  sm:px-[4.5vw]">
@@ -99,7 +99,7 @@ const projects = () => {
                   <div className="work-box " data-cursor-text="View Project"  onClick={() => window.open("https://gsap-cpr.vercel.app/", "_blank")}>
                     <div className="thumb  ">
                       <div className="image  " >
-                        <a href=""><img className='h-40 sm:h-[25vw] scale' src="/imgs/mojito.png" alt="image"/></a>
+                        <a href=""><img className='h-50 sm:h-[25vw] scale' src="/imgs/mojito.png" alt="image"/></a>
                       </div>
                     </div>
                     <div className="content">
@@ -113,7 +113,7 @@ const projects = () => {
                   <div className="work-box " data-cursor-text="View Project"  onClick={() => window.open("https://better-auth.farmui.com", "_blank")}>
                     <div className="thumb  ">
                       <div className="image  " >
-                        <a href=""><img className='h-40 sm:h-[25vw] scale' src="/imgs/betterauth-ui.png" alt="image"/></a>
+                        <a href=""><img className='h-50 sm:h-[25vw] scale' src="/imgs/betterauth-ui.png" alt="image"/></a>
                       </div>
                     </div>
                     <div className="content sm:px-[4.5vw]">
@@ -127,7 +127,7 @@ const projects = () => {
                   <div className="work-box" data-cursor-text="View Project">
                     <div className="thumb">
                       <div className="image  " >
-                        <a href="portfolio-details.html"><img className='h-40 sm:h-[25vw] scale' src="/imgs/image-5.webp" alt="image"/></a>
+                        <a href="portfolio-details.html"><img className='h-50 sm:h-[25vw] scale' src="/imgs/image-5.webp" alt="image"/></a>
                       </div>
                     </div>
                     <div className="content ">
@@ -141,7 +141,7 @@ const projects = () => {
                   <div className="work-box" data-cursor-text="View Project" onClick={() => window.open("https://abiye-wedase.vercel.app/", "_blank")}>
                     <div className="thumb">
                       <div className="image " >
-                        <a href=""><img className='h-40 sm:h-[25vw] scale' src="/imgs/wedaseMariam.png" alt="image"/></a>
+                        <a href=""><img className='h-50 sm:h-[25vw] scale' src="/imgs/wedaseMariam.png" alt="image"/></a>
                       </div>
                     </div>
                     <div className="content sm:px-[4.5vw]">
@@ -155,7 +155,7 @@ const projects = () => {
                   <div className="work-box" data-cursor-text="View Project" onClick={() => window.open("https://github.com/TsinatYilma/BookStoreApp", "_blank")}>
                     <div className="thumb">
                       <div className="image " > 
-                        <a href=""><img className='h-40 sm:h-[25vw] scale' src="/imgs/bookstoreapp.png" alt="image"/></a>
+                        <a href=""><img className='h-50 sm:h-[25vw] scale' src="/imgs/bookstoreapp.png" alt="image"/></a>
                       </div>
                     </div>
                     <div className="content ">

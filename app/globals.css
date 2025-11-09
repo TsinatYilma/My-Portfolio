@@ -852,7 +852,7 @@ body, html {
   overflow: hidden;
   position: relative;
   border-radius: 20px;
-  transform: scale(0.9);
+  transform: scale(1.1);
 }
 .works-wrapper-8 .work-box .thumb .image img {
   transform-origin: center;

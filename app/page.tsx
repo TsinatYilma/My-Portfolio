@@ -33,7 +33,7 @@ export default function Home() {
     threshold: 0.2,
   });
   return (
-    <div className="bg-black  text-white  px-2">
+    <div className="bg-black  text-white">
            {/* Vendor Scripts */}
 
      
