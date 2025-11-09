@@ -852,7 +852,7 @@ body, html {
   overflow: hidden;
   position: relative;
   border-radius: 20px;
-  transform: scale(1.1);
+  transform: scale(0.9);
 }
 .works-wrapper-8 .work-box .thumb .image img {
   transform-origin: center;
@@ -905,6 +905,9 @@ body, html {
   }
   .works-wrapper-8 > * .image {
     transform-origin: bottom left;
+  }
+  .works-wrapper-8 .work-box .thumb .image {
+    transform: scale(1.1);
   }
 }
 @media only screen and (max-width: 1199px) {
