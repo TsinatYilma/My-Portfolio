@@ -31,11 +31,11 @@ const IntroText = () => {
     <div className="intro mt-20  ">
         <hr className="w-32 mb-5" />
         <div className="flex flex-col items-center text-center min-w-[1000px]  ">
-            <h2 id='introHead' className="title  text-[4vw] font-bold text-gradient leading-tight "
+            <h2 id='introHead' className="title text-[6vw] sm:text-[4vw] font-bold text-gradient leading-tight "
             >
                 Shalom!, I'm The Developer  You <br /> have been Looking For.</h2>
             <br />
-            <p className="subtitle  text-[1vw] w-full">I am a junior web developer who loves to work on client-based <br /> web applications and  looks forward to solving human problems through the web.</p>
+            <p className="subtitle  text-[1.9vw] sm:text-[1vw] w-full">I am a junior web developer who loves to work on client-based <br /> web applications and  looks forward to solving human problems through the web.</p>
         </div>
     </div>
   )

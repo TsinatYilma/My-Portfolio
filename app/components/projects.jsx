@@ -52,10 +52,10 @@ const projects = () => {
               <div className="section-header fade-anim ">
                 <div className="section-title-wrapper ">
                   <div className="subtitle-wrapper">
-                    <span className="section-subtitle text-[1.5vw]">Recent work</span>
+                    <span className="section-subtitle text-lg sm:text-[1.5vw]">Recent work</span>
                   </div>
                   <div className="title-wrapper text-[1.3vw]">
-                    <h2 className="section-title  text-start font-instRegular text-[4vw] leading-none  w-full">Creative works
+                    <h2 className="section-title  text-start font-instRegular text-sm sm:text-[4vw] leading-none  w-full">Creative works
                       with awsome output.</h2>
                   </div>
                 </div>
@@ -79,13 +79,13 @@ const projects = () => {
               </div>
 
             </div>
-            <div className="works-wrapper-box  flex-col sm:flex justify-center border">
-              <div className="container large border min-w-full">
-                <div className="works-wrapper-8 border  ">
+            <div className="works-wrapper-box    flex-col sm:flex justify-center ">
+              <div className="container large  min-w-full">
+                <div className="works-wrapper-8  ">
                   <div className="work-box " data-cursor-text="View Project" onClick={() => window.open("https://github.com/TsinatYilma/book-store", "_blank")}>
-                    <div className="thumb " >
+                    <div className="thumb  " >
                       <div className="image "> 
-                        <a href=""><img className='h-[25vw]  scale' src="/imgs/book-store.png" alt="image"/></a>
+                        <a href=""><img className='h-40 sm:h-[25vw]  scale' src="/imgs/book-store.png" alt="image"/></a>
                       </div>
                     </div>
                     <div className="content  sm:px-[4.5vw]">
@@ -96,10 +96,10 @@ const projects = () => {
                       </div>
                     </div>
                   </div>
-                  <div className="work-box" data-cursor-text="View Project"  onClick={() => window.open("https://gsap-cpr.vercel.app/", "_blank")}>
+                  <div className="work-box " data-cursor-text="View Project"  onClick={() => window.open("https://gsap-cpr.vercel.app/", "_blank")}>
                     <div className="thumb  ">
                       <div className="image  " >
-                        <a href=""><img className='h-[25vw] scale' src="/imgs/mojito.png" alt="image"/></a>
+                        <a href=""><img className='h-40 sm:h-[25vw] scale' src="/imgs/mojito.png" alt="image"/></a>
                       </div>
                     </div>
                     <div className="content">
@@ -110,10 +110,10 @@ const projects = () => {
                       </div>
                     </div>
                   </div>
-                  <div className="work-box border" data-cursor-text="View Project"  onClick={() => window.open("https://better-auth.farmui.com", "_blank")}>
+                  <div className="work-box " data-cursor-text="View Project"  onClick={() => window.open("https://better-auth.farmui.com", "_blank")}>
                     <div className="thumb  ">
                       <div className="image  " >
-                        <a href=""><img className='h-[25vw] scale' src="/imgs/betterauth-ui.png" alt="image"/></a>
+                        <a href=""><img className='h-40 sm:h-[25vw] scale' src="/imgs/betterauth-ui.png" alt="image"/></a>
                       </div>
                     </div>
                     <div className="content sm:px-[4.5vw]">
@@ -127,7 +127,7 @@ const projects = () => {
                   <div className="work-box" data-cursor-text="View Project">
                     <div className="thumb">
                       <div className="image  " >
-                        <a href="portfolio-details.html"><img className='h-[25vw] scale' src="/imgs/image-5.webp" alt="image"/></a>
+                        <a href="portfolio-details.html"><img className='h-40 sm:h-[25vw] scale' src="/imgs/image-5.webp" alt="image"/></a>
                       </div>
                     </div>
                     <div className="content ">
@@ -141,7 +141,7 @@ const projects = () => {
                   <div className="work-box" data-cursor-text="View Project" onClick={() => window.open("https://abiye-wedase.vercel.app/", "_blank")}>
                     <div className="thumb">
                       <div className="image " >
-                        <a href=""><img className='h-[25vw] scale' src="/imgs/wedaseMariam.png" alt="image"/></a>
+                        <a href=""><img className='h-40 sm:h-[25vw] scale' src="/imgs/wedaseMariam.png" alt="image"/></a>
                       </div>
                     </div>
                     <div className="content sm:px-[4.5vw]">
@@ -155,7 +155,7 @@ const projects = () => {
                   <div className="work-box" data-cursor-text="View Project" onClick={() => window.open("https://github.com/TsinatYilma/BookStoreApp", "_blank")}>
                     <div className="thumb">
                       <div className="image " > 
-                        <a href=""><img className='h-[25vw] scale' src="/imgs/bookstoreapp.png" alt="image"/></a>
+                        <a href=""><img className='h-40 sm:h-[25vw] scale' src="/imgs/bookstoreapp.png" alt="image"/></a>
                       </div>
                     </div>
                     <div className="content ">

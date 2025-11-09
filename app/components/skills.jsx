@@ -27,7 +27,7 @@ const Skills = () => {
                         <div className="title-wrapper  px-[1vw] ">
                           <h2 className="section-title font-instrumentsans-medium word-anim text-[4vw] leading-none font-instRegular"><span className='text-[#000]'>In Tech</span>, the tools you choose shape the solutions you build.</h2>
                         </div>
-                          <div className="client-area-inner section-spacing-top border-r border-l border-dashed linear-gradient(to right, black 80%, transparent 100%)">
+                          <div className="client-area-inner section-spacing-top sm:border-r sm:border-l sm:border-dashed linear-gradient(to right, black 80%, transparent 100%)">
                             <div className="section-content fade-anim">
                               <div className="section-title-wrapper">
                               </div>

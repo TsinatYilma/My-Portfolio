@@ -33,13 +33,13 @@ export default function Home() {
     threshold: 0.2,
   });
   return (
-    <div className="bg-black  text-white border border-red-500">
+    <div className="bg-black  text-white  px-2">
            {/* Vendor Scripts */}
 
      
          
         <div className="main ">
-            <div id="Home" className="flex flex-col justify-center  items-center min-h-screen">
+            <div id="Home" className="flex flex-col justify-center  items-center min-h-[60vh] sm:min-h-screen">
              <IntroText />
             </div>
             <Projects />
