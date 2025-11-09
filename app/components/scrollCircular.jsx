@@ -79,15 +79,15 @@ const ExpandingCircle = () => {
                             <a href="">Tsinat Yilma</a>
                           </h2>
                           <span className="ceo-position text-[1.4vw]">Software Developer</span>
-                          <div className="ceo-description text-[1.2vw] max-w-[90ch] mx-auto">
+                          <div className="ceo-description text-[1.2vw] sm:max-w-[50ch] mx-auto sm:mx-0 ">
                             <p>
                               I'm Tsinat Yilma, a front-end developer focused on building fast, responsive interfaces with React and Next.js. I love crafting smooth animations, clean layouts, and immersive user experiences.
                             </p>
                           </div>
                           <div className="ceo-social flex gap-[2vw] justify-center sm:justify-start mt-[2vw]   ">
-                            <a href="https://t.me/dvlinz" target="_blank" rel="noopener noreferrer" className="socialLink text-[1.2vw]"><button>Telegram</button></a>
-                            <a href="#" className="socialLink text-[1.2vw] transition-all z-50 duration-300 hover:bg-[#A53B2F] hover:-[#A53B2F] hover:-translate-y-0.5 hover:underline ">LinkedIn</a>
-                            <a href="#" className="socialLink text-[1.2vw]">Twitter</a>
+                            <a href="https://t.me/dvlinz" target="_blank" rel="noopener noreferrer" className="socialLink  text-[10px] sm:text-[1.2vw]"><button>Telegram</button></a>
+                            <a href="#" className="socialLink  text-[10px] sm:text-[1.2vw] transition-all z-50 duration-300 hover:bg-[#A53B2F] hover:-[#A53B2F] hover:-translate-y-0.5 hover:underline ">LinkedIn</a>
+                            <a href="#" className="socialLink text-[10px] sm:text-[1.2vw]">Twitter</a>
                             
                           </div>
                         </div>
