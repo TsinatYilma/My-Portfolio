@@ -4,13 +4,13 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
-export default function ScrollWidthBox({img}) {
+export default function ScrollWidthBox({ img }) {
   const imgRef = useRef(null);
 
   useEffect(() => {
     gsap.to(imgRef.current, {
       width: "100%", // target width
-      ease: "power2.out", 
+      ease: "power2.out",
       scrollTrigger: {
         trigger: imgRef.current,
         start: "top 100%", // when image enters viewport
@@ -21,13 +21,8 @@ export default function ScrollWidthBox({img}) {
   }, []);
 
   return (
-    <div className="thumb flex justify-end " data-lag='2'>
-      <img
-        ref={imgRef}
-        src={img}
-        alt="image"
-        style={{ width: "35%",   }}
-      />
+    <div className="thumb flex justify-end " data-lag="2">
+      <img ref={imgRef} src={img} alt="image" style={{ width: "35%" }} />
     </div>
   );
 }
