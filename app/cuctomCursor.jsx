@@ -1,5 +1,5 @@
 // CustomCursor.js
-'use client'
+"use client";
 import { useEffect } from "react";
 
 export default function CustomCursor() {
@@ -35,7 +35,5 @@ export default function CustomCursor() {
     };
   }, []);
 
-  return (
-    <div className="custom-cursor "></div>
-  );
+  return <div className="custom-cursor "></div>;
 }

@@ -1,107 +1,148 @@
-"use client"
-import  {useEffect}  from 'react';
-import gsap from 'gsap';
-import ScrollTrigger from 'gsap/ScrollTrigger';
-import { useGSAP } from '@gsap/react';
-import Script from 'next/script';
-import '@/app/globals.css'
+"use client";
+import { useEffect } from "react";
+import gsap from "gsap";
+import ScrollTrigger from "gsap/ScrollTrigger";
+import { useGSAP } from "@gsap/react";
+import Script from "next/script";
+import "@/app/globals.css";
 
 gsap.registerPlugin(ScrollTrigger);
 
 const ExpandingCircle = () => {
-  
-  useGSAP(()=>{
-    gsap.timeline({
+  useGSAP(() => {
+    gsap
+      .timeline({
         scrollTrigger: {
-            trigger: '#art',
-            start: 'top top',
-            end: '+=2000',
-            scrub: 0.2,
-            pin: true,
-        }
-    })
-    .to('.circle',{
-        scale: 30, opacity: 0.1, maskPosition: 'center', maskSize: '400%', duration: 3, ease: 'power1.inOut', 
-    })
-    .to('.circleText',{
-      scale: 30, opacity: 0, maskPosition: 'center', maskSize: '400%', duration: 1, ease: 'power1.inOut', 
-  })
-    .from('.circleIn',{
-      opacity: 0,
-      y: 100,
-      ease: 'power2.out',
-    }) .to('.circleIn', {
-      opacity: 0,
-      y: -100,
-      duration: 1,
-      ease: 'power2.in',
-    }).from('.nextSection', {
-      opacity: 0,
-      y: 100,
-      duration: 1,
-      ease: 'power2.out',
-    })
-})
+          trigger: "#art",
+          start: "top top",
+          end: "+=2000",
+          scrub: 0.2,
+          pin: true,
+        },
+      })
+      .to(".circle", {
+        scale: 30,
+        opacity: 0.1,
+        maskPosition: "center",
+        maskSize: "400%",
+        duration: 3,
+        ease: "power1.inOut",
+      })
+      .to(".circleText", {
+        scale: 30,
+        opacity: 0,
+        maskPosition: "center",
+        maskSize: "400%",
+        duration: 1,
+        ease: "power1.inOut",
+      })
+      .from(".circleIn", {
+        opacity: 0,
+        y: 100,
+        ease: "power2.out",
+      })
+      .to(".circleIn", {
+        opacity: 0,
+        y: -100,
+        duration: 1,
+        ease: "power2.in",
+      })
+      .from(".nextSection", {
+        opacity: 0,
+        y: 100,
+        duration: 1,
+        ease: "power2.out",
+      });
+  });
+  const handleTelegram = () => {
+    console.log("am here dude");
+    window.open("https://t.me/dvlinz", "_blank", "noopener,noreferrer");
+  };
 
   return (
     <>
-    <div id="art" className="min-h-screen w-full overflow-hidden flex  ">
-      {/* Hero Circle Section */}
-      <div className="circle flex justify-center items-center  bg-[#A53B2F]  w-[50vw] h-[50vw] sm:w-[20vw] sm:h-[20vw] " >
-        <h1 className="circleText sm:text-[2vw] font-instBold tracking-tighter ">LET'S WORK</h1>
-      </div>
+      <div id="art" className="min-h-screen w-full overflow-hidden flex  ">
+        {/* Hero Circle Section */}
+        <div className="circle flex justify-center items-center  bg-[#A53B2F]  w-[50vw] h-[50vw] sm:w-[20vw] sm:h-[20vw] ">
+          <h1 className="circleText sm:text-[2vw] font-instBold tracking-tighter ">
+            LET'S WORK
+          </h1>
+        </div>
 
-      {/* Headline Section */}
-      <div className="circleIn w-full text-center relative bottom-0  flex items-center">
-        <h1 className="font-[var(--font_instrumentsans)] text-[8vw]  sm:text-[4vw] absolute sm:bottom-[10vw] leading-tight  w-full px-[5%]">
-          It’s all about the <br />
-          unique <span className="text-gray-600">thinking</span> with <br />
-          <span className="text-gray-600">creativity</span> and <span className="text-gray-600">quality</span> <br />
-          for complex solution <br /> in easy way
-        </h1>
-      </div>
+        {/* Headline Section */}
+        <div className="circleIn w-full text-center relative bottom-0  flex items-center">
+          <h1 className="font-[var(--font_instrumentsans)] text-[8vw]  sm:text-[4vw] absolute sm:bottom-[10vw] leading-tight  w-full px-[5%]">
+            It’s all about the <br />
+            unique <span className="text-gray-600">thinking</span> with <br />
+            <span className="text-gray-600">creativity</span> and{" "}
+            <span className="text-gray-600">quality</span> <br />
+            for complex solution <br /> in easy way
+          </h1>
+        </div>
 
-      {/* Team Section */}
-      <div className="nextSection w-full justify-center absolute bottom-0 ">
-        <section className="team-area  relative ">
-          <div className="container px-[5%] absolute bottom-0 ">
-            <div className="team-area-inner py-[5%] "> 
-              <div className="ceo-spotlight fade-anim  relative bottom-0  min-w-full ">
-                <div className="ceo-container absolute bottom-0 sm:bottom-0  min-w-full mx-auto">
-                   <div className="ceo-image-wrapper  ">
-                         <div className="ceo-thumb ">
-                            <img src="/imgs/me-pn.jpg" alt="Kirubel Habtamu" className=" sm:max-h-[35vw] rounded " />
-                         </div>
+        {/* Team Section */}
+        <div className="nextSection w-full justify-center absolute bottom-0 z-100">
+          <section className="team-area  relative ">
+            <div className="container px-[5%] absolute bottom-0 ">
+              <div className="team-area-inner py-[5%] ">
+                <div className="ceo-spotlight fade-anim  relative bottom-0  min-w-full ">
+                  <div className="ceo-container absolute bottom-0 sm:bottom-0  min-w-full mx-auto">
+                    <div className="ceo-image-wrapper  ">
+                      <div className="ceo-thumb ">
+                        <img
+                          src="/imgs/me-pn.jpg"
+                          alt="Kirubel Habtamu"
+                          className=" sm:max-h-[35vw] rounded "
+                        />
+                      </div>
                     </div>
                     <div className="ceo-content pl-0 sm:pl-10">
-                        <div className="ceo-info font-instRegular  min-w-full  ">
-                          <h2 className="ceo-name text-sm sm:text-[2vw] font-bold  ">
-                            <a href="">Tsinat Yilma</a>
-                          </h2>
-                          <span className="ceo-position text-[1.4vw]">Software Developer</span>
-                          <div className="ceo-description text-[1.2vw] sm:max-w-[50ch] mx-auto sm:mx-0 ">
-                            <p>
-                              I'm Tsinat Yilma, a front-end developer focused on building fast, responsive interfaces with React and Next.js. I love crafting smooth animations, clean layouts, and immersive user experiences.
-                            </p>
-                          </div>
-                          <div className="ceo-social flex gap-[2vw] justify-center sm:justify-start mt-[2vw]   ">
-                            <a href="https://t.me/dvlinz" target="_blank" rel="noopener noreferrer" className="socialLink  text-[10px] sm:text-[1.2vw]"><button>Telegram</button></a>
-                            <a href="#" className="socialLink  text-[10px] sm:text-[1.2vw] transition-all z-50 duration-300 hover:bg-[#A53B2F] hover:-[#A53B2F] hover:-translate-y-0.5 hover:underline ">LinkedIn</a>
-                            <a href="#" className="socialLink text-[10px] sm:text-[1.2vw]">Twitter</a>
-                            
-                          </div>
+                      <div className="ceo-info font-instRegular  min-w-full  ">
+                        <h2 className="ceo-name text-sm sm:text-[2vw] font-bold  ">
+                          <a href="">Tsinat Yilma</a>
+                        </h2>
+                        <span className="ceo-position text-[1.4vw]">
+                          Software Developer
+                        </span>
+                        <div className="ceo-description text-[1.2vw] sm:max-w-[50ch] mx-auto sm:mx-0 ">
+                          <p>
+                            I'm Tsinat Yilma, a front-end developer focused on
+                            building fast, responsive interfaces with React and
+                            Next.js. I love crafting smooth animations, clean
+                            layouts, and immersive user experiences.
+                          </p>
                         </div>
+                        <div className="ceo-social flex gap-[2vw] justify-center sm:justify-start mt-[2vw]   ">
+                          <a
+                            href="https://t.me/dvlinz"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="socialLink text-[10px] sm:text-[1.2vw] px-3 py-1 rounded bg-blue-500 text-white inline-block"
+                          >
+                              Telegram
+                          </a>
+                          <a
+                            href="#"
+                            className="socialLink  text-[10px] sm:text-[1.2vw] transition-all z-50 duration-300 hover:bg-[#A53B2F] hover:-[#A53B2F] hover:-translate-y-0.5 hover:underline "
+                          >
+                            LinkedIn
+                          </a>
+                          <a
+                            href="#"
+                            className="socialLink text-[10px] sm:text-[1.2vw]"
+                          >
+                            Twitter
+                          </a>
+                        </div>
+                      </div>
                     </div>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-        </section>
+          </section>
+        </div>
       </div>
-    </div>
-
-    
-      
     </>
   );
 };
