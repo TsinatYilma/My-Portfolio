@@ -119,7 +119,7 @@ const ExpandingCircle = () => {
                             rel="noopener noreferrer"
                             className="socialLink text-[10px] sm:text-[1.2vw] px-3 py-1 rounded bg-blue-500 text-white inline-block"
                           >
-                              Telegram
+                            Telegram
                           </a>
                           <a
                             href="#"
