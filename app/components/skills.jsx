@@ -24,7 +24,7 @@ const Skills = () => {
       <section className="client-area-service-page   ">
         <div className="container large  mx-auto ">
           <div className="title-wrapper  px-[1vw] ">
-            <h2 className="section-title font-instrumentsans-medium word-anim text-[4vw] leading-none font-instRegular">
+            <h2 className="section-title font-Geist word-anim text-[4vw] leading-none transition-all hover:text-[#d2857c] tracking-tight  [word-spacing:-0.39em] ">
               <span className="text-[#000]">In Tech</span>, the tools you choose
               shape the solutions you build.
             </h2>

@@ -60,7 +60,7 @@ const projects = () => {
               </div>
             </div>
           </div>
-          <div className="section-content-wrapper   flex flex-col gap-2 fade-anim text-[1.3vw] text-gray-500">
+          <div className="section-content-wrapper   flex flex-col gap-2 fade-anim text-[1.3vw] text-gray-500 font-stepsMono ">
             <div className="info-list">
               <ul>
                 <li>design</li>
