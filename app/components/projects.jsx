@@ -32,11 +32,12 @@ const projects = () => {
     });
     gsap.from(".work-area-work-page", {
       opacity: 0,
+      y: 100,
       duration: 1.5,
       ease: "power2.inOut",
       scrollTrigger: {
         trigger: ".work-area-work-page",
-        start: "top 60%",
+        start: "top 90%",
         end: "bottom top",
       },
     });
@@ -59,7 +60,7 @@ const projects = () => {
               </div>
             </div>
           </div>
-          <div className="section-content-wrapper fade-anim text-[1.3vw] text-gray-500">
+          <div className="section-content-wrapper   flex flex-col gap-2 fade-anim text-[1.3vw] text-gray-500">
             <div className="info-list">
               <ul>
                 <li>design</li>
@@ -68,7 +69,7 @@ const projects = () => {
                 <li>Writing</li>
               </ul>
             </div>
-            <div className="section-content">
+            <div className="section-content  flex flex-col gap-2">
               <div className="text-wrapper" data-direction="right">
                 <p className="text text-[1.3vw]">
                   We take a comprehensive approach to the creation and
@@ -82,17 +83,17 @@ const projects = () => {
         <div className="works-wrapper-box  flex-col   sm:flex justify-center ">
           <div className="container large  min-w-full">
             <div className="works-wrapper-8  ">
-              <div
-                className="work-box "
-                data-cursor-text="View Project"
-                onClick={() =>
-                  window.open(
-                    "https://github.com/TsinatYilma/book-store",
-                    "_blank"
-                  )
-                }
-              >
-                <div className="thumb  ">
+              <div className="work-box ">
+                <div
+                  className="thumb  "
+                  data-cursor-text="View Project"
+                  onClick={() =>
+                    window.open(
+                      "https://github.com/TsinatYilma/book-store",
+                      "_blank"
+                    )
+                  }
+                >
                   <div className="image   ">
                     <a href="">
                       <img
@@ -103,7 +104,7 @@ const projects = () => {
                     </a>
                   </div>
                 </div>
-                <div className="content  sm:px-[4.5vw]">
+                <div className="content  sm:px-[4.5vw] flex flex-col gap-2">
                   <h3 className="title">
                     <a href="portfolio-details.html">Book Store</a>
                   </h3>
@@ -111,16 +112,27 @@ const projects = () => {
                     <span className="date">2025</span>
                     <span className="tag">service</span>
                   </div>
+                  <div className="flex w-full flex-row flex-wrap items-start justify-start gap-2 ">
+                    <small className="cursor-pointer border-[0.15]  rounded px-1 whitespace-nowrap transition-all hover:scale-105 ">
+                      Fullstack
+                    </small>
+                    <small className="cursor-pointer border-[0.15]  rounded px-1 whitespace-nowrap transition-all hover:scale-105 ">
+                      Next.js
+                    </small>
+                    <small className="cursor-pointer border-[0.15]  rounded px-1 whitespace-nowrap transition-all hover:scale-105 ">
+                      Nest.js
+                    </small>
+                  </div>
                 </div>
               </div>
-              <div
-                className="work-box "
-                data-cursor-text="View Project"
-                onClick={() =>
-                  window.open("https://gsap-cpr.vercel.app/", "_blank")
-                }
-              >
-                <div className="thumb  ">
+              <div className="work-box ">
+                <div
+                  className="thumb  "
+                  data-cursor-text="View Project"
+                  onClick={() =>
+                    window.open("https://gsap-cpr.vercel.app/", "_blank")
+                  }
+                >
                   <div className="image  ">
                     <a href="">
                       <img
@@ -131,7 +143,7 @@ const projects = () => {
                     </a>
                   </div>
                 </div>
-                <div className="content">
+                <div className="content  flex flex-col gap-2">
                   <h3 className="title">
                     <a href="">MOJITO</a>
                   </h3>
@@ -139,16 +151,27 @@ const projects = () => {
                     <span className="date">2025</span>
                     <span className="tag">Client App</span>
                   </div>
+                  <div className="flex w-full flex-row flex-wrap items-start justify-start gap-2 ">
+                    <small className="cursor-pointer border-[0.15]  rounded px-1 whitespace-nowrap transition-all hover:scale-105 ">
+                      Frontend
+                    </small>
+                    <small className="cursor-pointer border-[0.15]  rounded px-1 whitespace-nowrap transition-all hover:scale-105 ">
+                      Next.js
+                    </small>
+                    <small className="cursor-pointer border-[0.15]  rounded px-1 whitespace-nowrap transition-all hover:scale-105 ">
+                      Gsap
+                    </small>
+                  </div>
                 </div>
               </div>
-              <div
-                className="work-box "
-                data-cursor-text="View Project"
-                onClick={() =>
-                  window.open("https://better-auth.farmui.com", "_blank")
-                }
-              >
-                <div className="thumb  ">
+              <div className="work-box ">
+                <div
+                  className="thumb  "
+                  data-cursor-text="View Project"
+                  onClick={() =>
+                    window.open("https://better-auth.farmui.com", "_blank")
+                  }
+                >
                   <div className="image  ">
                     <a href="">
                       <img
@@ -159,13 +182,21 @@ const projects = () => {
                     </a>
                   </div>
                 </div>
-                <div className="content sm:px-[4.5vw]">
+                <div className="content  flex flex-col gap-2 sm:px-[4.5vw]">
                   <h3 className="title">
                     <a href="portfolio-details.html">BetterAuth-UI</a>
                   </h3>
                   <div className="meta">
                     <span className="date">2025</span>
                     <span className="tag">frontend</span>
+                  </div>
+                  <div className="flex w-full flex-row flex-wrap items-start justify-start gap-2 ">
+                    <small className="cursor-pointer border-[0.15]  rounded px-1 whitespace-nowrap transition-all hover:scale-105 ">
+                      Frontend
+                    </small>
+                    <small className="cursor-pointer border-[0.15]  rounded px-1 whitespace-nowrap transition-all hover:scale-105 ">
+                      Next.js
+                    </small>
                   </div>
                 </div>
               </div>
@@ -181,7 +212,7 @@ const projects = () => {
                     </a>
                   </div>
                 </div>
-                <div className="content ">
+                <div className="content  flex flex-col gap-2 ">
                   <h3 className="title">
                     <a href="portfolio-details.html">Blog-It</a>
                   </h3>
@@ -189,16 +220,24 @@ const projects = () => {
                     <span className="date">2010</span>
                     <span className="tag">Marketing</span>
                   </div>
+                  <div className="flex w-full flex-row flex-wrap items-start justify-start gap-2 ">
+                    <small className="cursor-pointer border-[0.15]  rounded px-1 whitespace-nowrap transition-all hover:scale-105 ">
+                      Fullstack
+                    </small>
+                    <small className="cursor-pointer border-[0.15]  rounded px-1 whitespace-nowrap transition-all hover:scale-105 ">
+                      Next.js
+                    </small>
+                  </div>
                 </div>
               </div>
-              <div
-                className="work-box"
-                data-cursor-text="View Project"
-                onClick={() =>
-                  window.open("https://abiye-wedase.vercel.app/", "_blank")
-                }
-              >
-                <div className="thumb">
+              <div className="work-box">
+                <div
+                  className="thumb"
+                  data-cursor-text="View Project"
+                  onClick={() =>
+                    window.open("https://abiye-wedase.vercel.app/", "_blank")
+                  }
+                >
                   <div className="image ">
                     <a href="">
                       <img
@@ -209,7 +248,7 @@ const projects = () => {
                     </a>
                   </div>
                 </div>
-                <div className="content sm:px-[4.5vw]">
+                <div className="content  flex flex-col gap-2 sm:px-[4.5vw]">
                   <h3 className="title">
                     <a href="">Wedase Mariam Zema</a>
                   </h3>
@@ -217,20 +256,31 @@ const projects = () => {
                     <span className="date">2024</span>
                     <span className="tag">Spritual</span>
                   </div>
+                  <div className="flex w-full flex-row flex-wrap items-start justify-start gap-2 ">
+                    <small className="cursor-pointer border-[0.15]  rounded px-1 whitespace-nowrap transition-all hover:scale-105 ">
+                      Fullstack
+                    </small>
+                    <small className="cursor-pointer border-[0.15]  rounded px-1 whitespace-nowrap transition-all hover:scale-105 ">
+                      React
+                    </small>
+                    <small className="cursor-pointer border-[0.15]  rounded px-1 whitespace-nowrap transition-all hover:scale-105 ">
+                      Supabase
+                    </small>
+                  </div>
                 </div>
               </div>
-              <div
-                className="work-box"
-                data-cursor-text="View Project"
-                onClick={() =>
-                  window.open(
-                    "https://github.com/TsinatYilma/BookStoreApp",
-                    "_blank"
-                  )
-                }
-              >
+              <div className="work-box">
                 <div className="thumb">
-                  <div className="image ">
+                  <div
+                    className="image "
+                    data-cursor-text="View Project"
+                    onClick={() =>
+                      window.open(
+                        "https://github.com/TsinatYilma/BookStoreApp",
+                        "_blank"
+                      )
+                    }
+                  >
                     <a href="">
                       <img
                         className="h-50 sm:h-[25vw] scale"
@@ -240,7 +290,7 @@ const projects = () => {
                     </a>
                   </div>
                 </div>
-                <div className="content ">
+                <div className="content  flex flex-col gap-2 ">
                   <h3 className="title">
                     <a href="https://github.com/TsinatYilma/BookStoreApp">
                       BookStore-App
@@ -249,6 +299,14 @@ const projects = () => {
                   <div className="meta">
                     <span className="date">2025</span>
                     <span className="tag">mobile app</span>
+                  </div>
+                  <div className="flex w-full flex-row flex-wrap items-start justify-start gap-2 ">
+                    <small className="cursor-pointer border-[0.15]  rounded px-1 whitespace-nowrap transition-all hover:scale-105 ">
+                      Mobile App
+                    </small>
+                    <small className="cursor-pointer border-[0.15]  rounded px-1 whitespace-nowrap transition-all hover:scale-105 ">
+                      React Native
+                    </small>
                   </div>
                 </div>
               </div>
@@ -275,7 +333,7 @@ export default projects;
                           <span className="number">(01)</span>
                         </div>
 
-                        <div className="content" >
+                        <div className="content  flex flex-col gap-2" >
                           <h3 className="title"><a href="service-details.html">Book-Store</a></h3>
                           <p className="font-instRegular text-lg mt-10 pr-24">This book-store website is your go-to destination for exploring everything about a book — from detailed descriptions and author info to genre tags and reader reviews. You can easily filter titles by genre, discover personalized recommendations, and dive into community ratings to find your next great read.</p>
                         </div>
@@ -286,7 +344,7 @@ export default projects;
                           <span className="number">(02)</span>
                         </div>
 
-                        <div className="content ">
+                        <div className="content  flex flex-col gap-2 ">
                           <h3 className="title"><a href="service-details.html">Wedase Mariam Zema</a></h3>
                           <p className="text-lg"></p>
                         </div>
@@ -299,7 +357,7 @@ export default projects;
                           <span className="number">(03)</span>
                         </div>
 
-                        <div className="content">
+                        <div className="content  flex flex-col gap-2">
                           <h3 className="title"><a href="service-details.html">Better-Auth UI</a></h3>
                           <p className="text-lg font-instRegular mt-10 pr-24">This site showcases a clean and secure authentication flow, built to demonstrate better login and session handling. I contributed to the UI development, helping bring the design and interactions to life with a focus on clarity and usability..</p>
                         </div>
@@ -311,7 +369,7 @@ export default projects;
                         <div className="count">
                           <span className="number">(04)</span>
                         </div>
-                        <div className="content">
+                        <div className="content  flex flex-col gap-2">
                           <h3 className="title"><a href="service-details.html">Weather App</a></h3>
                           <p className="text-lg font-instRegular mt-10 pr-24">This is a beautifully crafted weather app I built during my early learning stage. It features a clean, responsive design and delivers real-time weather data with intuitive visuals. Building it helped me grasp core concepts like API integration, dynamic UI updates, and layout structuring.</p>
                         </div>

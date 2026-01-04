@@ -1,9 +1,20 @@
 @import "tailwindcss";
+@import "@fontsource/geist-mono/400.css";
 
 @font-face {
-  font-family: "InstrumentSans";
-  src: url("/fonts/InstrumentSans-Regular.ttf");
+  font-family: "stepsMono";
+  src: url("/fonts/Steps-Mono.otf");
   font-weight: 500;
+}
+@font-face {
+  font-family: "Gortex";
+  src: url("/fonts/SpaceGrotesk-light.ttf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Geist";
+  src: url("/fonts/Geist-VariableFont_wght.ttf");
+  font-weight: 700;
 }
 @font-face {
   font-family: "InstrumentSansBold";
@@ -15,8 +26,9 @@
   --font-instRegular: "instrumentSans";
 }
 :root {
-  --font_instrumentsans: "InstrumentSans", sans-serif;
+  --font_instrumentsans: "stepsMono", sans-serif;
   --font_instrumentsansBold: "InstrumentSansBold", sans-serif;
+  --font-Grotesk: "Gortesk", sans-serif;
   --background: #ffffff;
   --foreground: #171717;
 }
@@ -26,6 +38,10 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --font-stepsMono: "stepsMono", sans-serif;
+  --font_instrumentsansBold: "InstrumentSansBold", sans-serif;
+  --font-Grotesk: "Gortesk", sans-serif;
+  --font-Geist: "Geist Mono", sans-serif;
 }
 
 @media (prefers-color-scheme: dark) {
