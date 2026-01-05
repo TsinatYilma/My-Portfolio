@@ -113,13 +113,13 @@ const projects = () => {
                     <span className="tag">service</span>
                   </div>
                   <div className="flex w-full flex-row flex-wrap items-start justify-start gap-2 ">
-                    <small className="cursor-pointer border-[0.15]  rounded px-1 whitespace-nowrap transition-all hover:scale-105 ">
+                    <small className="cursor-pointer border-[0.1px] border-gray-400  rounded px-1 whitespace-nowrap transition-all hover:bg-[#a53b2f] hover:border-[#a53b2f] hover:scale-105 ">
                       Fullstack
                     </small>
-                    <small className="cursor-pointer border-[0.15]  rounded px-1 whitespace-nowrap transition-all hover:scale-105 ">
+                    <small className="cursor-pointer border-[0.1px] border-gray-400  rounded px-1 whitespace-nowrap transition-all hover:bg-[#a53b2f] hover:border-[#a53b2f] hover:scale-105 ">
                       Next.js
                     </small>
-                    <small className="cursor-pointer border-[0.15]  rounded px-1 whitespace-nowrap transition-all hover:scale-105 ">
+                    <small className="cursor-pointer border-[0.1px] border-gray-400  rounded px-1 whitespace-nowrap transition-all hover:bg-[#a53b2f] hover:border-[#a53b2f] hover:scale-105 ">
                       Nest.js
                     </small>
                   </div>
@@ -152,13 +152,13 @@ const projects = () => {
                     <span className="tag">Client App</span>
                   </div>
                   <div className="flex w-full flex-row flex-wrap items-start justify-start gap-2 ">
-                    <small className="cursor-pointer border-[0.15]  rounded px-1 whitespace-nowrap transition-all hover:scale-105 ">
+                    <small className="cursor-pointer border-[0.1px] border-gray-400  rounded px-1 whitespace-nowrap transition-all hover:bg-[#a53b2f] hover:border-[#a53b2f] hover:scale-105 ">
                       Frontend
                     </small>
-                    <small className="cursor-pointer border-[0.15]  rounded px-1 whitespace-nowrap transition-all hover:scale-105 ">
+                    <small className="cursor-pointer border-[0.1px] border-gray-400  rounded px-1 whitespace-nowrap transition-all hover:bg-[#a53b2f] hover:border-[#a53b2f] hover:scale-105 ">
                       Next.js
                     </small>
-                    <small className="cursor-pointer border-[0.15]  rounded px-1 whitespace-nowrap transition-all hover:scale-105 ">
+                    <small className="cursor-pointer border-[0.1px] border-gray-400  rounded px-1 whitespace-nowrap transition-all hover:bg-[#a53b2f] hover:border-[#a53b2f] hover:scale-105 ">
                       Gsap
                     </small>
                   </div>
@@ -191,17 +191,17 @@ const projects = () => {
                     <span className="tag">frontend</span>
                   </div>
                   <div className="flex w-full flex-row flex-wrap items-start justify-start gap-2 ">
-                    <small className="cursor-pointer border-[0.15]  rounded px-1 whitespace-nowrap transition-all hover:scale-105 ">
+                    <small className="cursor-pointer border-[0.1px] border-gray-400  rounded px-1 whitespace-nowrap transition-all hover:bg-[#a53b2f] hover:border-[#a53b2f] hover:scale-105 ">
                       Frontend
                     </small>
-                    <small className="cursor-pointer border-[0.15]  rounded px-1 whitespace-nowrap transition-all hover:scale-105 ">
+                    <small className="cursor-pointer border-[0.1px] border-gray-400  rounded px-1 whitespace-nowrap transition-all hover:bg-[#a53b2f] hover:border-[#a53b2f] hover:scale-105 ">
                       Next.js
                     </small>
                   </div>
                 </div>
               </div>
-              <div className="work-box" data-cursor-text="View Project">
-                <div className="thumb">
+              <div className="work-box">
+                <div className="thumb" data-cursor-text="View Project">
                   <div className="image  ">
                     <a href="portfolio-details.html">
                       <img
@@ -221,10 +221,10 @@ const projects = () => {
                     <span className="tag">Marketing</span>
                   </div>
                   <div className="flex w-full flex-row flex-wrap items-start justify-start gap-2 ">
-                    <small className="cursor-pointer border-[0.15]  rounded px-1 whitespace-nowrap transition-all hover:scale-105 ">
+                    <small className="cursor-pointer border-[0.1px] border-gray-400  rounded px-1 whitespace-nowrap transition-all hover:bg-[#a53b2f] hover:border-[#a53b2f] hover:scale-105 ">
                       Fullstack
                     </small>
-                    <small className="cursor-pointer border-[0.15]  rounded px-1 whitespace-nowrap transition-all hover:scale-105 ">
+                    <small className="cursor-pointer border-[0.1px] border-gray-400  rounded px-1 whitespace-nowrap transition-all hover:bg-[#a53b2f] hover:border-[#a53b2f] hover:scale-105 ">
                       Next.js
                     </small>
                   </div>
@@ -257,13 +257,13 @@ const projects = () => {
                     <span className="tag">Spritual</span>
                   </div>
                   <div className="flex w-full flex-row flex-wrap items-start justify-start gap-2 ">
-                    <small className="cursor-pointer border-[0.15]  rounded px-1 whitespace-nowrap transition-all hover:scale-105 ">
+                    <small className="cursor-pointer border-[0.1px] border-gray-400  rounded px-1 whitespace-nowrap transition-all hover:bg-[#a53b2f] hover:border-[#a53b2f] hover:scale-105 ">
                       Fullstack
                     </small>
-                    <small className="cursor-pointer border-[0.15]  rounded px-1 whitespace-nowrap transition-all hover:scale-105 ">
+                    <small className="cursor-pointer border-[0.1px] border-gray-400  rounded px-1 whitespace-nowrap transition-all hover:bg-[#a53b2f] hover:border-[#a53b2f] hover:scale-105 ">
                       React
                     </small>
-                    <small className="cursor-pointer border-[0.15]  rounded px-1 whitespace-nowrap transition-all hover:scale-105 ">
+                    <small className="cursor-pointer border-[0.1px] border-gray-400  rounded px-1 whitespace-nowrap transition-all hover:bg-[#a53b2f] hover:border-[#a53b2f] hover:scale-105 ">
                       Supabase
                     </small>
                   </div>
@@ -301,10 +301,10 @@ const projects = () => {
                     <span className="tag">mobile app</span>
                   </div>
                   <div className="flex w-full flex-row flex-wrap items-start justify-start gap-2 ">
-                    <small className="cursor-pointer border-[0.15]  rounded px-1 whitespace-nowrap transition-all hover:scale-105 ">
+                    <small className="cursor-pointer border-[0.1px] border-gray-400  rounded px-1 whitespace-nowrap transition-all hover:bg-[#a53b2f] hover:border-[#a53b2f] hover:scale-105 ">
                       Mobile App
                     </small>
-                    <small className="cursor-pointer border-[0.15]  rounded px-1 whitespace-nowrap transition-all hover:scale-105 ">
+                    <small className="cursor-pointer border-[0.1px] border-gray-400  rounded px-1 whitespace-nowrap transition-all hover:bg-[#a53b2f] hover:border-[#a53b2f] hover:scale-105 ">
                       React Native
                     </small>
                   </div>
