@@ -83,6 +83,39 @@ const projects = () => {
         <div className="works-wrapper-box  flex-col   sm:flex justify-center ">
           <div className="container large  min-w-full">
             <div className="works-wrapper-8  ">
+              <div className="work-box">
+                <div className="thumb" data-cursor-text="View Project">
+                  <div className="image  ">
+                    <a href="https://sheger-events.vercel.app/">
+                      <img
+                        className="h-50 sm:h-[25vw] scale"
+                        src="/imgs/shegerEvents.png"
+                        alt="image"
+                      />
+                    </a>
+                  </div>
+                </div>
+                <div className="content sm:px-[4.5vw]  flex flex-col gap-2 ">
+                  <h3 className="title">
+                    <a href="portfolio-details.html">Sheger-Events</a>
+                  </h3>
+                  <div className="meta">
+                    <span className="date">2025</span>
+                    <span className="tag">Marketing</span>
+                  </div>
+                  <div className="flex w-full flex-row flex-wrap items-start justify-start gap-2 ">
+                    <small className="cursor-pointer border-[0.1px] border-gray-400  rounded px-1 whitespace-nowrap transition-all hover:bg-[#a53b2f] hover:border-[#a53b2f] hover:scale-105 ">
+                      Fullstack
+                    </small>
+                    <small className="cursor-pointer border-[0.1px] border-gray-400  rounded px-1 whitespace-nowrap transition-all hover:bg-[#a53b2f] hover:border-[#a53b2f] hover:scale-105 ">
+                      Next.js
+                    </small>
+                    <small className="cursor-pointer border-[0.1px] border-gray-400  rounded px-1 whitespace-nowrap transition-all hover:bg-[#a53b2f] hover:border-[#a53b2f] hover:scale-105 ">
+                      Python
+                    </small>
+                  </div>
+                </div>
+              </div>
               <div className="work-box ">
                 <div
                   className="thumb  "
@@ -104,7 +137,7 @@ const projects = () => {
                     </a>
                   </div>
                 </div>
-                <div className="content  sm:px-[4.5vw] flex flex-col gap-2">
+                <div className="content   flex flex-col gap-2">
                   <h3 className="title">
                     <a href="portfolio-details.html">Book Store</a>
                   </h3>
@@ -143,7 +176,7 @@ const projects = () => {
                     </a>
                   </div>
                 </div>
-                <div className="content  flex flex-col gap-2">
+                <div className="content sm:px-[4.5vw] flex flex-col gap-2">
                   <h3 className="title">
                     <a href="">MOJITO</a>
                   </h3>
@@ -182,7 +215,7 @@ const projects = () => {
                     </a>
                   </div>
                 </div>
-                <div className="content  flex flex-col gap-2 sm:px-[4.5vw]">
+                <div className="content  flex flex-col gap-2 ">
                   <h3 className="title">
                     <a href="portfolio-details.html">BetterAuth-UI</a>
                   </h3>
@@ -200,36 +233,7 @@ const projects = () => {
                   </div>
                 </div>
               </div>
-              <div className="work-box">
-                <div className="thumb" data-cursor-text="View Project">
-                  <div className="image  ">
-                    <a href="portfolio-details.html">
-                      <img
-                        className="h-50 sm:h-[25vw] scale"
-                        src="/imgs/image-5.webp"
-                        alt="image"
-                      />
-                    </a>
-                  </div>
-                </div>
-                <div className="content  flex flex-col gap-2 ">
-                  <h3 className="title">
-                    <a href="portfolio-details.html">Blog-It</a>
-                  </h3>
-                  <div className="meta">
-                    <span className="date">2010</span>
-                    <span className="tag">Marketing</span>
-                  </div>
-                  <div className="flex w-full flex-row flex-wrap items-start justify-start gap-2 ">
-                    <small className="cursor-pointer border-[0.1px] border-gray-400  rounded px-1 whitespace-nowrap transition-all hover:bg-[#a53b2f] hover:border-[#a53b2f] hover:scale-105 ">
-                      Fullstack
-                    </small>
-                    <small className="cursor-pointer border-[0.1px] border-gray-400  rounded px-1 whitespace-nowrap transition-all hover:bg-[#a53b2f] hover:border-[#a53b2f] hover:scale-105 ">
-                      Next.js
-                    </small>
-                  </div>
-                </div>
-              </div>
+
               <div className="work-box">
                 <div
                   className="thumb"
